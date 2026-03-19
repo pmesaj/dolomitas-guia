@@ -1,0 +1,116 @@
+[build]
+  publish = "."
+
+# Pretty URLs: /lago-di-braies en lugar de /lago-di-braies.html
+[[redirects]]
+  from = "/lago-di-braies"
+  to = "/lago-di-braies.html"
+  status = 200
+
+[[redirects]]
+  from = "/tres-cime-di-lavaredo"
+  to = "/tres-cime-di-lavaredo.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-sorapis"
+  to = "/lago-sorapis.html"
+  status = 200
+
+[[redirects]]
+  from = "/cinque-torri"
+  to = "/cinque-torri.html"
+  status = 200
+
+[[redirects]]
+  from = "/val-di-funes"
+  to = "/val-di-funes.html"
+  status = 200
+
+[[redirects]]
+  from = "/seceda"
+  to = "/seceda.html"
+  status = 200
+
+[[redirects]]
+  from = "/alpe-di-siusi"
+  to = "/alpe-di-siusi.html"
+  status = 200
+
+[[redirects]]
+  from = "/la-marmolada"
+  to = "/la-marmolada.html"
+  status = 200
+
+[[redirects]]
+  from = "/cortina-dampezzo"
+  to = "/cortina-dampezzo.html"
+  status = 200
+
+[[redirects]]
+  from = "/ruta-dolomitas-en-coche"
+  to = "/ruta-dolomitas-en-coche.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-giau"
+  to = "/passo-giau.html"
+  status = 200
+
+[[redirects]]
+  from = "/val-gardena"
+  to = "/val-gardena.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-misurina"
+  to = "/lago-misurina.html"
+  status = 200
+
+[[redirects]]
+  from = "/dobbiaco"
+  to = "/dobbiaco.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-invierno"
+  to = "/dolomitas-en-invierno.html"
+  status = 200
+
+[[redirects]]
+  from = "/alta-badia"
+  to = "/alta-badia.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-pordoi"
+  to = "/passo-pordoi.html"
+  status = 200
+
+[[redirects]]
+  from = "/val-di-fassa"
+  to = "/val-di-fassa.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-otono"
+  to = "/dolomitas-en-otono.html"
+  status = 200
+
+[[redirects]]
+  from = "/donde-alojarse-dolomitas"
+  to = "/donde-alojarse-dolomitas.html"
+  status = 200
+
+# Headers de seguridad y cache
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

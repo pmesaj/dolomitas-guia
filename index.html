@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Guía Secreta de Dolomitas — Coordenadas Secretas</title>
+  <meta name="description" content="Guías de viaje detalladas para los Dolomitas: rutas, lagos, puertos de montaña y los mejores rincones que no encontrarás en ninguna guía convencional.">
+  <link rel="canonical" href="https://coordenadassecretas.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red: #ef2d2e;
+      --red-dark: #c82526;
+      --black: #1a1a1a;
+      --text: #333;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+    /* Hero */
+    .hero {
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--red); }
+    .hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 17px;
+      margin-bottom: 32px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-btn {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .hero-btn:hover { background: var(--red-dark); }
+
+    /* Articles grid */
+    .section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .section h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 900;
+      color: var(--black);
+      margin-bottom: 36px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    .card-img {
+      height: 140px;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+    }
+    .card-body {
+      padding: 16px 18px;
+    }
+    .card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+    .card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* CTA band */
+    .cta-band {
+      background: var(--black);
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .cta-band h2 {
+      color: #fff;
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+    .cta-band p {
+      color: rgba(255,255,255,0.7);
+      font-size: 16px;
+      max-width: 500px;
+      margin: 0 auto 28px;
+    }
+    .cta-band a {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .cta-band a:hover { background: var(--red-dark); }
+    .cta-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 24px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Coordenadas Secretas</span>
+    <h1>La guía definitiva para los <span>Dolomitas</span></h1>
+    <p>Rutas detalladas, lagos escondidos, refugios de montaña y los rincones que no aparecen en ninguna guía convencional.</p>
+    <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="hero-btn">Probar el primer capítulo gratis →</a>
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-title">Destinos</p>
+  <h2>Todos los artículos</h2>
+  <div class="grid">
+
+    <a href="/lago-di-braies" class="card">
+      <div class="card-img">🏔️</div>
+      <div class="card-body">
+        <p class="card-tag">Lago</p>
+        <h3>Lago di Braies</h3>
+        <p>El lago más fotografiado de los Dolomitas y cómo visitarlo sin aglomeraciones.</p>
+      </div>
+    </a>
+
+    <a href="/tres-cime-di-lavaredo" class="card">
+      <div class="card-img">⛰️</div>
+      <div class="card-body">
+        <p class="card-tag">Senderismo</p>
+        <h3>Tres Cime di Lavaredo</h3>
+        <p>La ruta circular más icónica de los Dolomitas, paso a paso.</p>
+      </div>
+    </a>
+
+    <a href="/lago-sorapis" class="card">
+      <div class="card-img">💎</div>
+      <div class="card-body">
+        <p class="card-tag">Lago</p>
+        <h3>Lago di Sorapis</h3>
+        <p>Aguas turquesas escondidas tras una ruta de montaña.</p>
+      </div>
+    </a>
+
+    <a href="/cinque-torri" class="card">
+      <div class="card-img">🗿</div>
+      <div class="card-body">
+        <p class="card-tag">Senderismo · Historia</p>
+        <h3>Cinque Torri</h3>
+        <p>Formaciones rocosas únicas con historia de la Primera Guerra Mundial.</p>
+      </div>
+    </a>
+
+    <a href="/val-di-funes" class="card">
+      <div class="card-img">🌿</div>
+      <div class="card-body">
+        <p class="card-tag">Valle</p>
+        <h3>Val di Funes</h3>
+        <p>El valle con la iglesia más fotografiada del norte de Italia.</p>
+      </div>
+    </a>
+
+    <a href="/seceda" class="card">
+      <div class="card-img">🚡</div>
+      <div class="card-body">
+        <p class="card-tag">Mirador</p>
+        <h3>Seceda</h3>
+        <p>Las crestas más espectaculares de los Dolomitas, accesibles en telecabina.</p>
+      </div>
+    </a>
+
+    <a href="/alpe-di-siusi" class="card">
+      <div class="card-img">🌄</div>
+      <div class="card-body">
+        <p class="card-tag">Altiplanicie</p>
+        <h3>Alpe di Siusi</h3>
+        <p>La mayor altiplanicie alpina de Europa, con vistas 360° de los Dolomitas.</p>
+      </div>
+    </a>
+
+    <a href="/la-marmolada" class="card">
+      <div class="card-img">🧊</div>
+      <div class="card-body">
+        <p class="card-tag">Cumbre</p>
+        <h3>La Marmolada</h3>
+        <p>La reina de los Dolomitas: el glaciar y la cima más alta del grupo.</p>
+      </div>
+    </a>
+
+    <a href="/cortina-dampezzo" class="card">
+      <div class="card-img">🎿</div>
+      <div class="card-body">
+        <p class="card-tag">Ciudad</p>
+        <h3>Cortina d'Ampezzo</h3>
+        <p>La capital de los Dolomitas: dónde dormir, comer y qué hacer.</p>
+      </div>
+    </a>
+
+    <a href="/ruta-dolomitas-en-coche" class="card">
+      <div class="card-img">🚗</div>
+      <div class="card-body">
+        <p class="card-tag">Ruta</p>
+        <h3>Ruta en coche por los Dolomitas</h3>
+        <p>El itinerario de 7 días para recorrer los Dolomitas a tu ritmo.</p>
+      </div>
+    </a>
+
+    <a href="/passo-giau" class="card">
+      <div class="card-img">🛣️</div>
+      <div class="card-body">
+        <p class="card-tag">Puerto de montaña</p>
+        <h3>Passo Giau</h3>
+        <p>El puerto más escénico de los Dolomitas, a 2.236 metros de altitud.</p>
+      </div>
+    </a>
+
+    <a href="/val-gardena" class="card">
+      <div class="card-img">🏘️</div>
+      <div class="card-body">
+        <p class="card-tag">Valle</p>
+        <h3>Val Gardena</h3>
+        <p>El valle ladino con tres pueblos únicos y acceso al Sellaronda.</p>
+      </div>
+    </a>
+
+    <a href="/lago-misurina" class="card">
+      <div class="card-img">🪞</div>
+      <div class="card-body">
+        <p class="card-tag">Lago</p>
+        <h3>Lago di Misurina</h3>
+        <p>El espejo perfecto de las Tres Cimas, accesible en coche.</p>
+      </div>
+    </a>
+
+    <a href="/dobbiaco" class="card">
+      <div class="card-img">🎼</div>
+      <div class="card-body">
+        <p class="card-tag">Pueblo</p>
+        <h3>Dobbiaco</h3>
+        <p>El pueblo de Mahler: cultura, lago y puerta a la Alta Pusteria.</p>
+      </div>
+    </a>
+
+    <a href="/dolomitas-en-invierno" class="card">
+      <div class="card-img">❄️</div>
+      <div class="card-body">
+        <p class="card-tag">Temporada</p>
+        <h3>Dolomitas en invierno</h3>
+        <p>Guía completa para esquiar y disfrutar los Dolomitas en la nieve.</p>
+      </div>
+    </a>
+
+    <a href="/alta-badia" class="card">
+      <div class="card-img">🏔️</div>
+      <div class="card-body">
+        <p class="card-tag">Valle</p>
+        <h3>Alta Badia</h3>
+        <p>Cinco pueblos ladinos, gastronomía Michelin y el Sellaronda.</p>
+      </div>
+    </a>
+
+    <a href="/passo-pordoi" class="card">
+      <div class="card-img">🗻</div>
+      <div class="card-body">
+        <p class="card-tag">Puerto de montaña</p>
+        <h3>Passo Pordoi</h3>
+        <p>A 2.239 m, el puerto más alto del Sellaronda y la ruta del Viel del Pan.</p>
+      </div>
+    </a>
+
+    <a href="/val-di-fassa" class="card">
+      <div class="card-img">🌹</div>
+      <div class="card-body">
+        <p class="card-tag">Valle</p>
+        <h3>Val di Fassa</h3>
+        <p>La leyenda del Enrosadira y el Catinaccio, el jardín de roca.</p>
+      </div>
+    </a>
+
+    <a href="/dolomitas-en-otono" class="card">
+      <div class="card-img">🍂</div>
+      <div class="card-body">
+        <p class="card-tag">Temporada</p>
+        <h3>Dolomitas en otoño</h3>
+        <p>Septiembre y octubre: colores, menos gente y la mejor luz para fotografiar.</p>
+      </div>
+    </a>
+
+    <a href="/donde-alojarse-dolomitas" class="card">
+      <div class="card-img">🏨</div>
+      <div class="card-body">
+        <p class="card-tag">Alojamiento</p>
+        <h3>Dónde alojarse en los Dolomitas</h3>
+        <p>Las mejores bases según tu itinerario, con precios y recomendaciones.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>El primer capítulo es gratis</h2>
+  <p>Rutas detalladas, mapas de cada jornada y más de 150 puntos de interés. Sin spam, sin compromisos.</p>
+  <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis">Probar el primer capítulo gratis →</a>
+  <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
+</div>
+
+<footer>
+  <p>© 2025 Coordenadas Secretas · <a href="https://coordenadassecretas.com" style="color:#ef2d2e;">coordenadassecretas.com</a></p>
+</footer>
+
+</body>
+</html>
