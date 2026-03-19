@@ -13,21 +13,17 @@
     h1 { font-family: 'Poppins', sans-serif; font-size: clamp(20px, 4vw, 32px); font-weight: 900; color: #fff; margin-bottom: 6px; }
     .subtitle { font-size: 14px; color: #666; margin-bottom: 40px; }
     .subtitle a { color: #ef2d2e; text-decoration: none; }
-
-    /* GLOBAL PROGRESS */
     .global { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 14px; padding: 28px; margin-bottom: 32px; }
     .global-numbers { display: flex; gap: 32px; margin-bottom: 20px; flex-wrap: wrap; }
     .global-num { text-align: center; }
     .global-num span { display: block; font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 900; color: #ef2d2e; line-height: 1; }
     .global-num small { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; display: block; }
     .progress-bar-wrap { background: #2a2a2a; border-radius: 100px; height: 10px; overflow: hidden; }
-    .progress-bar { height: 100%; background: linear-gradient(90deg, #ef2d2e, #ff6b6b); border-radius: 100px; transition: width 0.5s; }
+    .progress-bar { height: 100%; background: linear-gradient(90deg, #ef2d2e, #ff6b6b); border-radius: 100px; }
     .progress-label { font-size: 13px; color: #666; margin-top: 8px; }
-
-    /* CATEGORIES */
     .categories { display: flex; flex-direction: column; gap: 16px; }
     .cat { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; overflow: hidden; }
-    .cat-header { padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: default; }
+    .cat-header { padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .cat-name { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
     .cat-count { font-size: 13px; color: #666; white-space: nowrap; }
     .cat-bar-wrap { flex: 1; background: #2a2a2a; border-radius: 100px; height: 6px; overflow: hidden; min-width: 80px; }
@@ -38,129 +34,109 @@
     .done::before { content: '✓'; font-weight: 700; }
     .pending { background: #2a2a2a; color: #666; border: 1px solid #333; }
     .pending::before { content: '○'; }
-    .in-progress { background: #2a1a00; color: #ff9800; border: 1px solid #4a3000; }
-    .in-progress::before { content: '◉'; }
-
-    /* LAST UPDATE */
     .last-update { text-align: center; font-size: 12px; color: #444; margin-top: 32px; }
     .last-update strong { color: #666; }
   </style>
 </head>
 <body>
 <div class="wrap">
-
   <h1>🗻 Enciclopedia Dolomitas</h1>
   <p class="subtitle">Estado del proyecto · <a href="https://guiadolomitas.coordenadassecretas.com">guiadolomitas.coordenadassecretas.com</a> · Se actualiza automáticamente</p>
 
-  <!-- GLOBAL -->
   <div class="global">
     <div class="global-numbers">
-      <div class="global-num"><span>21</span><small>Publicados</small></div>
-      <div class="global-num"><span>29</span><small>En cola</small></div>
+      <div class="global-num"><span>46</span><small>Publicados</small></div>
+      <div class="global-num"><span>4</span><small>En cola</small></div>
       <div class="global-num"><span>50</span><small>Objetivo total</small></div>
     </div>
-    <div class="progress-bar-wrap">
-      <div class="progress-bar" style="width: 42%"></div>
-    </div>
-    <p class="progress-label">42% completado — 21 de 50 artículos publicados</p>
+    <div class="progress-bar-wrap"><div class="progress-bar" style="width:92%"></div></div>
+    <p class="progress-label">92% completado — 46 de 50 artículos publicados</p>
   </div>
 
-  <!-- CATEGORIES -->
   <div class="categories">
 
     <div class="cat">
       <div class="cat-header">
-        <div class="cat-name">🏔️ Travesías de larga distancia</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:50%"></div></div>
-        <div class="cat-count">1 / 2</div>
+        <div class="cat-name">🥾 Travesías de larga distancia</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">2 / 2</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Alta Via 1</span>
-        <span class="art-tag pending">Alta Via 2</span>
+        <span class="art-tag done">Alta Via 2</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🛣️ Puertos de montaña</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:25%"></div></div>
-        <div class="cat-count">2 / 8</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">6 / 6</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Passo Giau</span>
         <span class="art-tag done">Passo Pordoi</span>
-        <span class="art-tag pending">Passo Falzarego</span>
-        <span class="art-tag pending">Passo Sella</span>
-        <span class="art-tag pending">Passo Gardena</span>
-        <span class="art-tag pending">Passo Rolle</span>
-        <span class="art-tag pending">Passo Tre Croci</span>
-        <span class="art-tag pending">Passo Campolongo</span>
+        <span class="art-tag done">Passo Falzarego</span>
+        <span class="art-tag done">Passo Sella</span>
+        <span class="art-tag done">Passo Gardena</span>
+        <span class="art-tag done">Passo Rolle</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">💎 Lagos</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:27%"></div></div>
-        <div class="cat-count">3 / 11</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">8 / 8</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Lago di Braies</span>
         <span class="art-tag done">Lago di Sorapis</span>
         <span class="art-tag done">Lago di Misurina</span>
-        <span class="art-tag pending">Lago di Carezza</span>
-        <span class="art-tag pending">Lago di Alleghe</span>
-        <span class="art-tag pending">Lago Fedaia</span>
-        <span class="art-tag pending">Lago di Antorno</span>
-        <span class="art-tag pending">Laghi di Fusine</span>
-        <span class="art-tag pending">Lago di Dobbiaco</span>
-        <span class="art-tag pending">Lago di Santa Croce</span>
-        <span class="art-tag pending">Lago di Alleghe</span>
+        <span class="art-tag done">Lago di Carezza</span>
+        <span class="art-tag done">Lago di Alleghe</span>
+        <span class="art-tag done">Lago Fedaia</span>
+        <span class="art-tag done">Lago di Antorno</span>
+        <span class="art-tag done">Laghi di Fusine</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🌿 Valles</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:57%"></div></div>
-        <div class="cat-count">4 / 7</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">4 / 4</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Val Gardena</span>
         <span class="art-tag done">Val di Funes</span>
         <span class="art-tag done">Val di Fassa</span>
         <span class="art-tag done">Alta Badia</span>
-        <span class="art-tag pending">Fanes-Sennes-Braies</span>
-        <span class="art-tag pending">Dolomiti Friulane</span>
-        <span class="art-tag pending">Val Fiscalina</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🏘️ Pueblos y ciudades</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:20%"></div></div>
-        <div class="cat-count">2 / 10</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">7 / 7</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Cortina d'Ampezzo</span>
         <span class="art-tag done">Dobbiaco</span>
-        <span class="art-tag pending">Bolzano</span>
-        <span class="art-tag pending">Ortisei</span>
-        <span class="art-tag pending">Brunico</span>
-        <span class="art-tag pending">Corvara</span>
-        <span class="art-tag pending">Arabba</span>
-        <span class="art-tag pending">Bressanone</span>
-        <span class="art-tag pending">Belluno</span>
-        <span class="art-tag pending">San Cassiano</span>
+        <span class="art-tag done">Bolzano</span>
+        <span class="art-tag done">Ortisei</span>
+        <span class="art-tag done">Brunico</span>
+        <span class="art-tag done">Corvara</span>
+        <span class="art-tag done">Arabba</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">⛰️ Cumbres y miradores</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:60%"></div></div>
-        <div class="cat-count">3 / 5</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">5 / 5</div>
       </div>
       <div class="articles">
         <span class="art-tag done">La Marmolada</span>
@@ -173,82 +149,76 @@
 
     <div class="cat">
       <div class="cat-header">
-        <div class="cat-name">🥾 Senderismo</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:33%"></div></div>
-        <div class="cat-count">1 / 3</div>
+        <div class="cat-name">📖 Cultura y contexto</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">5 / 5</div>
       </div>
       <div class="articles">
-        <span class="art-tag done">Ruta en coche 7 días</span>
-        <span class="art-tag done">Alta Via 1</span>
-        <span class="art-tag pending">Alta Via 2</span>
-        <span class="art-tag pending">Vía ferrata principiantes</span>
-        <span class="art-tag pending">Viel del Pan</span>
+        <span class="art-tag done">Geología</span>
+        <span class="art-tag done">Primera Guerra Mundial</span>
+        <span class="art-tag done">Cultura ladina</span>
+        <span class="art-tag done">Gastronomía</span>
+        <span class="art-tag done">Fotografía</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🎿 Esquí y Sellaronda</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:0%"></div></div>
-        <div class="cat-count">0 / 4</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">3 / 3</div>
       </div>
       <div class="articles">
-        <span class="art-tag pending">El Sellaronda</span>
-        <span class="art-tag pending">Dolomiti Superski</span>
-        <span class="art-tag pending">Dolomitas en invierno (ski)</span>
-        <span class="art-tag pending">Arabba-Marmolada esquí</span>
+        <span class="art-tag done">Dolomitas en invierno</span>
+        <span class="art-tag done">Sellaronda</span>
+        <span class="art-tag done">Dolomiti Superski</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
-        <div class="cat-name">📖 Cultura y contexto</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:0%"></div></div>
-        <div class="cat-count">0 / 5</div>
+        <div class="cat-name">🏃 Actividades</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:100%"></div></div>
+        <div class="cat-count">2 / 2</div>
       </div>
       <div class="articles">
-        <span class="art-tag pending">Geología: cómo se formaron</span>
-        <span class="art-tag pending">Historia: WWI en los Dolomitas</span>
-        <span class="art-tag pending">Cultura ladina</span>
-        <span class="art-tag pending">Gastronomía</span>
-        <span class="art-tag pending">Fotografía en los Dolomitas</span>
+        <span class="art-tag done">Vía ferrata</span>
+        <span class="art-tag done">Dolomitas con niños</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🗓️ Por temporada</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:50%"></div></div>
-        <div class="cat-count">2 / 4</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:67%"></div></div>
+        <div class="cat-count">2 / 3</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Dolomitas en invierno</span>
         <span class="art-tag done">Dolomitas en otoño</span>
         <span class="art-tag pending">Dolomitas en primavera</span>
-        <span class="art-tag pending">Dolomitas en verano</span>
       </div>
     </div>
 
     <div class="cat">
       <div class="cat-header">
         <div class="cat-name">🧭 Práctica</div>
-        <div class="cat-bar-wrap"><div class="cat-bar" style="width:17%"></div></div>
-        <div class="cat-count">1 / 6</div>
+        <div class="cat-bar-wrap"><div class="cat-bar" style="width:50%"></div></div>
+        <div class="cat-count">3 / 6</div>
       </div>
       <div class="articles">
         <span class="art-tag done">Dónde alojarse</span>
-        <span class="art-tag pending">Cómo llegar desde España</span>
+        <span class="art-tag done">Cómo llegar desde España</span>
+        <span class="art-tag done">Ruta en coche 7 días</span>
         <span class="art-tag pending">Cuánto cuesta un viaje</span>
         <span class="art-tag pending">Los mejores refugios</span>
-        <span class="art-tag pending">Dolomitas con niños</span>
-        <span class="art-tag pending">Transporte en los Dolomitas</span>
+        <span class="art-tag pending">Fanes-Sennes-Braies</span>
       </div>
     </div>
 
   </div>
 
-  <p class="last-update">Última actualización: <strong>20 marzo 2026 — 21 artículos publicados</strong></p>
-
+  <p class="last-update">Última actualización: <strong>20 marzo 2026 — 46 artículos publicados</strong></p>
 </div>
 </body>
 </html>

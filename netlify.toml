@@ -114,3 +114,128 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+[[redirects]]
+  from = "/alta-via-2"
+  to = "/alta-via-2.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-falzarego"
+  to = "/passo-falzarego.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-sella"
+  to = "/passo-sella.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-gardena"
+  to = "/passo-gardena.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-rolle"
+  to = "/passo-rolle.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-di-carezza"
+  to = "/lago-di-carezza.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-di-alleghe"
+  to = "/lago-di-alleghe.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-fedaia"
+  to = "/lago-fedaia.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-di-antorno"
+  to = "/lago-di-antorno.html"
+  status = 200
+
+[[redirects]]
+  from = "/laghi-di-fusine"
+  to = "/laghi-di-fusine.html"
+  status = 200
+
+[[redirects]]
+  from = "/bolzano"
+  to = "/bolzano.html"
+  status = 200
+
+[[redirects]]
+  from = "/ortisei"
+  to = "/ortisei.html"
+  status = 200
+
+[[redirects]]
+  from = "/brunico"
+  to = "/brunico.html"
+  status = 200
+
+[[redirects]]
+  from = "/corvara"
+  to = "/corvara.html"
+  status = 200
+
+[[redirects]]
+  from = "/arabba"
+  to = "/arabba.html"
+  status = 200
+
+[[redirects]]
+  from = "/geologia-dolomitas"
+  to = "/geologia-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-primera-guerra-mundial"
+  to = "/dolomitas-primera-guerra-mundial.html"
+  status = 200
+
+[[redirects]]
+  from = "/cultura-ladina"
+  to = "/cultura-ladina.html"
+  status = 200
+
+[[redirects]]
+  from = "/gastronomia-dolomitas"
+  to = "/gastronomia-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/fotografia-dolomitas"
+  to = "/fotografia-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/via-ferrata-dolomitas"
+  to = "/via-ferrata-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-con-ninos"
+  to = "/dolomitas-con-ninos.html"
+  status = 200
+
+[[redirects]]
+  from = "/como-llegar-dolomitas"
+  to = "/como-llegar-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/sellaronda"
+  to = "/sellaronda.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomiti-superski"
+  to = "/dolomiti-superski.html"
+  status = 200
