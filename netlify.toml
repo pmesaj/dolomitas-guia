@@ -384,3 +384,153 @@
   from = "/brenta-dolomitas"
   to = "/brenta-dolomitas.html"
   status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-octubre"
+  to = "/dolomitas-en-octubre.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-enero"
+  to = "/dolomitas-en-enero.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-junio"
+  to = "/dolomitas-en-junio.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-desde-milan"
+  to = "/dolomitas-desde-milan.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-desde-verona"
+  to = "/dolomitas-desde-verona.html"
+  status = 200
+
+[[redirects]]
+  from = "/raquetas-nieve-dolomitas"
+  to = "/raquetas-nieve-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/esqui-de-fondo-dolomitas"
+  to = "/esqui-de-fondo-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-moto"
+  to = "/dolomitas-en-moto.html"
+  status = 200
+
+[[redirects]]
+  from = "/snowboard-dolomitas"
+  to = "/snowboard-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/camping-dolomitas"
+  to = "/camping-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/belluno"
+  to = "/belluno.html"
+  status = 200
+
+[[redirects]]
+  from = "/tofane"
+  to = "/tofane.html"
+  status = 200
+
+[[redirects]]
+  from = "/monte-pelmo"
+  to = "/monte-pelmo.html"
+  status = 200
+
+[[redirects]]
+  from = "/sass-pordoi"
+  to = "/sass-pordoi.html"
+  status = 200
+
+[[redirects]]
+  from = "/rifugio-lagazuoi"
+  to = "/rifugio-lagazuoi.html"
+  status = 200
+
+[[redirects]]
+  from = "/rifugio-nuvolau"
+  to = "/rifugio-nuvolau.html"
+  status = 200
+
+[[redirects]]
+  from = "/passo-tre-croci"
+  to = "/passo-tre-croci.html"
+  status = 200
+
+[[redirects]]
+  from = "/val-comelico"
+  to = "/val-comelico.html"
+  status = 200
+
+[[redirects]]
+  from = "/sappada"
+  to = "/sappada.html"
+  status = 200
+
+[[redirects]]
+  from = "/fotografia-nocturna-dolomitas"
+  to = "/fotografia-nocturna-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-mochilero"
+  to = "/dolomitas-mochilero.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-con-perro"
+  to = "/dolomitas-con-perro.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-romantico"
+  to = "/dolomitas-romantico.html"
+  status = 200
+
+[[redirects]]
+  from = "/hoteles-lujo-dolomitas"
+  to = "/hoteles-lujo-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/itinerario-dolomitas-10-dias"
+  to = "/itinerario-dolomitas-10-dias.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-sin-coche"
+  to = "/dolomitas-sin-coche.html"
+  status = 200
+
+[[redirects]]
+  from = "/lago-braies-sin-coche"
+  to = "/lago-braies-sin-coche.html"
+  status = 200
+
+[[redirects]]
+  from = "/tres-cime-sin-coche"
+  to = "/tres-cime-sin-coche.html"
+  status = 200
+
+[[redirects]]
+  from = "/cortina-sin-coche"
+  to = "/cortina-sin-coche.html"
+  status = 200
+
+[[redirects]]
+  from = "/tren-a-los-dolomitas"
+  to = "/tren-a-los-dolomitas.html"
+  status = 200
