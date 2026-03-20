@@ -539,3 +539,13 @@
   from = "/enciclopedia"
   to = "/enciclopedia.html"
   status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-autocaravana"
+  to = "/dolomitas-en-autocaravana.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-autocaravana-dolomitas"
+  to = "/areas-autocaravana-dolomitas.html"
+  status = 200
