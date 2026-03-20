@@ -4,457 +4,391 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuánto cuesta un viaje a los Dolomitas — Guía Dolomitas</title>
-  <meta name="description" content="Presupuesto real para viajar a los Dolomitas: alojamiento, comida, transporte y actividades. Desde 80€ hasta 300€ por día según tu nivel.">
+  <meta name="description" content="Presupuesto real para viajar a los Dolomitas: alojamiento, comida, transporte y actividades. Desde 80€ hasta 300€ por día con desglose completo.">
   <link rel="canonical" href="https://guiadolomitas.coordenadassecretas.com/cuanto-cuesta-dolomitas">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --red: #ef2d2e; --gold: #ef2d2e; --gold-dark: #c82526; }
-    body { font-family: 'Inter', sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.7; }
-    a { color: var(--red); text-decoration: none; }
-    nav { background: #111; border-bottom: 1px solid #222; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
-    .nav-logo { font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; color: #fff; }
-    .nav-logo span { color: var(--red); }
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a { font-size: 14px; color: #aaa; transition: color .2s; }
-    .nav-links a:hover { color: #fff; }
-    .hero { position: relative; height: 420px; display: flex; align-items: flex-end; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #1a2a1a 0%, #2d1a0e 50%, #1a1a2d 100%); }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.3) 60%, transparent 100%); }
-    .hero-content { position: relative; z-index: 2; padding: 40px; }
-    .hero-eyebrow { display: inline-block; background: var(--red); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 4px; margin-bottom: 12px; }
-    .hero h1 { font-family: 'Poppins', sans-serif; font-size: clamp(28px, 5vw, 52px); font-weight: 900; color: #fff; line-height: 1.1; max-width: 700px; }
-    .hero-sub { font-size: 18px; color: rgba(255,255,255,.75); margin-top: 12px; max-width: 560px; }
-    .container { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
-    h2 { font-family: 'Poppins', sans-serif; font-size: clamp(22px, 3vw, 30px); font-weight: 700; color: #fff; margin: 48px 0 16px; }
-    h3 { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; color: #f0f0f0; margin: 32px 0 12px; }
-    p { margin-bottom: 18px; font-size: 17px; color: #ccc; }
-    ul, ol { margin: 0 0 18px 24px; }
-    li { font-size: 17px; color: #ccc; margin-bottom: 8px; }
-    strong { color: #fff; }
-    .mid-cta { background: linear-gradient(135deg, #1a0a0a, #2d1515); border: 1px solid var(--red); border-radius: 16px; padding: 32px; margin: 40px 0; text-align: center; }
-    .mid-cta .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
-    .mid-cta h3 { font-family: 'Poppins', sans-serif; font-size: 22px; color: #fff; margin-bottom: 12px; }
-    .mid-cta p { font-size: 16px; color: #bbb; margin-bottom: 20px; }
-    .cta-btn { display: inline-block; background: var(--red); color: #fff; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; transition: background .2s, transform .1s; }
-    .cta-btn:hover { background: var(--gold-dark); transform: translateY(-1px); }
-    .cta-note { font-size: 13px; color: #666; margin-top: 10px; }
-    .info-box { background: #1a1a1a; border-left: 4px solid var(--red); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0; }
-    .info-box strong { display: block; font-size: 15px; margin-bottom: 6px; color: var(--red); }
-    table { width: 100%; border-collapse: collapse; margin: 24px 0; }
-    th { background: #1a1a1a; color: #fff; font-family: 'Poppins', sans-serif; font-size: 14px; padding: 12px 16px; text-align: left; border-bottom: 2px solid #333; }
-    td { padding: 11px 16px; border-bottom: 1px solid #222; font-size: 15px; color: #ccc; }
-    tr:nth-child(even) td { background: #131313; }
-    .price-highlight { color: var(--red); font-weight: 700; }
-    .budget-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 32px 0; }
-    .budget-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 14px; padding: 24px; }
-    .budget-card h4 { font-family: 'Poppins', sans-serif; font-size: 16px; color: #fff; margin-bottom: 8px; }
-    .budget-card .price { font-size: 28px; font-weight: 900; color: var(--red); font-family: 'Poppins', sans-serif; }
-    .budget-card .price-unit { font-size: 13px; color: #666; }
-    .budget-card p { font-size: 14px; color: #888; margin-top: 8px; }
-    .paywall-wrap { position: relative; margin: 48px 0 0; }
-    .paywall-blur { filter: blur(6px); pointer-events: none; user-select: none; opacity: .4; }
-    .paywall-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-    .paywall-cta { background: #111; border: 1px solid var(--red); border-radius: 20px; padding: 40px 36px; max-width: 560px; text-align: center; box-shadow: 0 0 60px rgba(239,45,46,.15); }
-    .paywall-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
-    .paywall-cta h2 { font-family: 'Poppins', sans-serif; font-size: 24px; color: #fff; margin: 0 0 12px; }
-    .paywall-cta p { font-size: 16px; color: #bbb; margin-bottom: 24px; }
-    footer { background: #111; border-top: 1px solid #222; padding: 40px 24px; text-align: center; }
-    footer p { font-size: 14px; color: #555; margin: 0; }
-    footer a { color: #888; }
-    @media (max-width: 600px) { .hero { height: 340px; } .hero-content { padding: 24px; } .budget-cards { grid-template-columns: 1fr; } }
+    :root {
+      --gold: #ef2d2e;
+      --gold-dark: #c82526;
+      --red: #ef2d2e;
+      --black: #1a1a1a;
+      --text: #333;
+      --bg: #fff;
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; }
+    a { color: var(--red); }
+
+    .hero {
+      width: 100%;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-placeholder {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(160deg, #1a2a0e 0%, #2d4a1a 40%, #1a3a2d 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 44px;
+      background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0) 100%);
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 { color: #fff; font-size: clamp(26px, 5vw, 48px); font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
+    .hero-meta { color: rgba(255,255,255,0.75); font-size: 14px; display: flex; flex-wrap: wrap; gap: 14px; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .article-body { padding: 44px 0 60px; }
+    .article-body h2 { font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: var(--black); margin: 44px 0 16px; padding-top: 8px; }
+    .article-body h3 { font-size: 18px; font-weight: 700; color: var(--black); margin: 28px 0 10px; }
+    .article-body p { margin-bottom: 18px; font-size: 16px; line-height: 1.75; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 22px; }
+    .article-body li { margin-bottom: 8px; font-size: 16px; line-height: 1.7; }
+    .article-body strong { color: var(--black); }
+
+    .mid-cta {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+      margin: 36px 0;
+      font-size: 15px;
+      color: #666;
+    }
+    .mid-cta a { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+    .budget-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .budget-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 22px;
+      text-align: center;
+    }
+    .budget-card h4 { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
+    .budget-card .price { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: 900; color: var(--red); line-height: 1.1; }
+    .budget-card .price-unit { font-size: 13px; color: #888; margin-bottom: 10px; display: block; }
+    .budget-card p { font-size: 14px; color: #666; margin: 0; line-height: 1.5; }
+    .budget-card.eco { border-color: #a5d6a7; background: #f1f8f1; }
+    .budget-card.mid { border-color: #ffe082; background: #fffbf0; }
+    .budget-card.prem { border-color: #ef9a9a; background: #fff5f5; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 24px 0; }
+    th { background: var(--black); color: #fff; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; padding: 10px 14px; text-align: left; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafafa; }
+    .price-col { font-weight: 700; color: var(--black); white-space: nowrap; }
+
+    .info-box { background: #f0f7ff; border-left: 4px solid #2196f3; border-radius: 0 8px 8px 0; padding: 18px 20px; margin: 24px 0; font-size: 15px; }
+    .info-box strong { display: block; margin-bottom: 6px; color: #1565c0; }
+    .good-box { background: #e8f5e9; border-left: 4px solid #4caf50; border-radius: 0 8px 8px 0; padding: 18px 20px; margin: 24px 0; font-size: 15px; }
+    .good-box strong { display: block; margin-bottom: 6px; color: #2e7d32; }
+    .warning-box { background: #fff8e1; border-left: 4px solid #ffc107; border-radius: 0 8px 8px 0; padding: 18px 20px; margin: 24px 0; font-size: 15px; }
+    .warning-box strong { display: block; margin-bottom: 6px; color: #e65100; }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+    .tip-item {
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .tip-item h4 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+    .tip-item p { font-size: 14px; color: #555; margin: 0; line-height: 1.5; }
+
+    .paywall-wrap { position: relative; margin: 40px 0 0; }
+    .paywall-blur { filter: blur(4px); pointer-events: none; user-select: none; line-height: 1.8; font-size: 16px; color: #333; }
+    .paywall-blur h2 { font-size: 22px; margin: 30px 0 12px; }
+    .paywall-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.97) 35%, rgba(255,255,255,1) 60%);
+      display: flex;
+      align-items: flex-end;
+    }
+    .paywall-cta { background: #fff; border: 2px solid #f0f0f0; border-radius: 16px; padding: 36px 32px; text-align: center; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .paywall-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+    .paywall-cta h2 { font-size: clamp(18px, 2.5vw, 24px); font-weight: 900; color: var(--black); margin-bottom: 12px; line-height: 1.3; }
+    .paywall-cta p { font-size: 15px; color: #555; margin-bottom: 22px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 15px; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+    .cta-btn:hover { background: var(--gold-dark); color: #fff; }
+    .cta-note { font-size: 12px; color: #aaa; margin-top: 12px; margin-bottom: 0; }
+
+    @media (max-width: 768px) {
+      .budget-cards { grid-template-columns: 1fr; }
+      .tips-grid { grid-template-columns: 1fr; }
+      .paywall-cta { padding: 28px 20px; }
+    }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a class="nav-logo" href="/">Guía <span>Dolomitas</span></a>
-    <div class="nav-links">
-      <a href="/">Inicio</a>
-      <a href="/donde-alojarse-dolomitas">Alojamiento</a>
-      <a href="/como-llegar-dolomitas">Cómo llegar</a>
+<section class="hero">
+  <div class="hero-placeholder"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Práctica · Presupuesto</span>
+    <h1>Cuánto cuesta un viaje a los Dolomitas</h1>
+    <div class="hero-meta">
+      <span>💶 Desde 80 € / día</span>
+      <span>📅 7 días de referencia</span>
+      <span>🏔️ Alojamiento, transporte y actividades</span>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <header class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="hero-eyebrow">Presupuesto real · 2025</span>
-      <h1>Cuánto cuesta un viaje a los Dolomitas</h1>
-      <p class="hero-sub">Desglose honesto de gastos: alojamiento, comida, transporte y actividades. Con cifras reales para 2025.</p>
+<div class="container">
+<div class="article-body">
+
+  <p>Los Dolomitas tienen fama de ser caros. Y lo son, comparados con otros destinos de montaña en España o Portugal. Pero esa fama está a menudo exagerada: con planificación, es perfectamente posible hacer una semana en los Dolomitas sin arruinarse. El secreto está en saber qué vale lo que cuesta y qué es un timo de turista.</p>
+
+  <p>Este artículo desglosa los costes reales de un viaje de 7 días: alojamiento, comida, transporte, actividades y los gastos que nadie menciona. Con tres niveles de presupuesto para que ajustes según tu viaje.</p>
+
+  <div class="mid-cta">
+    La Guía Secreta de Dolomitas incluye las estrategias exactas para visitar los lugares más espectaculares gastando lo mínimo. <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis">Descarga el Capítulo 1 gratis →</a>
+  </div>
+
+  <h2>Los tres presupuestos: cuánto puedes gastar por día</h2>
+
+  <div class="budget-cards">
+    <div class="budget-card eco">
+      <h4>🎒 Viajero económico</h4>
+      <div class="price">~80 €</div>
+      <span class="price-unit">por persona y día</span>
+      <p>Camping o albergue, mercado y cocina propia, coche compartido o bus, solo rutas de senderismo gratuitas.</p>
     </div>
-  </header>
+    <div class="budget-card mid">
+      <h4>🏨 Viajero medio</h4>
+      <div class="price">~150 €</div>
+      <span class="price-unit">por persona y día</span>
+      <p>Hotel 3 estrellas o garni, cenas en trattoria local, coche de alquiler, algún teleférico o refugio.</p>
+    </div>
+    <div class="budget-card prem">
+      <h4>✨ Viajero premium</h4>
+      <div class="price">~300 €</div>
+      <span class="price-unit">por persona y día</span>
+      <p>Hotel 4-5 estrellas, restaurantes gastronómicos, teleféricos y actividades guiadas sin límite.</p>
+    </div>
+  </div>
 
-  <main>
-    <div class="container">
+  <h2>Alojamiento: la partida más importante</h2>
 
-      <!-- mid-CTA before first H2 -->
-      <div class="mid-cta">
-        <p class="eyebrow">Guía Secreta Dolomitas</p>
-        <h3>Descarga gratis el Capítulo 1 de la guía</h3>
-        <p>Rutas detalladas, dónde alojarse, qué comer y cómo moverte — todo lo que necesitas para planificar tu viaje a los Dolomitas.</p>
-        <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="cta-btn">Descargar Capítulo 1 gratis →</a>
+  <p>El alojamiento supone entre el 40% y el 60% del presupuesto total. Los precios varían enormemente según la temporada (julio-agosto es el pico máximo) y la zona (Cortina d'Ampezzo y Val Gardena son las más caras).</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de alojamiento</th>
+        <th>Temporada baja (may-jun, oct)</th>
+        <th>Temporada alta (jul-ago)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Camping (por persona)</td><td class="price-col">12–20 €/noche</td><td class="price-col">18–30 €/noche</td></tr>
+      <tr><td>Albergue / hostal (cama)</td><td class="price-col">30–45 €/noche</td><td class="price-col">45–65 €/noche</td></tr>
+      <tr><td>Garni / B&B (habitación doble)</td><td class="price-col">70–110 €/noche</td><td class="price-col">110–180 €/noche</td></tr>
+      <tr><td>Hotel 3 estrellas (doble)</td><td class="price-col">100–150 €/noche</td><td class="price-col">160–260 €/noche</td></tr>
+      <tr><td>Hotel 4 estrellas (doble)</td><td class="price-col">180–280 €/noche</td><td class="price-col">280–500 €/noche</td></tr>
+      <tr><td>Rifugio de montaña (media pensión)</td><td class="price-col">50–65 €/persona</td><td class="price-col">60–80 €/persona</td></tr>
+    </tbody>
+  </table>
+
+  <div class="good-box">
+    <strong>Truco: los garni son la mejor relación calidad-precio</strong>
+    Los garni son pequeñas casas de huéspedes gestionadas por familias locales. Ofrecen habitación doble con desayuno por 80–120 €/noche en temporada alta, mucho más barato que los hoteles con la misma calidad. Y el desayuno suele ser abundante y casero.
+  </div>
+
+  <h2>Comida: dónde comer sin arruinarse</h2>
+
+  <p>Comer en los Dolomitas puede ser tanto una experiencia gastronómica espectacular como una trampa turística cara. La diferencia la marca saber dónde ir.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo de comida</th>
+        <th>Precio aproximado</th>
+        <th>Qué esperar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Café y croissant (bar)</td><td class="price-col">2–4 €</td><td>Igual que en Italia, excelente</td></tr>
+      <tr><td>Almuerzo en rifugio (canederli o pasta)</td><td class="price-col">12–18 €</td><td>Porciones generosas, vistas incluidas</td></tr>
+      <tr><td>Menú del día en trattoria</td><td class="price-col">15–22 €</td><td>Primer + segundo + postre + agua</td></tr>
+      <tr><td>Cena en restaurante local</td><td class="price-col">25–40 €</td><td>Con vino y postre</td></tr>
+      <tr><td>Cena en restaurante gastronómico</td><td class="price-col">60–120 €</td><td>Alta cocina tirolesa</td></tr>
+      <tr><td>Compra en supermercado (SPAR, Eurospar)</td><td class="price-col">10–15 €/día</td><td>Para desayunos y picnic</td></tr>
+    </tbody>
+  </table>
+
+  <p>Los supermercados <strong>SPAR</strong> y <strong>Eurospar</strong> son omnipresentes en el Alto Adige. Comprar el desayuno y preparar bocadillos para el senderismo puede ahorrar 20–30 € al día por persona sin sacrificar calidad.</p>
+
+  <h2>Transporte: coche, bus o teleférico</h2>
+
+  <p>El coche propio o de alquiler es prácticamente necesario para moverse con libertad por los Dolomitas. El transporte público existe (servicio SAD en el Alto Adige, buses en Veneto), pero es lento y no cubre todos los puntos de interés.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Transporte</th>
+        <th>Coste aproximado</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Coche de alquiler (semana)</td><td class="price-col">250–450 €</td><td>Más seguro, mejor con reserva anticipada</td></tr>
+      <tr><td>Gasolina (semana, ruta completa)</td><td class="price-col">80–140 €</td><td>Peajes mínimos en carreteras de montaña</td></tr>
+      <tr><td>Parking (centros turísticos)</td><td class="price-col">5–15 €/día</td><td>Lago di Braies y Tre Cime los más caros</td></tr>
+      <tr><td>Bus SAD (billete suelto)</td><td class="price-col">2–5 €/trayecto</td><td>Pass diario/semanal disponible</td></tr>
+      <tr><td>Teleférico Seceda (ida y vuelta)</td><td class="price-col">26 €/persona</td><td>El más espectacular de la zona</td></tr>
+      <tr><td>Teleférico Sass Pordoi (ida y vuelta)</td><td class="price-col">22 €/persona</td><td>A 2.950 m, vistas 360°</td></tr>
+      <tr><td>Telecabina Alpe di Siusi (ida y vuelta)</td><td class="price-col">24 €/persona</td><td>Imprescindible si no caminas</td></tr>
+      <tr><td>Teleférico Marmolada (ida y vuelta)</td><td class="price-col">35 €/persona</td><td>El más caro, pero el glaciar lo justifica</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <strong>Ojo con los parkings de los sitios más famosos</strong>
+    Lago di Braies (15 €/día), Tre Cime di Lavaredo (30 € de peaje en temporada alta) y Cinque Torri (parking + telecabina) son los más caros. En julio-agosto, los parkings más baratos se llenan antes de las 8:00.
+  </div>
+
+  <h2>Actividades: qué es gratis y qué cuesta</h2>
+
+  <h3>Gratis (o casi)</h3>
+  <ul>
+    <li><strong>Senderismo</strong> en la gran mayoría de senderos — no hay tarifas de acceso</li>
+    <li><strong>Lago di Braies</strong> — el acceso al lago es libre, solo el parking tiene coste</li>
+    <li><strong>Val di Funes</strong> — el paseo por Santa Maddalena es completamente libre</li>
+    <li><strong>Cinque Torri</strong> — se puede llegar a pie desde Passo Falzarego sin telecabina</li>
+    <li><strong>Lago di Sorapis</strong> — senderismo libre, 2h30 de ida desde el parking</li>
+    <li><strong>Passo Giau, Pordoi, Sella</strong> — la carretera es libre (fuera de zonas de pago)</li>
+    <li><strong>Alta Via 1 y 2</strong> — los senderos son libres, solo los refugios tienen coste</li>
+  </ul>
+
+  <h3>Con coste</h3>
+  <ul>
+    <li><strong>Teleféricos</strong>: 20–35 € ida y vuelta según instalación</li>
+    <li><strong>Vías ferratas con guía</strong>: 80–150 €/persona/día</li>
+    <li><strong>Museos</strong>: Messner Mountain Museum (13 €), Ötzi (15 €), Museo de la WWI (8–12 €)</li>
+    <li><strong>Tre Cime di Lavaredo</strong>: la carretera privada cobra 30 € de peaje en julio-agosto</li>
+    <li><strong>Excursiones organizadas</strong>: 40–80 € por excursión de día completo</li>
+  </ul>
+
+  <h2>Presupuesto total para 7 días: el desglose real</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Partida</th>
+        <th>Económico (7 días)</th>
+        <th>Medio (7 días)</th>
+        <th>Premium (7 días)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Alojamiento</td><td class="price-col">140 €</td><td class="price-col">700 €</td><td class="price-col">2.100 €</td></tr>
+      <tr><td>Comida</td><td class="price-col">175 €</td><td class="price-col">350 €</td><td class="price-col">700 €</td></tr>
+      <tr><td>Transporte (coche + gasolina)</td><td class="price-col">100 €</td><td class="price-col">180 €</td><td class="price-col">250 €</td></tr>
+      <tr><td>Parkings</td><td class="price-col">35 €</td><td class="price-col">70 €</td><td class="price-col">100 €</td></tr>
+      <tr><td>Teleféricos y actividades</td><td class="price-col">0 €</td><td class="price-col">120 €</td><td class="price-col">300 €</td></tr>
+      <tr><td>Varios (tasas turísticas, etc.)</td><td class="price-col">30 €</td><td class="price-col">60 €</td><td class="price-col">100 €</td></tr>
+      <tr><td><strong>TOTAL (por persona)</strong></td><td class="price-col"><strong>~480 €</strong></td><td class="price-col"><strong>~1.480 €</strong></td><td class="price-col"><strong>~3.550 €</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p>Nota: estos totales son por persona. Para una pareja, el coste de alojamiento y coche se divide entre dos, lo que reduce significativamente el presupuesto por persona.</p>
+
+  <h2>Cuándo ir para ahorrar más</h2>
+
+  <p>La temporada condiciona el precio más que cualquier otro factor:</p>
+
+  <ul>
+    <li><strong>Julio – Agosto</strong>: precios máximos, todo lleno, reservar con meses de antelación</li>
+    <li><strong>Junio y Septiembre</strong>: el equilibrio perfecto — todo abierto, precios 20–30% más bajos y mucha menos gente</li>
+    <li><strong>Mayo y Octubre</strong>: precios mínimos (40–50% menos), pero algunos refugios cerrados y pasos con posible nieve</li>
+    <li><strong>Diciembre – Marzo</strong>: temporada de esquí, precios similares al verano en las zonas de Sellaronda</li>
+  </ul>
+
+  <h2>Seis consejos para reducir el presupuesto sin sacrificar experiencia</h2>
+
+  <div class="tips-grid">
+    <div class="tip-item">
+      <h4>🗓️ Viaja en junio o septiembre</h4>
+      <p>Todo abierto, 25–35% más barato que en agosto y sin las colas que arruinan los mejores sitios.</p>
+    </div>
+    <div class="tip-item">
+      <h4>🛒 Compra el desayuno en el supermercado</h4>
+      <p>Yogur, fruta, embutidos y pan cuestan 4–5 € en el SPAR. El desayuno del hotel, 15–25 €.</p>
+    </div>
+    <div class="tip-item">
+      <h4>🥾 Sube sin teleférico</h4>
+      <p>Cinque Torri, la cima del Passo Giau o el mirador de Seceda se alcanzan caminando, sin pagar 25 €.</p>
+    </div>
+    <div class="tip-item">
+      <h4>🚌 Usa el bus SAD en el Alto Adige</h4>
+      <p>El bono de transporte de 3 o 7 días es muy económico y llega a Val Gardena, Alpe di Siusi y Dobbiaco.</p>
+    </div>
+    <div class="tip-item">
+      <h4>🏘️ Alójate en los valles</h4>
+      <p>Bruneck/Brunico, Chiusa/Klausen o Ortisei en temporada media son mucho más baratos que Cortina o Corvara.</p>
+    </div>
+    <div class="tip-item">
+      <h4>🍽️ Come en la trattoria local, no en el restaurante turístico</h4>
+      <p>El menú del día de una trattoria sin carta en italiano cuesta lo mismo que un bocadillo en un rifugio de moda.</p>
+    </div>
+  </div>
+
+  <div class="paywall-wrap">
+    <div class="paywall-blur">
+      <h2>Los trucos de insider para ahorrar un 40% en los Dolomitas</h2>
+      <p>Hay formas de visitar los Dolomitas gastando mucho menos de lo que indica cualquier presupuesto estándar. No son trucos oscuros, pero tampoco los encontrarás en TripAdvisor ni en los blogs de viajes convencionales.</p>
+      <p>El primero tiene que ver con cuándo reservar el alojamiento: hay una ventana concreta de semanas antes de la llegada donde los garni y casas rurales locales (no las cadenas) aplican descuentos de hasta el 30%. La mayoría de viajeros reserva demasiado tarde o demasiado pronto.</p>
+      <p>El segundo es la Gästekarte o carta de huésped: muchos municipios la ofrecen automáticamente con cualquier alojamiento oficial. Da acceso ilimitado a teleféricos, buses y museos locales. Pocas personas la piden. El ahorro puede ser de 80–120 € por persona.</p>
+    </div>
+    <div class="paywall-overlay">
+      <div class="paywall-cta">
+        <p class="paywall-eyebrow">Planifica tu viaje sin pagar de más</p>
+        <h2>El Capítulo 1 de la Guía Secreta incluye las estrategias para visitar los Dolomitas gastando mucho menos</h2>
+        <p>Rutas exactas a los lugares del Capítulo 1 — Lago di Braies, Tre Cime, Cinque Torri y Passo Giau — con los consejos que usan los que ya han estado. Pruébalo gratis.</p>
+        <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="cta-btn">Probar el primer capítulo gratis →</a>
         <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
       </div>
-
-      <!-- article content -->
-
-      <h2>Los Dolomitas no son baratos — y por eso merece la pena planificarlos bien</h2>
-
-      <p>Vamos a ser directos desde el principio: los Dolomitas son uno de los destinos de montaña más caros de Europa. Estamos hablando de una región en el norte de Italia donde el turismo de lujo convive con senderistas, el precio de un café puede superar fácilmente los 2,50 € y una noche en un rifugio —básicamente un refugio de montaña con literas— puede costarte más que un hotel de tres estrellas en Barcelona.</p>
-
-      <p>Pero aquí está la realidad que nadie te dice: <strong>los Dolomitas son completamente accesibles con un presupuesto medio</strong>, siempre que sepas dónde buscar, cuándo ir y cómo moverte. La diferencia entre un viajero que gasta 600 € en una semana y otro que gasta 2.100 € no es la calidad de la experiencia —muchas veces es exactamente la misma montaña, el mismo amanecer, el mismo sendero— sino la información que tiene cada uno antes de salir.</p>
-
-      <p>En esta guía vamos a desglosar todos los costes reales de un viaje a los Dolomitas: alojamiento, comida, transporte, actividades y los gastos imprevistos que casi nadie menciona. Al final encontrarás una tabla con el presupuesto total para una semana según tres niveles de viaje.</p>
-
-      <div class="info-box">
-        <strong>Nota sobre los precios</strong>
-        Todos los precios están actualizados para la temporada 2025 y corresponden a viajero individual o pareja dividiendo gastos. Los precios de temporada alta (julio-agosto) pueden ser un 30-50% superiores a los de temporada media (junio, septiembre).
-      </div>
-
-      <h2>Los tres perfiles de viajero: ¿cuánto gastas al día?</h2>
-
-      <p>Antes de entrar en el detalle categoría por categoría, aquí tienes una visión general de lo que cuesta un día en los Dolomitas según tu estilo de viaje:</p>
-
-      <div class="budget-cards">
-        <div class="budget-card">
-          <h4>Viajero Económico</h4>
-          <div class="price">~80 €</div>
-          <div class="price-unit">por persona/día</div>
-          <p>Camping o hostel, supermercado y alguna trattoria, coche compartido o autobús, senderismo libre. Experiencia auténtica sin lujos.</p>
-        </div>
-        <div class="budget-card">
-          <h4>Viajero Medio</h4>
-          <div class="price">~150 €</div>
-          <div class="price-unit">por persona/día</div>
-          <p>Hotel 3 estrellas o B&amp;B rural, restaurantes locales a diario, coche de alquiler propio, algún teleférico incluido.</p>
-        </div>
-        <div class="budget-card">
-          <h4>Viajero Premium</h4>
-          <div class="price">~300 €</div>
-          <div class="price-unit">por persona/día</div>
-          <p>Hotel 4-5 estrellas o refugio boutique, restaurantes con carta, SUV de alquiler, todas las atracciones y guías privados.</p>
-        </div>
-      </div>
-
-      <h2>Costes de alojamiento en los Dolomitas</h2>
-
-      <p>El alojamiento es, con diferencia, la mayor partida del presupuesto en los Dolomitas. La región se divide en varios valles —Val Gardena, Val di Fassa, Val di Funes, Alta Badia— y los precios varían notablemente según dónde te alojes. Cortina d'Ampezzo es el polo más caro; los pueblos pequeños alrededor de Ortisei o Canazei suelen ser más asequibles.</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Tipo de alojamiento</th>
-            <th>Precio por noche (temporada media)</th>
-            <th>Precio por noche (temporada alta)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Camping (parcela + 2 personas)</td>
-            <td class="price-highlight">25 – 45 €</td>
-            <td class="price-highlight">40 – 65 €</td>
-          </tr>
-          <tr>
-            <td>Hostel (cama en dormitorio)</td>
-            <td class="price-highlight">30 – 50 €</td>
-            <td class="price-highlight">45 – 70 €</td>
-          </tr>
-          <tr>
-            <td>Hotel 3 estrellas (habitación doble)</td>
-            <td class="price-highlight">90 – 140 €</td>
-            <td class="price-highlight">140 – 220 €</td>
-          </tr>
-          <tr>
-            <td>Hotel 4 estrellas (habitación doble)</td>
-            <td class="price-highlight">180 – 280 €</td>
-            <td class="price-highlight">260 – 420 €</td>
-          </tr>
-          <tr>
-            <td>Rifugio (media pensión)</td>
-            <td class="price-highlight">70 – 110 € pp</td>
-            <td class="price-highlight">90 – 140 € pp</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>Un apunte importante sobre los <strong>rifugi</strong>: muchos incluyen la cena y el desayuno en el precio (media pensión), lo que los hace más competitivos de lo que parece. Dormir en un rifugio en lo alto de las montañas es además una de las experiencias más auténticas de los Dolomitas, especialmente si buscas madrugar para ver el Enrosadira —el fenómeno por el que las rocas dolomíticas se tiñen de rojo y naranja al amanecer.</p>
-
-      <h3>Las zonas más caras y más asequibles para alojarse</h3>
-
-      <p><strong>Más caro:</strong> Cortina d'Ampezzo, Madonna di Campiglio, Ortisei (centro). En estas localidades los precios de temporada alta pueden dispararse sin límite visible. Un hotel de cuatro estrellas en Cortina en agosto puede superar los 500 € por noche.</p>
-
-      <p><strong>Más asequible:</strong> Pueblo de Badia, Canazei (periferia), Moena, Predazzo. Desde estos puntos puedes acceder igualmente a Lago di Braies, Tre Cime di Lavaredo, Cinque Torri, Passo Giau y Passo Pordoi sin pagar la prima de ubicación de los grandes resorts.</p>
-
-      <h2>Costes de comida y restaurantes</h2>
-
-      <p>La gastronomía del Tirol del Sur es una de las más interesantes de Italia: mezcla la tradición italiana con influencias austriacas y bávaras. Los <em>canederli</em> (albóndigas de pan), el <em>Schlutzkrapfen</em> (pasta rellena de espinacas) y el <em>Speck Alto Adige</em> son imprescindibles. El problema es que en zona turística todo tiene un precio elevado.</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Opción</th>
-            <th>Coste estimado por persona</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Café y croissant en un bar</td>
-            <td class="price-highlight">2,50 – 4 €</td>
-          </tr>
-          <tr>
-            <td>Menú del día en trattoria local</td>
-            <td class="price-highlight">14 – 22 €</td>
-          </tr>
-          <tr>
-            <td>Almuerzo en rifugio (plato principal)</td>
-            <td class="price-highlight">12 – 18 €</td>
-          </tr>
-          <tr>
-            <td>Cena completa en restaurante (3 platos)</td>
-            <td class="price-highlight">28 – 55 €</td>
-          </tr>
-          <tr>
-            <td>Picnic del supermercado</td>
-            <td class="price-highlight">6 – 12 €</td>
-          </tr>
-          <tr>
-            <td>Cerveza o vino local en bar</td>
-            <td class="price-highlight">4 – 7 €</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>El truco más sencillo para controlar el gasto en comida es hacer los desayunos en el alojamiento o con compras del supermercado, llevar un picnic para el almuerzo en la montaña (con vistas a las Tre Cime o desde Cinque Torri la experiencia no tiene precio) y reservar el restaurante solo para la cena. Con esta estrategia puedes comer muy bien por 20-25 € al día por persona.</p>
-
-      <div class="info-box">
-        <strong>Supermercados en los Dolomitas</strong>
-        Las cadenas más comunes son Despar, Eurospar y Coop. En Bolzano, Trento o Belluno encontrarás opciones más baratas. Dentro de las zonas de montaña los precios suben considerablemente. Haz la compra grande antes de adentrarte en los valles.
-      </div>
-
-      <h2>Costes de transporte</h2>
-
-      <p>El transporte es la segunda gran variable del presupuesto en los Dolomitas. La región no tiene un sistema de tren que llegue a los valles principales, por lo que la mayoría de viajeros opta por el coche. Esto tiene implicaciones directas en el presupuesto.</p>
-
-      <h3>Coche de alquiler</h3>
-
-      <p>Es la opción más habitual y cómoda. Un coche de segmento B reservado con antelación desde España puede salir por <strong>30-50 € al día</strong> incluyendo seguro. En temporada alta sin reserva previa, puede duplicarse fácilmente. Si vais dos personas, el coste por persona se vuelve razonable; si vais cuatro, sale muy económico.</p>
-
-      <h3>Gasolina y peajes</h3>
-
-      <p>El precio de la gasolina en Italia está entre 1,80 y 2,10 € por litro en 2025. Las autopistas italianas son de peaje; si llegas desde España pasando por Francia, calcula aproximadamente <strong>40-70 € de peajes</strong> en cada sentido dependiendo del trayecto. Dentro de los Dolomitas hay pocas autopistas, pero algunos pasos de montaña tienen peaje en temporada alta (Tre Cime di Lavaredo cobra entre 15 y 30 € por vehículo según la época).</p>
-
-      <h3>Teleféricos y góndolas</h3>
-
-      <p>Los teleféricos son una de las atracciones icónicas de los Dolomitas y también uno de los gastos que más sorprenden a los viajeros. Aquí los más importantes con sus precios aproximados:</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Teleférico / Atracción</th>
-            <th>Precio ida y vuelta (adulto)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Funivia Seceda (Val Gardena)</td>
-            <td class="price-highlight">22 – 28 €</td>
-          </tr>
-          <tr>
-            <td>Teleférico Sass Pordoi (Passo Pordoi)</td>
-            <td class="price-highlight">18 – 24 €</td>
-          </tr>
-          <tr>
-            <td>Cinque Torri lift (Cortina)</td>
-            <td class="price-highlight">14 – 20 €</td>
-          </tr>
-          <tr>
-            <td>Marmolada gondola (La Marmolada)</td>
-            <td class="price-highlight">28 – 38 €</td>
-          </tr>
-          <tr>
-            <td>Funivia Alpe di Siusi</td>
-            <td class="price-highlight">16 – 22 €</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>Si planeas usar varios teleféricos, <strong>la Dolomiti Superski Card o los pases de teleférico regionales</strong> pueden suponer un ahorro del 20-30%. Vale la pena calcular cuántos subirías de forma individual para comparar con el precio del pase.</p>
-
-      <h2>Actividades: lo gratuito y lo que cuesta</h2>
-
-      <p>Una de las grandes noticias para el viajero con presupuesto ajustado es que <strong>la mayor parte de lo mejor en los Dolomitas es gratuito</strong>. Las rutas de senderismo son libres de acceso. Puedes caminar hasta el Lago di Braies, subir hasta las vistas sobre el Val di Funes o recorrer el Alpe di Siusi sin pagar ni un euro de entrada (aunque el aparcamiento sí tiene coste).</p>
-
-      <h3>Actividades gratuitas</h3>
-      <ul>
-        <li>Senderismo en todos los valles: Val di Funes, Val Gardena, Val di Fassa, Alta Badia</li>
-        <li>Paseo hasta el Lago di Braies desde el parking</li>
-        <li>Ruta circular alrededor de las Tre Cime di Lavaredo (solo se paga el acceso al Parco Naturale Tre Cime)</li>
-        <li>Vistas panorámicas desde Passo Giau y Passo Pordoi (acceso en coche)</li>
-        <li>Paseo por los pueblos de Val Gardena: Ortisei, Santa Cristina, Selva</li>
-        <li>Lago di Sorapis (senderismo de aprox. 1,5 h desde el parking)</li>
-        <li>Lago di Misurina (acceso libre, parking de pago)</li>
-      </ul>
-
-      <h3>Actividades con coste</h3>
-      <ul>
-        <li>Acceso al Parco Naturale Tre Cime di Lavaredo: <strong>30 € por vehículo</strong> (en temporada alta)</li>
-        <li>Teleféricos (ver tabla anterior)</li>
-        <li>Escalada con guía: 80 – 150 € por persona</li>
-        <li>Excursión en e-bike: 40 – 80 € por día de alquiler</li>
-        <li>Excursiones con guía oficial de montaña: 120 – 250 €/grupo</li>
-        <li>Visita a la cima de La Marmolada: incluye teleférico (ver tabla)</li>
-        <li>Parapente en Cortina d'Ampezzo: 150 – 200 €</li>
-      </ul>
-
-      <div class="info-box">
-        <strong>El parking: el gasto oculto que casi nadie menciona</strong>
-        En temporada alta, los aparcamientos en los puntos de acceso más populares (Lago di Braies, Tre Cime, Seceda, Lago di Sorapis) cobran entre 5 y 15 € por día. Si visitas 5-6 destinos en una semana, suma fácilmente 50-80 € solo en parking. Llegar temprano (antes de las 8:00) suele significar aparcamiento gratis o muy barato.
-      </div>
-
-      <h2>Consejos para ahorrar en los Dolomitas</h2>
-
-      <p>Aquí están las estrategias que realmente marcan la diferencia cuando se trata de gestionar el presupuesto en los Dolomitas sin sacrificar la experiencia:</p>
-
-      <h3>1. Viaja en temporada media</h3>
-      <p>Junio y septiembre son los meses perfectos en los Dolomitas: el tiempo es estable, los senderos están abiertos, los precios son entre un 25 y un 40% más bajos que en julio-agosto y hay mucho menos masificación. El Lago di Braies en septiembre con el reflejo del Croda del Becco es igual de espectacular que en agosto, pero sin las colas y con los aparcamientos a la mitad de precio.</p>
-
-      <h3>2. Reserva el alojamiento con 3-4 meses de antelación</h3>
-      <p>Los alojamientos más pequeños —B&amp;B familiares, pensiones rurales— se llenan antes que los hoteles grandes. Pero los hoteles independientes (no las cadenas) a menudo liberan habitaciones a mejor precio a medida que se acerca la fecha. Hay un equilibrio entre reservar temprano para asegurar disponibilidad y esperar para encontrar ofertas de última hora.</p>
-
-      <h3>3. Cocina tus propios desayunos y almuerzos</h3>
-      <p>Si te alojas en un apartamento o en un camping con cocina, la diferencia es enorme. Un desayuno casero cuesta 2-3 € por persona; en un bar de montaña pagarás entre 5 y 8 €. Multiplica eso por 7 días y dos personas: el ahorro supera los 80 €.</p>
-
-      <h3>4. Madruga para los destinos icónicos</h3>
-      <p>Llegar al Lago di Braies antes de las 7:30 o a las Tre Cime antes de las 8:00 no solo te garantiza las mejores fotos sin gente —también evitas el parking de pago. Muchos de los aparcamientos de gestión privada no empiezan a cobrar hasta las 8:00 o las 9:00, y los guardas del Parco Naturale tampoco están a primera hora. Es el truco que más aplican los locales.</p>
-
-      <h3>5. Usa el transporte público donde existe</h3>
-      <p>El servicio de autobuses SAD cubre muchos valles de los Dolomitas con tarifas muy razonables (2-5 € por trayecto). En temporada alta algunas zonas como el Alpe di Siusi tienen restricción de acceso en coche privado y el autobús es obligatorio, lo que en realidad te ayuda a no pagar parking. Infórmate antes de qué zonas tienen esta restricción.</p>
-
-      <h3>6. Prioriza los miradores naturales sobre los teleféricos</h3>
-      <p>Muchas de las mejores vistas de los Dolomitas no requieren teleférico. Las vistas desde Passo Giau, Passo Pordoi o el Col di Lana son accesibles en coche y absolutamente espectaculares. Guarda el presupuesto de teleférico para uno o dos que realmente valgan la pena (Seceda y Marmolada son los más recomendables).</p>
-
-      <h2>Tabla de presupuesto para 7 días en los Dolomitas</h2>
-
-      <p>Aquí el resumen por categorías para una semana completa, por persona, en los tres niveles de presupuesto:</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Categoría</th>
-            <th>Económico</th>
-            <th>Medio</th>
-            <th>Premium</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Alojamiento (7 noches)</td>
-            <td class="price-highlight">175 €</td>
-            <td class="price-highlight">490 €</td>
-            <td class="price-highlight">1.400 €</td>
-          </tr>
-          <tr>
-            <td>Comida y bebida</td>
-            <td class="price-highlight">140 €</td>
-            <td class="price-highlight">280 €</td>
-            <td class="price-highlight">560 €</td>
-          </tr>
-          <tr>
-            <td>Transporte (coche + gasolina + peajes)</td>
-            <td class="price-highlight">120 €</td>
-            <td class="price-highlight">210 €</td>
-            <td class="price-highlight">350 €</td>
-          </tr>
-          <tr>
-            <td>Teleféricos y actividades</td>
-            <td class="price-highlight">40 €</td>
-            <td class="price-highlight">120 €</td>
-            <td class="price-highlight">300 €</td>
-          </tr>
-          <tr>
-            <td>Parking y accesos</td>
-            <td class="price-highlight">30 €</td>
-            <td class="price-highlight">60 €</td>
-            <td class="price-highlight">80 €</td>
-          </tr>
-          <tr>
-            <td>Imprevistos (10%)</td>
-            <td class="price-highlight">50 €</td>
-            <td class="price-highlight">116 €</td>
-            <td class="price-highlight">269 €</td>
-          </tr>
-          <tr>
-            <td><strong>TOTAL 7 DÍAS</strong></td>
-            <td class="price-highlight"><strong>~555 €</strong></td>
-            <td class="price-highlight"><strong>~1.276 €</strong></td>
-            <td class="price-highlight"><strong>~2.959 €</strong></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>Estos totales no incluyen el vuelo o el transporte de origen hasta los Dolomitas. Si llegas desde España en avión hasta Venecia, Verona o Bolzano, añade entre 80 y 300 € por persona dependiendo de cuánto antelación reserves y desde qué ciudad sales.</p>
-
-      <h2>Los mejores y peores meses para viajar según el precio</h2>
-
-      <p>La estacionalidad es brutal en los Dolomitas. No es solo que los precios cambien; es que algunos destinos literalmente no son accesibles en invierno (los pasos de montaña están cerrados de noviembre a mayo) y en verano algunos se colapsan hasta el punto de que la experiencia deja de ser agradable.</p>
-
-      <h3>Meses con mejor relación precio-experiencia</h3>
-      <ul>
-        <li><strong>Junio (segunda quincena):</strong> Los senderos de alta montaña ya están abiertos, hay nieve residual para las fotos, los precios son de temporada media y el turismo masivo no ha llegado todavía. Es probablemente el mejor momento del año.</li>
-        <li><strong>Septiembre:</strong> El otoño empieza a teñir los prados del Alpe di Siusi y el Val di Funes de amarillo y naranja. Los precios bajan progresivamente durante el mes y el tiempo sigue siendo muy estable. Las multitudes de agosto han desaparecido.</li>
-        <li><strong>Primera quincena de julio:</strong> Todavía dentro de temporada alta, pero menos masificada que agosto. Algunos hoteles siguen con precios de temporada media.</li>
-      </ul>
-
-      <h3>Meses más caros y masificados</h3>
-      <ul>
-        <li><strong>Agosto:</strong> El mes más caro sin discusión. Los aparcamientos del Lago di Braies se llenan antes de las 7:00 de la mañana. Las colas para el teleférico de Seceda pueden superar la hora de espera. Los precios de alojamiento alcanzan el máximo anual. A menos que sea la única opción, evítalo.</li>
-        <li><strong>Navidades y Año Nuevo:</strong> Las estaciones de esquí se convierten en destino de lujo. Los precios de los hoteles se disparan incluso más que en verano. Si no vas a esquiar, no tiene sentido pagar esos precios.</li>
-        <li><strong>Puentes de mayo:</strong> El turismo italiano interno se desplaza en masa durante los puentes de Liberazione (25 de abril) y Repubblica (2 de junio). Los precios no son los más altos del año, pero la masificación en los puntos icónicos puede ser tan intensa como en agosto.</li>
-      </ul>
-
-      <div class="info-box">
-        <strong>La regla de oro de los Dolomitas</strong>
-        Independientemente del mes que elijas, reserva el alojamiento con al menos 3 meses de antelación para temporada media y con 5-6 meses para temporada alta. Los mejores B&amp;B familiares y los rifugi más solicitados —especialmente el Rifugio Auronzo junto a las Tre Cime— se agotan muy rápido.
-      </div>
-
-      <h2>Gastos imprevistos que nadie menciona</h2>
-
-      <p>Hay una serie de costes que no aparecen en la mayoría de artículos de presupuesto pero que son perfectamente predecibles si sabes dónde mirar:</p>
-
-      <ul>
-        <li><strong>Tasa turística:</strong> La mayoría de municipios del Tirol del Sur cobra entre 1 y 3 € por persona y noche de tasa turística. En siete noches y dos personas, suma entre 14 y 42 € que no suelen estar incluidos en el precio del alojamiento.</li>
-        <li><strong>Lavandería:</strong> Si estás una semana o más de senderismo con equipaje ligero, necesitarás lavar ropa. Los laundromats existen pero no abundan; muchos alojamientos ofrecen servicio de lavandería por 10-15 €.</li>
-        <li><strong>Seguro de viaje:</strong> Si practicas senderismo de nivel medio-alto o escalada, el seguro de rescate en montaña es fundamental. En los Alpes italianos un helicóptero de rescate puede costar miles de euros sin seguro. El Club Alpino Italiano (CAI) ofrece seguros anuales desde 45 €, o puedes incluirlo en tu seguro de viaje habitual.</li>
-        <li><strong>Crema solar y medicación:</strong> En altitudes de 2.000-3.000 metros el sol pega con mucha más intensidad. Si no llevas crema solar de casa, los precios en las tiendas de montaña son considerablemente más altos que en cualquier farmacia urbana.</li>
-      </ul>
-
-      <!-- paywall at end -->
-      <div class="paywall-wrap">
-        <div class="paywall-blur">
-          <h2>Los trucos de insider para ahorrar de verdad</h2>
-          <p>Hay formas de visitar los Dolomitas gastando un 40% menos que el turista medio. No son secretos oscuros, pero tampoco los vas a encontrar en TripAdvisor...</p>
-          <p>El primer truco tiene que ver con cuándo reservar el alojamiento: hay una ventana de 6-8 semanas antes de la llegada donde los hoteles locales (no las cadenas) hacen descuentos silenciosos del 25-30%...</p>
-          <p>El segundo truco está en la tarjeta de huésped (Gästekarte): muchos municipios la ofrecen gratis con cualquier alojamiento y da acceso ilimitado a teleféricos, autobuses y museos...</p>
-        </div>
-        <div class="paywall-overlay">
-          <div class="paywall-cta">
-            <p class="paywall-eyebrow">Contenido exclusivo</p>
-            <h2>Los secretos para ahorrar en los Dolomitas</h2>
-            <p>El Capítulo 1 de La Guía Secreta incluye las estrategias exactas que usamos para visitar los Dolomitas gastando mucho menos de lo que crees.</p>
-            <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="cta-btn">Probar el primer capítulo gratis →</a>
-            <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </main>
+  </div>
 
-  <footer>
-    <p>© 2025 <a href="https://coordenadassecretas.com">Coordenadas Secretas</a> · Guía Dolomitas en español</p>
-  </footer>
+</div>
+</div>
 
 </body>
 </html>
