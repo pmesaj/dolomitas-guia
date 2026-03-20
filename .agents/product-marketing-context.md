@@ -4,7 +4,7 @@
 **La Guía Secreta de Dolomitas** — guía de viaje en español para los Dolomitas italianos.
 - **Lead magnet**: Capítulo 1 gratis en `https://coordenadassecretas.com/dolomitas-etapa-1-gratis`
 - **Venta**: Guía completa en `https://coordenadassecretas.com`
-- **Sitio de contenido**: `https://guiadolomitas.coordenadassecretas.com`
+- **Sitio de contenido**: `https://dolomitas.guiassecretas.com`
 
 ## Destinos que cubre la guía (IMPORTANTE para CTAs)
 Solo estos destinos están en La Guía Secreta de Dolomitas. No inventes ni insinúes que la guía cubre otros:
@@ -39,7 +39,7 @@ SEO → artículo → mid-CTA (capítulo gratis) → paywall → descarga → em
 
 ## CTA — Reglas críticas
 - **URL siempre**: `https://coordenadassecretas.com/dolomitas-etapa-1-gratis`
-- **Nunca**: `guiadolomitas.coordenadassecretas.com/...`
+- **Nunca**: `dolomitas.guiassecretas.com/...`
 - Si el artículo trata un destino NO incluido en la guía, el CTA referencia el destino cubierto más cercano o relacionado
 - Ejemplo: artículo sobre San Martino → "¿Vas a Val di Fassa? El primer capítulo incluye el valle completo"
 - Ejemplo: artículo de logística general → puede referenciar cualquiera de los 15 destinos cubiertos
