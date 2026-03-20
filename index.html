@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Guía Secreta de Dolomitas — Coordenadas Secretas</title>
-  <meta name="description" content="Guías de viaje detalladas para los Dolomitas: rutas, lagos, puertos de montaña y los mejores rincones que no encontrarás en ninguna guía convencional.">
+  <title>Dolomitas — La Enciclopedia en Español | Guías Secretas</title>
+  <meta name="description" content="La enciclopedia más completa de los Dolomitas en español: 105 artículos sobre lagos, valles, pasos, actividades, temporadas y cómo llegar sin coche.">
   <link rel="canonical" href="https://dolomitas.guiassecretas.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,24 +16,22 @@
       --red-dark: #c82526;
       --black: #1a1a1a;
       --text: #333;
+      --bg-warm: #FFF8E7;
+      --border: #eee;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: #fff;
-      line-height: 1.6;
-    }
-    h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    a { text-decoration: none; color: inherit; }
 
-    /* Hero */
+    /* ── HERO ── */
     .hero {
-      min-height: 480px;
+      min-height: 560px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
-      padding: 60px 24px;
+      background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 50%, #0d2a3a 100%);
+      padding: 80px 24px 60px;
       position: relative;
       overflow: hidden;
     }
@@ -41,13 +39,9 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M0 40 L40 0 L80 40 L40 80 Z'/%3E%3C/g%3E%3C/svg%3E");
     }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-    }
+    .hero-content { position: relative; z-index: 2; max-width: 740px; margin: 0 auto; }
     .hero-eyebrow {
       display: inline-block;
       background: var(--red);
@@ -55,1133 +49,1173 @@
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 5px 14px;
+      padding: 5px 16px;
       border-radius: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .hero h1 {
       color: #fff;
-      font-size: clamp(28px, 5vw, 52px);
+      font-size: clamp(30px, 5.5vw, 58px);
       font-weight: 900;
-      line-height: 1.15;
-      margin-bottom: 18px;
+      line-height: 1.1;
+      margin-bottom: 20px;
     }
-    .hero h1 span { color: var(--red); }
-    .hero p {
-      color: rgba(255,255,255,0.8);
+    .hero h1 em { color: var(--red); font-style: normal; }
+    .hero-sub {
+      color: rgba(255,255,255,0.75);
       font-size: 17px;
-      margin-bottom: 32px;
-      max-width: 560px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
     }
-    .hero-btn {
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
       display: inline-block;
       background: var(--red);
       color: #fff;
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 15px;
-      padding: 14px 28px;
+      padding: 15px 30px;
       border-radius: 8px;
-      text-decoration: none;
       transition: background 0.2s;
     }
-    .hero-btn:hover { background: var(--red-dark); }
-
-    /* Articles grid */
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 24px;
+    .btn-primary:hover { background: var(--red-dark); }
+    .btn-secondary {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 15px 30px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: background 0.2s;
     }
-    .section-title {
-      font-size: 13px;
+    .btn-secondary:hover { background: rgba(255,255,255,0.18); }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 44px;
+      flex-wrap: wrap;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat strong {
+      display: block;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+    }
+    .hero-stat span { color: rgba(255,255,255,0.55); font-size: 12px; letter-spacing: 0.5px; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── CATEGORY SECTIONS ── */
+    .cat-section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+    .cat-section:last-of-type { border-bottom: none; }
+    .cat-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .cat-header-left {}
+    .cat-label {
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--red);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
-    .section h2 {
-      font-size: clamp(22px, 3vw, 32px);
-      font-weight: 900;
+    .cat-title {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
       color: var(--black);
-      margin-bottom: 36px;
+      line-height: 1.2;
     }
-    .grid {
+    .cat-desc {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+      max-width: 520px;
+    }
+    .cat-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--red);
+      white-space: nowrap;
+    }
+    .cat-link:hover { text-decoration: underline; }
+
+    /* article list rows */
+    .art-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
     }
-    .card {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: box-shadow 0.2s, transform 0.2s;
-      text-decoration: none;
+    .art-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: box-shadow 0.15s, border-color 0.15s;
       color: inherit;
-      display: block;
     }
-    .card:hover {
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      transform: translateY(-2px);
+    .art-item:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border-color: #ddd;
     }
-    .card-img {
-      height: 140px;
-      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    .art-icon {
+      font-size: 22px;
+      width: 42px;
+      height: 42px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 36px;
+      background: var(--bg-warm);
+      border-radius: 8px;
+      flex-shrink: 0;
     }
-    .card-body {
-      padding: 16px 18px;
-    }
-    .card-tag {
-      font-size: 11px;
+    .art-info {}
+    .art-tag {
+      font-size: 10px;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--red);
-      margin-bottom: 6px;
+      margin-bottom: 2px;
     }
-    .card h3 {
-      font-size: 15px;
-      font-weight: 700;
+    .art-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
       color: var(--black);
-      line-height: 1.4;
-      margin-bottom: 6px;
+      line-height: 1.3;
     }
-    .card p {
-      font-size: 13px;
-      color: #666;
-      line-height: 1.5;
+    .art-desc {
+      font-size: 12px;
+      color: #888;
+      margin-top: 2px;
+      line-height: 1.4;
     }
 
-    /* CTA band */
-    .cta-band {
-      background: var(--black);
-      padding: 60px 24px;
-      text-align: center;
+    /* ── FEATURED (large cards for top articles) ── */
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
     }
-    .cta-band h2 {
-      color: #fff;
-      font-size: clamp(22px, 3vw, 34px);
-      font-weight: 900;
-      margin-bottom: 14px;
+    .feat-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      color: inherit;
+      display: block;
     }
-    .cta-band p {
-      color: rgba(255,255,255,0.7);
-      font-size: 16px;
-      max-width: 500px;
-      margin: 0 auto 28px;
+    .feat-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
     }
-    .cta-band a {
+    .feat-img {
+      height: 100px;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .feat-body { padding: 14px 16px; }
+    .feat-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 4px;
+    }
+    .feat-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.35;
+      margin-bottom: 4px;
+    }
+    .feat-desc { font-size: 12px; color: #777; line-height: 1.45; }
+
+    /* ── VER TODOS BAND ── */
+    .all-band {
+      background: var(--bg-warm);
+      border: 1px solid #e8d9b5;
+      border-radius: 14px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 56px 0;
+      flex-wrap: wrap;
+    }
+    .all-band-text h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--black);
+      margin-bottom: 4px;
+    }
+    .all-band-text p { font-size: 14px; color: #777; }
+    .all-band a {
       display: inline-block;
-      background: var(--red);
+      background: var(--black);
       color: #fff;
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
-      font-size: 15px;
-      padding: 14px 28px;
+      font-size: 14px;
+      padding: 12px 24px;
       border-radius: 8px;
-      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
     }
-    .cta-band a:hover { background: var(--red-dark); }
-    .cta-note {
-      margin-top: 14px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.45);
-    }
+    .all-band a:hover { background: #333; }
 
-    footer {
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--black);
+      padding: 70px 24px;
       text-align: center;
-      padding: 30px 24px;
-      font-size: 13px;
-      color: #999;
     }
+    .cta-band h2 { color: #fff; font-size: clamp(22px, 3vw, 36px); font-weight: 900; margin-bottom: 14px; }
+    .cta-band p { color: rgba(255,255,255,0.7); font-size: 16px; max-width: 500px; margin: 0 auto 28px; }
+    .cta-band .btn-primary { font-size: 16px; padding: 16px 32px; }
+    .cta-note { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.35); }
 
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; }
+    /* ── FOOTER ── */
+    footer { text-align: center; padding: 30px 24px; font-size: 13px; color: #999; }
+    footer a { color: var(--red); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .art-grid { grid-template-columns: 1fr; }
+      .feat-grid { grid-template-columns: 1fr 1fr; }
+      .all-band { flex-direction: column; text-align: center; }
+      .hero-stats { gap: 20px; }
+    }
+    @media (max-width: 420px) {
+      .feat-grid { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <span class="hero-eyebrow">Coordenadas Secretas</span>
-    <h1>La guía definitiva para los <span>Dolomitas</span></h1>
-    <p>Rutas detalladas, lagos escondidos, refugios de montaña y los rincones que no aparecen en ninguna guía convencional.</p>
-    <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="hero-btn">Probar el primer capítulo gratis →</a>
+    <h1>La <em>enciclopedia</em> de los Dolomitas<br>en español</h1>
+    <p class="hero-sub">105 artículos sobre lagos, valles, pasos de montaña, actividades, temporadas y cómo moverse. Todo lo que necesitas para planificar el viaje perfecto.</p>
+    <div class="hero-btns">
+      <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="btn-primary">Probar la guía gratis →</a>
+      <a href="/enciclopedia" class="btn-secondary">Ver los 105 artículos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>105</strong><span>artículos</span></div>
+      <div class="hero-stat"><strong>12</strong><span>categorías</span></div>
+      <div class="hero-stat"><strong>Mar 2026</strong><span>actualizado</span></div>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <p class="section-title">Destinos</p>
-  <h2>Todos los artículos</h2>
-  <div class="grid">
-
-    <a href="/lago-di-braies" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago di Braies</h3>
-        <p>El lago más fotografiado de los Dolomitas y cómo visitarlo sin aglomeraciones.</p>
-      </div>
-    </a>
-
-    <a href="/tres-cime-di-lavaredo" class="card">
-      <div class="card-img">⛰️</div>
-      <div class="card-body">
-        <p class="card-tag">Senderismo</p>
-        <h3>Tres Cime di Lavaredo</h3>
-        <p>La ruta circular más icónica de los Dolomitas, paso a paso.</p>
-      </div>
-    </a>
-
-    <a href="/lago-sorapis" class="card">
-      <div class="card-img">💎</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago di Sorapis</h3>
-        <p>Aguas turquesas escondidas tras una ruta de montaña.</p>
-      </div>
-    </a>
-
-    <a href="/cinque-torri" class="card">
-      <div class="card-img">🗿</div>
-      <div class="card-body">
-        <p class="card-tag">Senderismo · Historia</p>
-        <h3>Cinque Torri</h3>
-        <p>Formaciones rocosas únicas con historia de la Primera Guerra Mundial.</p>
-      </div>
-    </a>
-
-    <a href="/val-di-funes" class="card">
-      <div class="card-img">🌿</div>
-      <div class="card-body">
-        <p class="card-tag">Valle</p>
-        <h3>Val di Funes</h3>
-        <p>El valle con la iglesia más fotografiada del norte de Italia.</p>
-      </div>
-    </a>
-
-    <a href="/seceda" class="card">
-      <div class="card-img">🚡</div>
-      <div class="card-body">
-        <p class="card-tag">Mirador</p>
-        <h3>Seceda</h3>
-        <p>Las crestas más espectaculares de los Dolomitas, accesibles en telecabina.</p>
-      </div>
-    </a>
-
-    <a href="/alpe-di-siusi" class="card">
-      <div class="card-img">🌄</div>
-      <div class="card-body">
-        <p class="card-tag">Altiplanicie</p>
-        <h3>Alpe di Siusi</h3>
-        <p>La mayor altiplanicie alpina de Europa, con vistas 360° de los Dolomitas.</p>
-      </div>
-    </a>
-
-    <a href="/la-marmolada" class="card">
-      <div class="card-img">🧊</div>
-      <div class="card-body">
-        <p class="card-tag">Cumbre</p>
-        <h3>La Marmolada</h3>
-        <p>La reina de los Dolomitas: el glaciar y la cima más alta del grupo.</p>
-      </div>
-    </a>
-
-    <a href="/cortina-dampezzo" class="card">
-      <div class="card-img">🎿</div>
-      <div class="card-body">
-        <p class="card-tag">Ciudad</p>
-        <h3>Cortina d'Ampezzo</h3>
-        <p>La capital de los Dolomitas: dónde dormir, comer y qué hacer.</p>
-      </div>
-    </a>
-
-    <a href="/ruta-dolomitas-en-coche" class="card">
-      <div class="card-img">🚗</div>
-      <div class="card-body">
-        <p class="card-tag">Ruta</p>
-        <h3>Ruta en coche por los Dolomitas</h3>
-        <p>El itinerario de 7 días para recorrer los Dolomitas a tu ritmo.</p>
-      </div>
-    </a>
-
-    <a href="/passo-giau" class="card">
-      <div class="card-img">🛣️</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Giau</h3>
-        <p>El puerto más escénico de los Dolomitas, a 2.236 metros de altitud.</p>
-      </div>
-    </a>
-
-    <a href="/val-gardena" class="card">
-      <div class="card-img">🏘️</div>
-      <div class="card-body">
-        <p class="card-tag">Valle</p>
-        <h3>Val Gardena</h3>
-        <p>El valle ladino con tres pueblos únicos y acceso al Sellaronda.</p>
-      </div>
-    </a>
-
-    <a href="/lago-misurina" class="card">
-      <div class="card-img">🪞</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago di Misurina</h3>
-        <p>El espejo perfecto de las Tres Cimas, accesible en coche.</p>
-      </div>
-    </a>
-
-    <a href="/dobbiaco" class="card">
-      <div class="card-img">🎼</div>
-      <div class="card-body">
-        <p class="card-tag">Pueblo</p>
-        <h3>Dobbiaco</h3>
-        <p>El pueblo de Mahler: cultura, lago y puerta a la Alta Pusteria.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-invierno" class="card">
-      <div class="card-img">❄️</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en invierno</h3>
-        <p>Guía completa para esquiar y disfrutar los Dolomitas en la nieve.</p>
-      </div>
-    </a>
-
-    <a href="/alta-badia" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Valle</p>
-        <h3>Alta Badia</h3>
-        <p>Cinco pueblos ladinos, gastronomía Michelin y el Sellaronda.</p>
-      </div>
-    </a>
-
-    <a href="/passo-pordoi" class="card">
-      <div class="card-img">🗻</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Pordoi</h3>
-        <p>A 2.239 m, el puerto más alto del Sellaronda y la ruta del Viel del Pan.</p>
-      </div>
-    </a>
-
-    <a href="/val-di-fassa" class="card">
-      <div class="card-img">🌹</div>
-      <div class="card-body">
-        <p class="card-tag">Valle</p>
-        <h3>Val di Fassa</h3>
-        <p>La leyenda del Enrosadira y el Catinaccio, el jardín de roca.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-otono" class="card">
-      <div class="card-img">🍂</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en otoño</h3>
-        <p>Septiembre y octubre: colores, menos gente y la mejor luz para fotografiar.</p>
-      </div>
-    </a>
-
-    <a href="/alta-via-1" class="card">
-      <div class="card-img">🥾</div>
-      <div class="card-body">
-        <p class="card-tag">Gran Travesía</p>
-        <h3>Alta Via 1</h3>
-        <p>120 km de Lago di Braies a Belluno: la gran travesía de los Dolomitas, etapa por etapa.</p>
-      </div>
-    </a>
-
-    <a href="/donde-alojarse-dolomitas" class="card">
-      <div class="card-img">🏨</div>
-      <div class="card-body">
-        <p class="card-tag">Alojamiento</p>
-        <h3>Dónde alojarse en los Dolomitas</h3>
-        <p>Las mejores bases según tu itinerario, con precios y recomendaciones.</p>
-      </div>
-    </a>
-
-    <a href="/alta-via-2" class="card">
-      <div class="card-img">🥾</div>
-      <div class="card-body">
-        <p class="card-tag">Gran Travesía</p>
-        <h3>Alta Via 2</h3>
-        <p>La travesía técnica de Bressanone a Feltre: vías ferratas, 9 etapas y paisajes salvajes.</p>
-      </div>
-    </a>
-
-    <a href="/passo-falzarego" class="card">
-      <div class="card-img">🛣️</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Falzarego</h3>
-        <p>2.117m, trincheras de la WWI, Cinque Torri y el teleférico del Lagazuoi.</p>
-      </div>
-    </a>
-
-    <a href="/passo-sella" class="card">
-      <div class="card-img">🗻</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Sella</h3>
-        <p>El corazón del Sellaronda: vistas al Sassolungo y conexión entre 4 valles ladinos.</p>
-      </div>
-    </a>
-
-    <a href="/passo-gardena" class="card">
-      <div class="card-img">⛷️</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Gardena</h3>
-        <p>2.121m, copa del mundo de esquí Gran Risa y puerta entre Val Gardena y Alta Badia.</p>
-      </div>
-    </a>
-
-    <a href="/passo-rolle" class="card">
-      <div class="card-img">🌲</div>
-      <div class="card-body">
-        <p class="card-tag">Puerto de montaña</p>
-        <h3>Passo Rolle</h3>
-        <p>El paso más fotogénico del Trentino: Pale di San Martino y el abeto solitario.</p>
-      </div>
-    </a>
-
-    <a href="/lago-di-carezza" class="card">
-      <div class="card-img">🌈</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago di Carezza</h3>
-        <p>El lago arcoíris del Val di Fassa: aguas multicolores y el Catinaccio al fondo.</p>
-      </div>
-    </a>
-
-    <a href="/lago-di-alleghe" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago di Alleghe</h3>
-        <p>Creado por un alud en 1771, con la pared norte de la Civetta como telón de fondo.</p>
-      </div>
-    </a>
-
-    <a href="/lago-fedaia" class="card">
-      <div class="card-img">🧊</div>
-      <div class="card-body">
-        <p class="card-tag">Lago</p>
-        <h3>Lago Fedaia</h3>
-        <p>A los pies de la Marmolada: glaciar, presa y acceso al teleférico más alto.</p>
-      </div>
-    </a>
-
-    <a href="/lago-di-antorno" class="card">
-      <div class="card-img">📸</div>
-      <div class="card-body">
-        <p class="card-tag">Lago · Mirador</p>
-        <h3>Lago di Antorno</h3>
-        <p>El reflejo de las Tres Cimas más accesible, antes del peaje de Misurina.</p>
-      </div>
-    </a>
-
-    <a href="/laghi-di-fusine" class="card">
-      <div class="card-img">🌿</div>
-      <div class="card-body">
-        <p class="card-tag">Lagos</p>
-        <h3>Laghi di Fusine</h3>
-        <p>Dos lagos alpinos en Friuli con el Mangart al fondo y flora única de los Alpes.</p>
-      </div>
-    </a>
-
-    <a href="/bolzano" class="card">
-      <div class="card-img">🏛️</div>
-      <div class="card-body">
-        <p class="card-tag">Ciudad</p>
-        <h3>Bolzano</h3>
-        <p>La puerta de los Dolomitas: Ötzi, los Lauben medievales y gastronomía tirolesa.</p>
-      </div>
-    </a>
-
-    <a href="/ortisei" class="card">
-      <div class="card-img">🪵</div>
-      <div class="card-body">
-        <p class="card-tag">Pueblo</p>
-        <h3>Ortisei</h3>
-        <p>Capital de Val Gardena: artesanía en madera ladina, Seceda y Alpe di Siusi.</p>
-      </div>
-    </a>
-
-    <a href="/brunico" class="card">
-      <div class="card-img">🏰</div>
-      <div class="card-body">
-        <p class="card-tag">Pueblo</p>
-        <h3>Brunico</h3>
-        <p>Capital de la Alta Pusteria: museo Messner, centro medieval y puerta al Parque Fanes.</p>
-      </div>
-    </a>
-
-    <a href="/corvara" class="card">
-      <div class="card-img">🌟</div>
-      <div class="card-body">
-        <p class="card-tag">Pueblo · Esquí</p>
-        <h3>Corvara</h3>
-        <p>El pueblo más alto de Alta Badia: Sellaronda, estrellas Michelin y ski de lujo.</p>
-      </div>
-    </a>
-
-    <a href="/arabba" class="card">
-      <div class="card-img">⛷️</div>
-      <div class="card-body">
-        <p class="card-tag">Pueblo · Esquí</p>
-        <h3>Arabba</h3>
-        <p>El resort auténtico del Sellaronda: Porta Dolomiti y conexión directa a la Marmolada.</p>
-      </div>
-    </a>
-
-    <a href="/geologia-dolomitas" class="card">
-      <div class="card-img">🪨</div>
-      <div class="card-body">
-        <p class="card-tag">Cultura</p>
-        <h3>Geología de los Dolomitas</h3>
-        <p>Arrecifes de coral triásicos, 250 millones de años y el misterio del enrosadira.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-primera-guerra-mundial" class="card">
-      <div class="card-img">⚔️</div>
-      <div class="card-body">
-        <p class="card-tag">Historia</p>
-        <h3>Los Dolomitas en la Primera Guerra Mundial</h3>
-        <p>Trincheras a 3.000m, túneles en la roca y el frente más duro de los Alpes.</p>
-      </div>
-    </a>
-
-    <a href="/cultura-ladina" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Cultura</p>
-        <h3>Cultura ladina</h3>
-        <p>El pueblo más antiguo de los Alpes: idioma reto-románico, tradiciones y gastronomía.</p>
-      </div>
-    </a>
-
-    <a href="/gastronomia-dolomitas" class="card">
-      <div class="card-img">🍽️</div>
-      <div class="card-body">
-        <p class="card-tag">Gastronomía</p>
-        <h3>Gastronomía de los Dolomitas</h3>
-        <p>Canederli, speck, casunziei y refugios con estrella Michelin en la alta montaña.</p>
-      </div>
-    </a>
-
-    <a href="/fotografia-dolomitas" class="card">
-      <div class="card-img">📷</div>
-      <div class="card-body">
-        <p class="card-tag">Fotografía</p>
-        <h3>Fotografía en los Dolomitas</h3>
-        <p>Los 12 mejores spots, el enrosadira y los mejores meses para fotografiar.</p>
-      </div>
-    </a>
-
-    <a href="/via-ferrata-dolomitas" class="card">
-      <div class="card-img">🧗</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Vía ferrata en los Dolomitas</h3>
-        <p>Guía para principiantes: niveles A-E, equipo necesario y las 8 mejores ferratas.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-con-ninos" class="card">
-      <div class="card-img">👨‍👩‍👧</div>
-      <div class="card-body">
-        <p class="card-tag">Familias</p>
-        <h3>Dolomitas con niños</h3>
-        <p>Actividades por edad, refugios family-friendly y los destinos más accesibles.</p>
-      </div>
-    </a>
-
-    <a href="/como-llegar-dolomitas" class="card">
-      <div class="card-img">✈️</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Cómo llegar a los Dolomitas</h3>
-        <p>Vuelos desde España, aeropuertos, alquiler de coche y tiempos de viaje.</p>
-      </div>
-    </a>
-
-    <a href="/sellaronda" class="card">
-      <div class="card-img">🔄</div>
-      <div class="card-body">
-        <p class="card-tag">Esquí</p>
-        <h3>El Sellaronda</h3>
-        <p>La ruta de esquí más famosa de los Alpes: 4 pasos, 40 km y un día completo.</p>
-      </div>
-    </a>
-
-    <a href="/dolomiti-superski" class="card">
-      <div class="card-img">🎿</div>
-      <div class="card-body">
-        <p class="card-tag">Esquí</p>
-        <h3>Dolomiti Superski</h3>
-        <p>El skipass más grande del mundo: 12 zonas, 1.200 km de pistas y cómo elegir.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-primavera" class="card">
-      <div class="card-img">🌸</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en primavera</h3>
-        <p>Abril, mayo y junio: praderas florecidas, sin masas y precios un 30% más bajos.</p>
-      </div>
-    </a>
-
-    <a href="/cuanto-cuesta-dolomitas" class="card">
-      <div class="card-img">💶</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Cuánto cuesta un viaje</h3>
-        <p>Presupuestos reales para 7 días: económico, medio y premium con desglose completo.</p>
-      </div>
-    </a>
-
-    <a href="/mejores-refugios-dolomitas" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Los mejores refugios</h3>
-        <p>Los 8 rifugios más espectaculares: cómo reservar, qué comer y cuánto cuesta.</p>
-      </div>
-    </a>
-
-    <a href="/fanes-sennes-braies" class="card">
-      <div class="card-img">🌿</div>
-      <div class="card-body">
-        <p class="card-tag">Parque Natural</p>
-        <h3>Fanes-Sennes-Braies</h3>
-        <p>86.000 hectáreas de paisaje virgen con el Lago di Braies como joya central.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-verano" class="card">
-      <div class="card-img">☀️</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en verano</h3>
-        <p>Junio, julio y agosto: qué esperar, cuándo ir y cómo evitar las masas en temporada alta.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-agosto" class="card">
-      <div class="card-img">🌞</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en agosto</h3>
-        <p>El mes pico: horarios estratégicos, rutas con menos gente y todo lo que necesitas saber.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-septiembre" class="card">
-      <div class="card-img">🍂</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Dolomitas en septiembre</h3>
-        <p>El mes ideal: menos turistas, colores de otoño y todos los servicios abiertos.</p>
-      </div>
-    </a>
-
-    <a href="/itinerario-dolomitas-7-dias" class="card">
-      <div class="card-img">🗺️</div>
-      <div class="card-body">
-        <p class="card-tag">Itinerario</p>
-        <h3>Itinerario 7 días</h3>
-        <p>El circuito completo día a día: Braies, Tre Cime, Cortina, Val Gardena, Marmolada y más.</p>
-      </div>
-    </a>
-
-    <a href="/itinerario-dolomitas-3-dias" class="card">
-      <div class="card-img">⚡</div>
-      <div class="card-body">
-        <p class="card-tag">Itinerario</p>
-        <h3>Itinerario 3 días</h3>
-        <p>Lago di Braies, Tre Cime y Val di Funes: el mejor fin de semana largo posible.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-desde-venecia" class="card">
-      <div class="card-img">🚗</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Desde Venecia</h3>
-        <p>En coche, tren o autobús: tiempos, rutas recomendadas y opciones para cada presupuesto.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-desde-munich" class="card">
-      <div class="card-img">🚂</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Desde Múnich</h3>
-        <p>La ruta del Brennero: tiempos reales, peajes, vignette austríaca y qué ver de camino.</p>
-      </div>
-    </a>
-
-    <a href="/transporte-publico-dolomitas" class="card">
-      <div class="card-img">🚌</div>
-      <div class="card-body">
-        <p class="card-tag">Práctica</p>
-        <h3>Transporte público</h3>
-        <p>El sistema SAD: líneas clave, passes y cómo llegar a Tre Cime y Braies sin coche.</p>
-      </div>
-    </a>
-
-    <a href="/senderismo-dolomitas" class="card">
-      <div class="card-img">🥾</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Senderismo</h3>
-        <p>Las mejores rutas clasificadas por dificultad: desde paseos fáciles hasta exigentes travesías.</p>
-      </div>
-    </a>
-
-    <a href="/escalada-dolomitas" class="card">
-      <div class="card-img">🧗</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Escalada</h3>
-        <p>Historia, zonas y vías: de las primeras ascensiones del siglo XIX a las rutas de hoy.</p>
-      </div>
-    </a>
-
-    <a href="/mountain-bike-dolomitas" class="card">
-      <div class="card-img">🚵</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Mountain bike</h3>
-        <p>El Sellaronda MTB, rutas por nivel y dónde alquilar bici en los Dolomitas.</p>
-      </div>
-    </a>
-
-    <a href="/trail-running-dolomitas" class="card">
-      <div class="card-img">🏃</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Trail running</h3>
-        <p>Lavaredo Ultra Trail, rutas populares y cómo preparar la temporada en altitud.</p>
-      </div>
-    </a>
-
-    <a href="/parapente-dolomitas" class="card">
-      <div class="card-img">🪂</div>
-      <div class="card-body">
-        <p class="card-tag">Actividad</p>
-        <h3>Parapente</h3>
-        <p>Zonas de vuelo, escuelas y precios de tándem desde Cortina y Val Gardena.</p>
-      </div>
-    </a>
-
-    <a href="/fauna-dolomitas" class="card">
-      <div class="card-img">🦅</div>
-      <div class="card-body">
-        <p class="card-tag">Naturaleza</p>
-        <h3>Fauna de los Dolomitas</h3>
-        <p>Dónde y cuándo ver camoscio, marmota, ciervo rojo, águila real y oso pardo.</p>
-      </div>
-    </a>
-
-    <a href="/flora-dolomitas" class="card">
-      <div class="card-img">🌺</div>
-      <div class="card-body">
-        <p class="card-tag">Naturaleza</p>
-        <h3>Flora alpina</h3>
-        <p>Edelweiss, rododendros y genciana: el calendario de floración mes a mes.</p>
-      </div>
-    </a>
-
-    <a href="/glaciares-dolomitas" class="card">
-      <div class="card-img">🧊</div>
-      <div class="card-body">
-        <p class="card-tag">Naturaleza</p>
-        <h3>El glaciar de La Marmolada</h3>
-        <p>Historia, retroceso y acceso al mayor glaciar de los Dolomitas desde Passo Pordoi.</p>
-      </div>
-    </a>
-
-    <a href="/patrimonio-mundial-unesco-dolomitas" class="card">
-      <div class="card-img">🏛️</div>
-      <div class="card-body">
-        <p class="card-tag">Naturaleza</p>
-        <h3>Patrimonio UNESCO</h3>
-        <p>Los 9 sistemas reconocidos en 2009 y qué significa el sello para el viajero.</p>
-      </div>
-    </a>
-
-    <a href="/mercados-navidad-dolomitas" class="card">
-      <div class="card-img">🎄</div>
-      <div class="card-body">
-        <p class="card-tag">Temporada</p>
-        <h3>Mercados de Navidad</h3>
-        <p>Bolzano, Brunico, Merano y Cortina: fechas, horarios y qué comprar en cada uno.</p>
-      </div>
-    </a>
-
-    <a href="/san-martino-di-castrozza" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>San Martino di Castrozza</h3>
-        <p>El valle más espectacular del sur: las Pale de fondo y un pueblo alpino genuino.</p>
-      </div>
-    </a>
-
-    <a href="/pale-di-san-martino" class="card">
-      <div class="card-img">🗻</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Pale di San Martino</h3>
-        <p>El grupo más monumental: 60+ cimas, el Altipiano di Rosetta y los rifugios colgantes.</p>
-      </div>
-    </a>
-
-    <a href="/val-pusteria" class="card">
-      <div class="card-img">🌄</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Val Pusteria</h3>
-        <p>El valle más largo del Alto Adigio: 100 km de montañas y la puerta al Lago di Braies.</p>
-      </div>
-    </a>
-
-    <a href="/canazei" class="card">
-      <div class="card-img">🏘️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Canazei</h3>
-        <p>La capital de Val di Fassa: base perfecta para Passo Pordoi, La Marmolada y el Sellaronda.</p>
-      </div>
-    </a>
-
-    <a href="/civetta" class="card">
-      <div class="card-img">⛰️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Civetta</h3>
-        <p>La "pared de las paredes": la cara noroeste y las mejores rutas para acercarse.</p>
-      </div>
-    </a>
-
-    <a href="/auronzo-di-cadore" class="card">
-      <div class="card-img">🏡</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Auronzo di Cadore</h3>
-        <p>El pueblo base para las Tre Cime: cómo funciona la SP49 y cuándo reservar plaza.</p>
-      </div>
-    </a>
-
-    <a href="/brenta-dolomitas" class="card">
-      <div class="card-img">🧗</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Dolomitas de Brenta</h3>
-        <p>El grupo occidental UNESCO: ferratas Bocchette, rifugios y acceso desde Madonna di Campiglio.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-octubre" class="card">
-      <div class="card-img">🍂</div>
-      <div class="card-body">
-        <p class="card-tag">Temporadas</p>
-        <h3>Dolomitas en octubre</h3>
-        <p>Follaje dorado, sin multitudes y la mejor luz del año para fotografiar los Dolomitas.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-enero" class="card">
-      <div class="card-img">❄️</div>
-      <div class="card-body">
-        <p class="card-tag">Temporadas</p>
-        <h3>Dolomitas en enero</h3>
-        <p>Esquí, nieve y pueblos nevados en plena temporada alta de invierno.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-junio" class="card">
-      <div class="card-img">🌸</div>
-      <div class="card-body">
-        <p class="card-tag">Temporadas</p>
-        <h3>Dolomitas en junio</h3>
-        <p>Los prados en flor, los refugios recién abiertos y los senderos sin gente.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-desde-milan" class="card">
-      <div class="card-img">🚗</div>
-      <div class="card-body">
-        <p class="card-tag">Acceso</p>
-        <h3>Dolomitas desde Milán</h3>
-        <p>La ruta más rápida desde Milán: autostrada, tiempo de viaje y dónde parar.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-desde-verona" class="card">
-      <div class="card-img">🚗</div>
-      <div class="card-body">
-        <p class="card-tag">Acceso</p>
-        <h3>Dolomitas desde Verona</h3>
-        <p>Verona como puerta de entrada: ruta por la Val d'Adige y las alternativas.</p>
-      </div>
-    </a>
-
-    <a href="/raquetas-nieve-dolomitas" class="card">
-      <div class="card-img">🥾</div>
-      <div class="card-body">
-        <p class="card-tag">Actividades</p>
-        <h3>Raquetas de nieve</h3>
-        <p>Las mejores rutas con raquetas en el Alpe di Siusi, Val di Funes y Alta Badia.</p>
-      </div>
-    </a>
-
-    <a href="/esqui-de-fondo-dolomitas" class="card">
-      <div class="card-img">⛷️</div>
-      <div class="card-body">
-        <p class="card-tag">Actividades</p>
-        <h3>Esquí de fondo</h3>
-        <p>Las pistas de fondo más bonitas de los Dolomitas: Alpe di Siusi y Val Pusteria.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-en-moto" class="card">
-      <div class="card-img">🏍️</div>
-      <div class="card-body">
-        <p class="card-tag">Actividades</p>
-        <h3>Dolomitas en moto</h3>
-        <p>La ruta en moto por los grandes pasos alpinos: Giau, Gardena, Sella y Falzarego.</p>
-      </div>
-    </a>
-
-    <a href="/snowboard-dolomitas" class="card">
-      <div class="card-img">🏂</div>
-      <div class="card-body">
-        <p class="card-tag">Actividades</p>
-        <h3>Snowboard en los Dolomitas</h3>
-        <p>Las mejores zonas para snowboard dentro del Dolomiti Superski.</p>
-      </div>
-    </a>
-
-    <a href="/camping-dolomitas" class="card">
-      <div class="card-img">⛺</div>
-      <div class="card-body">
-        <p class="card-tag">Alojamiento</p>
-        <h3>Camping en los Dolomitas</h3>
-        <p>Los mejores campings de los Dolomitas: ubicación, precios y temporada.</p>
-      </div>
-    </a>
-
-    <a href="/belluno" class="card">
-      <div class="card-img">🏙️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Belluno</h3>
-        <p>La capital de los Dolomitas: por qué merece una parada y qué ver en la ciudad.</p>
-      </div>
-    </a>
-
-    <a href="/tofane" class="card">
-      <div class="card-img">⛰️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Las Tofane</h3>
-        <p>El macizo que domina Cortina d'Ampezzo: rutas, teleféricos y vistas únicas.</p>
-      </div>
-    </a>
-
-    <a href="/monte-pelmo" class="card">
-      <div class="card-img">🗻</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Monte Pelmo</h3>
-        <p>El trono de Dios: el pico más aislado y fotogénico de los Dolomitas centrales.</p>
-      </div>
-    </a>
-
-    <a href="/sass-pordoi" class="card">
-      <div class="card-img">🚡</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Sass Pordoi</h3>
-        <p>La cima más accesible de los Dolomitas: teleférico desde Passo Pordoi y vistas 360°.</p>
-      </div>
-    </a>
-
-    <a href="/rifugio-lagazuoi" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Refugios</p>
-        <h3>Rifugio Lagazuoi</h3>
-        <p>El refugio más espectacular de los Dolomitas: teleférico, trincheras WWI y vistas 360°.</p>
-      </div>
-    </a>
-
-    <a href="/rifugio-nuvolau" class="card">
-      <div class="card-img">☁️</div>
-      <div class="card-body">
-        <p class="card-tag">Refugios</p>
-        <h3>Rifugio Nuvolau</h3>
-        <p>El refugio más antiguo de los Dolomitas: cómo llegar y qué esperar en la cima.</p>
-      </div>
-    </a>
-
-    <a href="/passo-tre-croci" class="card">
-      <div class="card-img">🏔️</div>
-      <div class="card-body">
-        <p class="card-tag">Pasos</p>
-        <h3>Passo Tre Croci</h3>
-        <p>El paso entre Cortina y el Lago di Sorapis: acceso, vistas y rutas desde el puerto.</p>
-      </div>
-    </a>
-
-    <a href="/val-comelico" class="card">
-      <div class="card-img">🌲</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Val Comelico</h3>
-        <p>El valle más desconocido de los Dolomitas orientales: auténtico y sin masificación.</p>
-      </div>
-    </a>
-
-    <a href="/sappada" class="card">
-      <div class="card-img">🏘️</div>
-      <div class="card-body">
-        <p class="card-tag">Destino</p>
-        <h3>Sappada</h3>
-        <p>El pueblo walser más desconocido de los Dolomitas: arquitectura de madera y carnaval histórico.</p>
-      </div>
-    </a>
-
-    <a href="/fotografia-nocturna-dolomitas" class="card">
-      <div class="card-img">🌌</div>
-      <div class="card-body">
-        <p class="card-tag">Fotografía</p>
-        <h3>Fotografía nocturna</h3>
-        <p>Astrofotografía en los Dolomitas: los mejores spots para fotografiar la Vía Láctea.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-mochilero" class="card">
-      <div class="card-img">🎒</div>
-      <div class="card-body">
-        <p class="card-tag">Viajero</p>
-        <h3>Dolomitas mochilero</h3>
-        <p>Cómo visitar los Dolomitas con poco presupuesto: refugios, camping y transporte público.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-con-perro" class="card">
-      <div class="card-img">🐕</div>
-      <div class="card-body">
-        <p class="card-tag">Viajero</p>
-        <h3>Dolomitas con perro</h3>
-        <p>Rutas, refugios y normas para viajar a los Dolomitas con tu perro.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-romantico" class="card">
-      <div class="card-img">💑</div>
-      <div class="card-body">
-        <p class="card-tag">Viajero</p>
-        <h3>Dolomitas en pareja</h3>
-        <p>La escapada romántica perfecta: hoteles con encanto, rutas para dos y atardeceres únicos.</p>
-      </div>
-    </a>
-
-    <a href="/hoteles-lujo-dolomitas" class="card">
-      <div class="card-img">🏨</div>
-      <div class="card-body">
-        <p class="card-tag">Alojamiento</p>
-        <h3>Hoteles de lujo</h3>
-        <p>Rosa Alpina, Ciasa Salares, Vigilius: los hoteles de lujo más especiales de los Dolomitas.</p>
-      </div>
-    </a>
-
-    <a href="/itinerario-dolomitas-10-dias" class="card">
-      <div class="card-img">🗺️</div>
-      <div class="card-body">
-        <p class="card-tag">Itinerarios</p>
-        <h3>Itinerario 10 días</h3>
-        <p>La ruta completa de 10 días por los Dolomitas: día a día, bases y qué no perderse.</p>
-      </div>
-    </a>
-
-    <a href="/dolomitas-sin-coche" class="card">
-      <div class="card-img">🚌</div>
-      <div class="card-body">
-        <p class="card-tag">Sin Coche</p>
-        <h3>Dolomitas sin coche</h3>
-        <p>Guía completa para visitar los Dolomitas en transporte público: qué puedes ver y cómo.</p>
-      </div>
-    </a>
-
-    <a href="/lago-braies-sin-coche" class="card">
-      <div class="card-img">🚌</div>
-      <div class="card-body">
-        <p class="card-tag">Sin Coche</p>
-        <h3>Lago di Braies sin coche</h3>
-        <p>Cómo llegar al lago más fotografiado de Italia en autobús, sin restricciones de acceso.</p>
-      </div>
-    </a>
-
-    <a href="/tres-cime-sin-coche" class="card">
-      <div class="card-img">🚌</div>
-      <div class="card-body">
-        <p class="card-tag">Sin Coche</p>
-        <h3>Tres Cime sin coche</h3>
-        <p>Autobús desde Cortina al Rifugio Auronzo: cómo, cuándo y qué cuesta.</p>
-      </div>
-    </a>
-
-    <a href="/cortina-sin-coche" class="card">
-      <div class="card-img">🚌</div>
-      <div class="card-body">
-        <p class="card-tag">Sin Coche</p>
-        <h3>Cortina sin coche</h3>
-        <p>Flixbus, tren + autobús y cómo moverse desde Cortina a los destinos del entorno.</p>
-      </div>
-    </a>
-
-    <a href="/tren-a-los-dolomitas" class="card">
-      <div class="card-img">🚂</div>
-      <div class="card-body">
-        <p class="card-tag">Sin Coche</p>
-        <h3>Llegar en tren</h3>
-        <p>Las estaciones de entrada a los Dolomitas y cómo combinar tren y autobús desde España.</p>
-      </div>
-    </a>
-
+<div class="container">
+
+  <!-- LAGOS -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Naturaleza</p>
+        <h2 class="cat-title">Lagos</h2>
+        <p class="cat-desc">Los lagos de montaña más impresionantes de los Alpes — turquesas, escondidos y con rutas para todos los niveles.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="feat-grid">
+      <a href="/lago-di-braies" class="feat-card">
+        <div class="feat-img">🏔️</div>
+        <div class="feat-body">
+          <p class="feat-tag">Lago · Alta Pusteria</p>
+          <p class="feat-name">Lago di Braies</p>
+          <p class="feat-desc">El lago más fotografiado de Italia y cómo visitarlo sin aglomeraciones.</p>
+        </div>
+      </a>
+      <a href="/lago-sorapis" class="feat-card">
+        <div class="feat-img">💎</div>
+        <div class="feat-body">
+          <p class="feat-tag">Lago · Cortina</p>
+          <p class="feat-name">Lago di Sorapis</p>
+          <p class="feat-desc">El agua más turquesa de los Dolomitas, tras 2h de ruta desde Passo Tre Croci.</p>
+        </div>
+      </a>
+      <a href="/lago-misurina" class="feat-card">
+        <div class="feat-img">🌊</div>
+        <div class="feat-body">
+          <p class="feat-tag">Lago · Cadore</p>
+          <p class="feat-name">Lago di Misurina</p>
+          <p class="feat-desc">El lago accesible en coche con vistas directas a las Tres Cime.</p>
+        </div>
+      </a>
+      <a href="/lago-di-carezza" class="feat-card">
+        <div class="feat-img">🌈</div>
+        <div class="feat-body">
+          <p class="feat-tag">Lago · Val di Fassa</p>
+          <p class="feat-name">Lago di Carezza</p>
+          <p class="feat-desc">El Arcoíris de los Dolomitas: el lago más colorido del Alto Adigio.</p>
+        </div>
+      </a>
+    </div>
+    <div class="art-grid">
+      <a href="/lago-fedaia" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Lago</p>
+          <p class="art-name">Lago Fedaia</p>
+          <p class="art-desc">Al pie de la Marmolada, el glaciar más alto de los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/lago-di-alleghe" class="art-item">
+        <div class="art-icon">🏘️</div>
+        <div class="art-info">
+          <p class="art-tag">Lago</p>
+          <p class="art-name">Lago di Alleghe</p>
+          <p class="art-desc">El lago de origen glaciar con el pueblo más fotogénico de la zona.</p>
+        </div>
+      </a>
+      <a href="/lago-di-antorno" class="art-item">
+        <div class="art-icon">🌿</div>
+        <div class="art-info">
+          <p class="art-tag">Lago</p>
+          <p class="art-name">Lago di Antorno</p>
+          <p class="art-desc">El espejo de agua secreto con las Tres Cime de fondo.</p>
+        </div>
+      </a>
+      <a href="/laghi-di-fusine" class="art-item">
+        <div class="art-icon">🌲</div>
+        <div class="art-info">
+          <p class="art-tag">Lagos</p>
+          <p class="art-name">Laghi di Fusine</p>
+          <p class="art-desc">Los dos lagos esmeralda de las Dolomitas de Friuli.</p>
+        </div>
+      </a>
+      <a href="/lago-braies-sin-coche" class="art-item">
+        <div class="art-icon">🚌</div>
+        <div class="art-info">
+          <p class="art-tag">Sin coche</p>
+          <p class="art-name">Lago di Braies sin coche</p>
+          <p class="art-desc">Cómo llegar en autobús 442 desde Dobbiaco.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- PASOS DE MONTAÑA -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Rutas panorámicas</p>
+        <h2 class="cat-title">Pasos de montaña</h2>
+        <p class="cat-desc">Los grandes puertos alpinos de los Dolomitas — vistas de 360°, carreteras de película y acceso a los mejores senderos.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/passo-giau" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 2.236 m</p>
+          <p class="art-name">Passo Giau</p>
+          <p class="art-desc">El paso más fotogénico de los Dolomitas con vistas a la Marmolada.</p>
+        </div>
+      </a>
+      <a href="/passo-pordoi" class="art-item">
+        <div class="art-icon">⛰️</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 2.239 m</p>
+          <p class="art-name">Passo Pordoi</p>
+          <p class="art-desc">El techo del Sellaronda y acceso al Sass Pordoi en teleférico.</p>
+        </div>
+      </a>
+      <a href="/passo-sella" class="art-item">
+        <div class="art-icon">🔺</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 2.240 m</p>
+          <p class="art-name">Passo Sella</p>
+          <p class="art-desc">El cruce de cuatro valles y el corazón del Sellaronda.</p>
+        </div>
+      </a>
+      <a href="/passo-falzarego" class="art-item">
+        <div class="art-icon">🏕️</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 2.105 m</p>
+          <p class="art-name">Passo Falzarego</p>
+          <p class="art-desc">Base del teleférico al Lagazuoi y ruta de la Primera Guerra Mundial.</p>
+        </div>
+      </a>
+      <a href="/passo-gardena" class="art-item">
+        <div class="art-icon">🌄</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 2.121 m</p>
+          <p class="art-name">Passo Gardena</p>
+          <p class="art-desc">El paso entre Val Gardena y la Alta Badia con vistas al Sella.</p>
+        </div>
+      </a>
+      <a href="/passo-rolle" class="art-item">
+        <div class="art-icon">🌲</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 1.970 m</p>
+          <p class="art-name">Passo Rolle</p>
+          <p class="art-desc">La Pale di San Martino en primer plano y los bosques más bonitos.</p>
+        </div>
+      </a>
+      <a href="/passo-tre-croci" class="art-item">
+        <div class="art-icon">🗻</div>
+        <div class="art-info">
+          <p class="art-tag">Paso · 1.809 m</p>
+          <p class="art-name">Passo Tre Croci</p>
+          <p class="art-desc">Entre Cortina y el Lago di Sorapis: acceso y rutas desde el puerto.</p>
+        </div>
+      </a>
+      <a href="/sass-pordoi" class="art-item">
+        <div class="art-icon">🚡</div>
+        <div class="art-info">
+          <p class="art-tag">Cima · 2.952 m</p>
+          <p class="art-name">Sass Pordoi</p>
+          <p class="art-desc">La cima más accesible de los Dolomitas: teleférico y vistas 360°.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- VALLES Y DESTINOS -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Pueblos y valles</p>
+        <h2 class="cat-title">Valles y destinos</h2>
+        <p class="cat-desc">Los valles que componen los Dolomitas — cada uno con su cultura, su gastronomía y sus rutas propias.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="feat-grid">
+      <a href="/val-gardena" class="feat-card">
+        <div class="feat-img">🏡</div>
+        <div class="feat-body">
+          <p class="feat-tag">Valle · Alto Adigio</p>
+          <p class="feat-name">Val Gardena</p>
+          <p class="feat-desc">El valle más visitado de los Dolomitas: Ortisei, Santa Cristina y Selva.</p>
+        </div>
+      </a>
+      <a href="/alpe-di-siusi" class="feat-card">
+        <div class="feat-img">🌾</div>
+        <div class="feat-body">
+          <p class="feat-tag">Altiplano · Alto Adigio</p>
+          <p class="feat-name">Alpe di Siusi</p>
+          <p class="feat-desc">El altiplano alpino más grande de Europa y el Sassolungo de fondo.</p>
+        </div>
+      </a>
+      <a href="/cortina-dampezzo" class="feat-card">
+        <div class="feat-img">🎿</div>
+        <div class="feat-body">
+          <p class="feat-tag">Ciudad · Veneto</p>
+          <p class="feat-name">Cortina d'Ampezzo</p>
+          <p class="feat-desc">La reina de los Dolomitas: lujo, esquí y las mejores vistas del grupo.</p>
+        </div>
+      </a>
+      <a href="/alta-badia" class="feat-card">
+        <div class="feat-img">🏔️</div>
+        <div class="feat-body">
+          <p class="feat-tag">Valle · Alto Adigio</p>
+          <p class="feat-name">Alta Badia</p>
+          <p class="feat-desc">Gastronomía de nivel, Sellaronda y el grupo del Sella de fondo.</p>
+        </div>
+      </a>
+    </div>
+    <div class="art-grid">
+      <a href="/val-di-funes" class="art-item">
+        <div class="art-icon">⛪</div>
+        <div class="art-info">
+          <p class="art-tag">Valle</p>
+          <p class="art-name">Val di Funes</p>
+          <p class="art-desc">La iglesia más fotografiada de los Dolomitas y las Odle de fondo.</p>
+        </div>
+      </a>
+      <a href="/val-di-fassa" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Valle</p>
+          <p class="art-name">Val di Fassa</p>
+          <p class="art-desc">El corazón de la cultura ladina y acceso a la Marmolada.</p>
+        </div>
+      </a>
+      <a href="/seceda" class="art-item">
+        <div class="art-icon">🌅</div>
+        <div class="art-info">
+          <p class="art-tag">Mirador</p>
+          <p class="art-name">Seceda</p>
+          <p class="art-desc">El atardecer más bonito de los Dolomitas, en teleférico desde Ortisei.</p>
+        </div>
+      </a>
+      <a href="/bolzano" class="art-item">
+        <div class="art-icon">🏛️</div>
+        <div class="art-info">
+          <p class="art-tag">Ciudad</p>
+          <p class="art-name">Bolzano</p>
+          <p class="art-desc">La capital del Alto Adigio y la mejor puerta de entrada a los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/ortisei" class="art-item">
+        <div class="art-icon">🎨</div>
+        <div class="art-info">
+          <p class="art-tag">Pueblo</p>
+          <p class="art-name">Ortisei</p>
+          <p class="art-desc">El pueblo de los escultores en madera y base perfecta para Val Gardena.</p>
+        </div>
+      </a>
+      <a href="/corvara" class="art-item">
+        <div class="art-icon">🏘️</div>
+        <div class="art-info">
+          <p class="art-tag">Pueblo</p>
+          <p class="art-name">Corvara</p>
+          <p class="art-desc">El epicentro de la Alta Badia y el Sellaronda en invierno.</p>
+        </div>
+      </a>
+      <a href="/sappada" class="art-item">
+        <div class="art-icon">🌲</div>
+        <div class="art-info">
+          <p class="art-tag">Pueblo walser</p>
+          <p class="art-name">Sappada</p>
+          <p class="art-desc">El pueblo tirolés más desconocido, con carnaval histórico y madera oscura.</p>
+        </div>
+      </a>
+      <a href="/val-comelico" class="art-item">
+        <div class="art-icon">🌿</div>
+        <div class="art-info">
+          <p class="art-tag">Valle secreto</p>
+          <p class="art-name">Val Comelico</p>
+          <p class="art-desc">El valle más auténtico de los Dolomitas orientales, sin masificación.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CUMBRES Y REFUGIOS -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Alta montaña</p>
+        <h2 class="cat-title">Cumbres y refugios</h2>
+        <p class="cat-desc">Las grandes cimas y los refugios desde los que los Dolomitas se ven de otra manera.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/tres-cime-di-lavaredo" class="art-item">
+        <div class="art-icon">⛰️</div>
+        <div class="art-info">
+          <p class="art-tag">Icono · 2.999 m</p>
+          <p class="art-name">Tres Cime di Lavaredo</p>
+          <p class="art-desc">La ruta circular más icónica de los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/la-marmolada" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Cima · 3.343 m</p>
+          <p class="art-name">La Marmolada</p>
+          <p class="art-desc">La reina de los Dolomitas: el pico más alto y su glaciar.</p>
+        </div>
+      </a>
+      <a href="/rifugio-lagazuoi" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Refugio · 2.752 m</p>
+          <p class="art-name">Rifugio Lagazuoi</p>
+          <p class="art-desc">El refugio más espectacular: teleférico, trincheras WWI y vistas 360°.</p>
+        </div>
+      </a>
+      <a href="/rifugio-nuvolau" class="art-item">
+        <div class="art-icon">☁️</div>
+        <div class="art-info">
+          <p class="art-tag">Refugio · 2.574 m</p>
+          <p class="art-name">Rifugio Nuvolau</p>
+          <p class="art-desc">El refugio más antiguo de los Dolomitas, desde 1883.</p>
+        </div>
+      </a>
+      <a href="/cinque-torri" class="art-item">
+        <div class="art-icon">🗿</div>
+        <div class="art-info">
+          <p class="art-tag">Torres · Cortina</p>
+          <p class="art-name">Cinque Torri</p>
+          <p class="art-desc">Las cinco torres de roca y el museo de la Primera Guerra Mundial.</p>
+        </div>
+      </a>
+      <a href="/tofane" class="art-item">
+        <div class="art-icon">⛰️</div>
+        <div class="art-info">
+          <p class="art-tag">Macizo · Cortina</p>
+          <p class="art-name">Las Tofane</p>
+          <p class="art-desc">El macizo que domina Cortina: rutas y teleféricos.</p>
+        </div>
+      </a>
+      <a href="/monte-pelmo" class="art-item">
+        <div class="art-icon">🗻</div>
+        <div class="art-info">
+          <p class="art-tag">Cumbre · 3.168 m</p>
+          <p class="art-name">Monte Pelmo</p>
+          <p class="art-desc">El trono de Dios: el pico más aislado y fotogénico.</p>
+        </div>
+      </a>
+      <a href="/mejores-refugios-dolomitas" class="art-item">
+        <div class="art-icon">🏕️</div>
+        <div class="art-info">
+          <p class="art-tag">Guía</p>
+          <p class="art-name">Los mejores refugios</p>
+          <p class="art-desc">Los refugios imprescindibles para dormir en la montaña.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Deporte y aventura</p>
+        <h2 class="cat-title">Actividades</h2>
+        <p class="cat-desc">Desde senderismo fácil hasta vía ferrata técnica, esquí, snowboard, moto y fotografia nocturna.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/senderismo-dolomitas" class="art-item">
+        <div class="art-icon">🥾</div>
+        <div class="art-info">
+          <p class="art-tag">Actividad</p>
+          <p class="art-name">Senderismo</p>
+          <p class="art-desc">Las mejores rutas a pie para todos los niveles.</p>
+        </div>
+      </a>
+      <a href="/via-ferrata-dolomitas" class="art-item">
+        <div class="art-icon">⛏️</div>
+        <div class="art-info">
+          <p class="art-tag">Actividad</p>
+          <p class="art-name">Vía ferrata</p>
+          <p class="art-desc">Las ferratas más espectaculares y cómo prepararse.</p>
+        </div>
+      </a>
+      <a href="/escalada-dolomitas" class="art-item">
+        <div class="art-icon">🧗</div>
+        <div class="art-info">
+          <p class="art-tag">Actividad</p>
+          <p class="art-name">Escalada</p>
+          <p class="art-desc">La meca de la escalada alpina: zonas y vías clásicas.</p>
+        </div>
+      </a>
+      <a href="/mountain-bike-dolomitas" class="art-item">
+        <div class="art-icon">🚵</div>
+        <div class="art-info">
+          <p class="art-tag">Actividad</p>
+          <p class="art-name">Mountain bike</p>
+          <p class="art-desc">Los mejores trails y los pasos que se pueden pedalear.</p>
+        </div>
+      </a>
+      <a href="/sellaronda" class="art-item">
+        <div class="art-icon">⛷️</div>
+        <div class="art-info">
+          <p class="art-tag">Esquí</p>
+          <p class="art-name">Sellaronda</p>
+          <p class="art-desc">El circuito de esquí más famoso de los Dolomitas: 40 km.</p>
+        </div>
+      </a>
+      <a href="/dolomiti-superski" class="art-item">
+        <div class="art-icon">🎿</div>
+        <div class="art-info">
+          <p class="art-tag">Esquí</p>
+          <p class="art-name">Dolomiti Superski</p>
+          <p class="art-desc">El mayor dominio esquiable del mundo: 1.200 km de pistas.</p>
+        </div>
+      </a>
+      <a href="/snowboard-dolomitas" class="art-item">
+        <div class="art-icon">🏂</div>
+        <div class="art-info">
+          <p class="art-tag">Esquí</p>
+          <p class="art-name">Snowboard</p>
+          <p class="art-desc">Las mejores zonas para snowboard dentro del Superski.</p>
+        </div>
+      </a>
+      <a href="/raquetas-nieve-dolomitas" class="art-item">
+        <div class="art-icon">❄️</div>
+        <div class="art-info">
+          <p class="art-tag">Invierno</p>
+          <p class="art-name">Raquetas de nieve</p>
+          <p class="art-desc">Rutas con raquetas en Alpe di Siusi y Val di Funes.</p>
+        </div>
+      </a>
+      <a href="/esqui-de-fondo-dolomitas" class="art-item">
+        <div class="art-icon">⛷️</div>
+        <div class="art-info">
+          <p class="art-tag">Invierno</p>
+          <p class="art-name">Esquí de fondo</p>
+          <p class="art-desc">Las pistas de fondo más bonitas: Alpe di Siusi y Val Pusteria.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-moto" class="art-item">
+        <div class="art-icon">🏍️</div>
+        <div class="art-info">
+          <p class="art-tag">Ruta</p>
+          <p class="art-name">En moto</p>
+          <p class="art-desc">La ruta en moto por los grandes pasos alpinos.</p>
+        </div>
+      </a>
+      <a href="/parapente-dolomitas" class="art-item">
+        <div class="art-icon">🪂</div>
+        <div class="art-info">
+          <p class="art-tag">Actividad</p>
+          <p class="art-name">Parapente</p>
+          <p class="art-desc">Volar sobre los Dolomitas: escuelas y mejores zonas de vuelo.</p>
+        </div>
+      </a>
+      <a href="/fotografia-nocturna-dolomitas" class="art-item">
+        <div class="art-icon">🌌</div>
+        <div class="art-info">
+          <p class="art-tag">Fotografía</p>
+          <p class="art-name">Fotografía nocturna</p>
+          <p class="art-desc">Astrofotografía: los mejores spots para la Vía Láctea.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- SIN COCHE -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Transporte público</p>
+        <h2 class="cat-title">Dolomitas sin coche</h2>
+        <p class="cat-desc">Todo lo que necesitas para visitar los Dolomitas en autobús y tren — destino a destino, con horarios y combinaciones reales.</p>
+      </div>
+    </div>
+    <div class="art-grid">
+      <a href="/dolomitas-sin-coche" class="art-item">
+        <div class="art-icon">🗺️</div>
+        <div class="art-info">
+          <p class="art-tag">Guía completa</p>
+          <p class="art-name">Dolomitas sin coche</p>
+          <p class="art-desc">Qué puedes ver y cómo organizarlo en transporte público.</p>
+        </div>
+      </a>
+      <a href="/tren-a-los-dolomitas" class="art-item">
+        <div class="art-icon">🚂</div>
+        <div class="art-info">
+          <p class="art-tag">Acceso</p>
+          <p class="art-name">Llegar en tren</p>
+          <p class="art-desc">Desde España e Italia: estaciones de entrada y combinaciones.</p>
+        </div>
+      </a>
+      <a href="/transporte-publico-dolomitas" class="art-item">
+        <div class="art-icon">🚌</div>
+        <div class="art-info">
+          <p class="art-tag">Guía</p>
+          <p class="art-name">Transporte público</p>
+          <p class="art-desc">SAD, Dolomiti Bus, passes y cómo moverse una vez allí.</p>
+        </div>
+      </a>
+      <a href="/lago-braies-sin-coche" class="art-item">
+        <div class="art-icon">🏔️</div>
+        <div class="art-info">
+          <p class="art-tag">Destino</p>
+          <p class="art-name">Lago Braies sin coche</p>
+          <p class="art-desc">Autobús 442 desde Dobbiaco: horarios y qué esperar.</p>
+        </div>
+      </a>
+      <a href="/tres-cime-sin-coche" class="art-item">
+        <div class="art-icon">⛰️</div>
+        <div class="art-info">
+          <p class="art-tag">Destino</p>
+          <p class="art-name">Tres Cime sin coche</p>
+          <p class="art-desc">Autobús desde Cortina al Rifugio Auronzo en temporada alta.</p>
+        </div>
+      </a>
+      <a href="/cortina-sin-coche" class="art-item">
+        <div class="art-icon">🏙️</div>
+        <div class="art-info">
+          <p class="art-tag">Destino</p>
+          <p class="art-name">Cortina sin coche</p>
+          <p class="art-desc">Flixbus desde Venecia y cómo moverse desde Cortina.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- TEMPORADAS -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Cuándo ir</p>
+        <h2 class="cat-title">Temporadas</h2>
+        <p class="cat-desc">Cada mes tiene sus ventajas en los Dolomitas — esta sección ayuda a elegir cuándo ir según lo que buscas.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/dolomitas-en-verano" class="art-item">
+        <div class="art-icon">☀️</div>
+        <div class="art-info">
+          <p class="art-tag">Temporada</p>
+          <p class="art-name">Verano</p>
+          <p class="art-desc">La temporada alta: qué esperar y cómo evitar las multitudes.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-agosto" class="art-item">
+        <div class="art-icon">🌡️</div>
+        <div class="art-info">
+          <p class="art-tag">Mes</p>
+          <p class="art-name">Agosto</p>
+          <p class="art-desc">El mes más concurrido: estrategias para disfrutarlo de todas formas.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-septiembre" class="art-item">
+        <div class="art-icon">🍁</div>
+        <div class="art-info">
+          <p class="art-tag">Mes · Recomendado</p>
+          <p class="art-name">Septiembre</p>
+          <p class="art-desc">El mejor mes para los Dolomitas: menos gente y los primeros colores.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-octubre" class="art-item">
+        <div class="art-icon">🍂</div>
+        <div class="art-info">
+          <p class="art-tag">Mes</p>
+          <p class="art-name">Octubre</p>
+          <p class="art-desc">Follaje dorado, sin multitudes y la mejor luz del año.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-otono" class="art-item">
+        <div class="art-icon">🌳</div>
+        <div class="art-info">
+          <p class="art-tag">Temporada</p>
+          <p class="art-name">Otoño</p>
+          <p class="art-desc">La temporada más fotogénica de los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-invierno" class="art-item">
+        <div class="art-icon">⛷️</div>
+        <div class="art-info">
+          <p class="art-tag">Temporada</p>
+          <p class="art-name">Invierno</p>
+          <p class="art-desc">Esquí, nieve y pueblos nevados — la otra cara de los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-enero" class="art-item">
+        <div class="art-icon">❄️</div>
+        <div class="art-info">
+          <p class="art-tag">Mes</p>
+          <p class="art-name">Enero</p>
+          <p class="art-desc">Plena temporada de esquí con los valles nevados.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-primavera" class="art-item">
+        <div class="art-icon">🌸</div>
+        <div class="art-info">
+          <p class="art-tag">Temporada</p>
+          <p class="art-name">Primavera</p>
+          <p class="art-desc">La temporada secreta: flores alpinas y refugios recién abiertos.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-en-junio" class="art-item">
+        <div class="art-icon">🌿</div>
+        <div class="art-info">
+          <p class="art-tag">Mes</p>
+          <p class="art-name">Junio</p>
+          <p class="art-desc">Los prados en flor y los senderos sin aglomeraciones.</p>
+        </div>
+      </a>
+      <a href="/mercados-navidad-dolomitas" class="art-item">
+        <div class="art-icon">🎄</div>
+        <div class="art-info">
+          <p class="art-tag">Especial</p>
+          <p class="art-name">Mercados de Navidad</p>
+          <p class="art-desc">Los mejores mercadillos navideños del Alto Adigio.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- PLANIFICACIÓN -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Organiza tu viaje</p>
+        <h2 class="cat-title">Planificación</h2>
+        <p class="cat-desc">Itinerarios, acceso, alojamiento y presupuesto — todo lo que necesitas antes de salir.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/itinerario-dolomitas-7-dias" class="art-item">
+        <div class="art-icon">🗓️</div>
+        <div class="art-info">
+          <p class="art-tag">Itinerario</p>
+          <p class="art-name">7 días en los Dolomitas</p>
+          <p class="art-desc">La ruta más equilibrada: los mejores destinos sin agotarse.</p>
+        </div>
+      </a>
+      <a href="/itinerario-dolomitas-10-dias" class="art-item">
+        <div class="art-icon">🗺️</div>
+        <div class="art-info">
+          <p class="art-tag">Itinerario</p>
+          <p class="art-name">10 días en los Dolomitas</p>
+          <p class="art-desc">La ruta completa: de Val Gardena al Lago di Braies, día a día.</p>
+        </div>
+      </a>
+      <a href="/itinerario-dolomitas-3-dias" class="art-item">
+        <div class="art-icon">⚡</div>
+        <div class="art-info">
+          <p class="art-tag">Itinerario</p>
+          <p class="art-name">3 días en los Dolomitas</p>
+          <p class="art-desc">Lo esencial si el tiempo es limitado: los puntos que no pueden faltar.</p>
+        </div>
+      </a>
+      <a href="/como-llegar-dolomitas" class="art-item">
+        <div class="art-icon">✈️</div>
+        <div class="art-info">
+          <p class="art-tag">Acceso</p>
+          <p class="art-name">Cómo llegar</p>
+          <p class="art-desc">Vuelos, aeropuertos y la ruta desde España.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-desde-milan" class="art-item">
+        <div class="art-icon">🚗</div>
+        <div class="art-info">
+          <p class="art-tag">Acceso</p>
+          <p class="art-name">Desde Milán</p>
+          <p class="art-desc">La ruta más rápida desde Milán: autostrada y tiempo de viaje.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-desde-venecia" class="art-item">
+        <div class="art-icon">🚗</div>
+        <div class="art-info">
+          <p class="art-tag">Acceso</p>
+          <p class="art-name">Desde Venecia</p>
+          <p class="art-desc">El acceso más habitual desde el aeropuerto de Marco Polo.</p>
+        </div>
+      </a>
+      <a href="/donde-alojarse-dolomitas" class="art-item">
+        <div class="art-icon">🏨</div>
+        <div class="art-info">
+          <p class="art-tag">Alojamiento</p>
+          <p class="art-name">Dónde alojarse</p>
+          <p class="art-desc">Las mejores bases según lo que quieras ver.</p>
+        </div>
+      </a>
+      <a href="/cuanto-cuesta-dolomitas" class="art-item">
+        <div class="art-icon">💶</div>
+        <div class="art-info">
+          <p class="art-tag">Presupuesto</p>
+          <p class="art-name">Cuánto cuesta</p>
+          <p class="art-desc">Presupuesto real para 7 días en los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-mochilero" class="art-item">
+        <div class="art-icon">🎒</div>
+        <div class="art-info">
+          <p class="art-tag">Presupuesto</p>
+          <p class="art-name">Dolomitas mochilero</p>
+          <p class="art-desc">Cómo visitar los Dolomitas con poco presupuesto.</p>
+        </div>
+      </a>
+      <a href="/ruta-dolomitas-en-coche" class="art-item">
+        <div class="art-icon">🚘</div>
+        <div class="art-info">
+          <p class="art-tag">Ruta</p>
+          <p class="art-name">Ruta en coche</p>
+          <p class="art-desc">El gran circuito de los Dolomitas por los mejores pasos alpinos.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- HISTORIA Y CULTURA -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Contexto y cultura</p>
+        <h2 class="cat-title">Historia, naturaleza y cultura</h2>
+        <p class="cat-desc">Por qué los Dolomitas son Patrimonio UNESCO, quiénes son los ladinos y qué pasó aquí durante la Primera Guerra Mundial.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/geologia-dolomitas" class="art-item">
+        <div class="art-icon">🪨</div>
+        <div class="art-info">
+          <p class="art-tag">Ciencia</p>
+          <p class="art-name">Geología</p>
+          <p class="art-desc">Por qué las rocas de los Dolomitas son únicas en el mundo.</p>
+        </div>
+      </a>
+      <a href="/patrimonio-mundial-unesco-dolomitas" class="art-item">
+        <div class="art-icon">🏛️</div>
+        <div class="art-info">
+          <p class="art-tag">UNESCO</p>
+          <p class="art-name">Patrimonio Mundial</p>
+          <p class="art-desc">Por qué los Dolomitas son Patrimonio de la Humanidad desde 2009.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-primera-guerra-mundial" class="art-item">
+        <div class="art-icon">🪖</div>
+        <div class="art-info">
+          <p class="art-tag">Historia</p>
+          <p class="art-name">Primera Guerra Mundial</p>
+          <p class="art-desc">Las trincheras, los museos y los paisajes marcados por la guerra.</p>
+        </div>
+      </a>
+      <a href="/cultura-ladina" class="art-item">
+        <div class="art-icon">🎭</div>
+        <div class="art-info">
+          <p class="art-tag">Cultura</p>
+          <p class="art-name">Cultura ladina</p>
+          <p class="art-desc">El pueblo que habita el corazón de los Dolomitas desde la Antigüedad.</p>
+        </div>
+      </a>
+      <a href="/gastronomia-dolomitas" class="art-item">
+        <div class="art-icon">🍽️</div>
+        <div class="art-info">
+          <p class="art-tag">Gastronomía</p>
+          <p class="art-name">Gastronomía</p>
+          <p class="art-desc">Spätzle, speck, strudel y la cocina alpina que une Italia y Austria.</p>
+        </div>
+      </a>
+      <a href="/fauna-dolomitas" class="art-item">
+        <div class="art-icon">🦌</div>
+        <div class="art-info">
+          <p class="art-tag">Naturaleza</p>
+          <p class="art-name">Fauna</p>
+          <p class="art-desc">Marmotas, gamuzas, águilas reales y osos: la vida salvaje de los Dolomitas.</p>
+        </div>
+      </a>
+      <a href="/flora-dolomitas" class="art-item">
+        <div class="art-icon">🌸</div>
+        <div class="art-info">
+          <p class="art-tag">Naturaleza</p>
+          <p class="art-name">Flora</p>
+          <p class="art-desc">La edelweiss, las gencianas y los prados alpinos más bonitos.</p>
+        </div>
+      </a>
+      <a href="/fotografia-dolomitas" class="art-item">
+        <div class="art-icon">📷</div>
+        <div class="art-info">
+          <p class="art-tag">Fotografía</p>
+          <p class="art-name">Fotografía</p>
+          <p class="art-desc">Los mejores spots fotográficos y la hora dorada en cada destino.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- VIAJERO -->
+  <section class="cat-section">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <p class="cat-label">Para cada viajero</p>
+        <h2 class="cat-title">Según tu perfil de viaje</h2>
+        <p class="cat-desc">En pareja, con niños, con perro, en moto o buscando lujo — los Dolomitas tienen algo para cada uno.</p>
+      </div>
+      <a href="/enciclopedia" class="cat-link">Ver todos →</a>
+    </div>
+    <div class="art-grid">
+      <a href="/dolomitas-romantico" class="art-item">
+        <div class="art-icon">💑</div>
+        <div class="art-info">
+          <p class="art-tag">Viajero</p>
+          <p class="art-name">En pareja</p>
+          <p class="art-desc">La escapada romántica perfecta: hoteles, rutas y atardeceres.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-con-ninos" class="art-item">
+        <div class="art-icon">👨‍👩‍👧</div>
+        <div class="art-info">
+          <p class="art-tag">Viajero</p>
+          <p class="art-name">Con niños</p>
+          <p class="art-desc">Actividades, rutas fáciles y los mejores destinos para familias.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-con-perro" class="art-item">
+        <div class="art-icon">🐕</div>
+        <div class="art-info">
+          <p class="art-tag">Viajero</p>
+          <p class="art-name">Con perro</p>
+          <p class="art-desc">Normas, rutas y refugios que aceptan mascotas.</p>
+        </div>
+      </a>
+      <a href="/hoteles-lujo-dolomitas" class="art-item">
+        <div class="art-icon">🏨</div>
+        <div class="art-info">
+          <p class="art-tag">Alojamiento</p>
+          <p class="art-name">Hoteles de lujo</p>
+          <p class="art-desc">Rosa Alpina, Ciasa Salares, Vigilius: lo mejor sin límite de presupuesto.</p>
+        </div>
+      </a>
+      <a href="/camping-dolomitas" class="art-item">
+        <div class="art-icon">⛺</div>
+        <div class="art-info">
+          <p class="art-tag">Alojamiento</p>
+          <p class="art-name">Camping</p>
+          <p class="art-desc">Los mejores campings de los Dolomitas: ubicación y precios.</p>
+        </div>
+      </a>
+      <a href="/dolomitas-mochilero" class="art-item">
+        <div class="art-icon">🎒</div>
+        <div class="art-info">
+          <p class="art-tag">Presupuesto</p>
+          <p class="art-name">Mochilero</p>
+          <p class="art-desc">Cómo ver los Dolomitas con poco dinero y disfrutarlo igual.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- VER TODOS -->
+  <div class="all-band">
+    <div class="all-band-text">
+      <h3>105 artículos en la enciclopedia completa</h3>
+      <p>Lagos, pasos, valles, refugios, actividades, temporadas, historia y más — todo indexado y con buscador.</p>
+    </div>
+    <a href="/enciclopedia">Ver todos los artículos →</a>
   </div>
-</section>
 
+</div><!-- /container -->
+
+<!-- CTA BAND -->
 <div class="cta-band">
-  <h2>El primer capítulo es gratis</h2>
+  <h2>El primer capítulo de la guía es gratis</h2>
   <p>Rutas detalladas, mapas de cada jornada y más de 150 puntos de interés. Sin spam, sin compromisos.</p>
-  <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis">Probar el primer capítulo gratis →</a>
+  <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="btn-primary">Probar el primer capítulo gratis →</a>
   <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
 </div>
 
 <footer>
-  <p>© 2025 Coordenadas Secretas · <a href="https://coordenadassecretas.com" style="color:#ef2d2e;">coordenadassecretas.com</a></p>
+  <p>© 2025 Coordenadas Secretas · <a href="https://coordenadassecretas.com">coordenadassecretas.com</a></p>
 </footer>
 
 </body>

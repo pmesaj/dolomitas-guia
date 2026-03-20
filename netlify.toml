@@ -534,3 +534,8 @@
   from = "/tren-a-los-dolomitas"
   to = "/tren-a-los-dolomitas.html"
   status = 200
+
+[[redirects]]
+  from = "/enciclopedia"
+  to = "/enciclopedia.html"
+  status = 200
