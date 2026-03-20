@@ -259,3 +259,128 @@
   from = "/fanes-sennes-braies"
   to = "/fanes-sennes-braies.html"
   status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-verano"
+  to = "/dolomitas-en-verano.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-agosto"
+  to = "/dolomitas-en-agosto.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-septiembre"
+  to = "/dolomitas-en-septiembre.html"
+  status = 200
+
+[[redirects]]
+  from = "/itinerario-dolomitas-7-dias"
+  to = "/itinerario-dolomitas-7-dias.html"
+  status = 200
+
+[[redirects]]
+  from = "/itinerario-dolomitas-3-dias"
+  to = "/itinerario-dolomitas-3-dias.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-desde-venecia"
+  to = "/dolomitas-desde-venecia.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-desde-munich"
+  to = "/dolomitas-desde-munich.html"
+  status = 200
+
+[[redirects]]
+  from = "/transporte-publico-dolomitas"
+  to = "/transporte-publico-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/senderismo-dolomitas"
+  to = "/senderismo-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/escalada-dolomitas"
+  to = "/escalada-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/mountain-bike-dolomitas"
+  to = "/mountain-bike-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/trail-running-dolomitas"
+  to = "/trail-running-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/parapente-dolomitas"
+  to = "/parapente-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/fauna-dolomitas"
+  to = "/fauna-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/flora-dolomitas"
+  to = "/flora-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/glaciares-dolomitas"
+  to = "/glaciares-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/patrimonio-mundial-unesco-dolomitas"
+  to = "/patrimonio-mundial-unesco-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/mercados-navidad-dolomitas"
+  to = "/mercados-navidad-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/san-martino-di-castrozza"
+  to = "/san-martino-di-castrozza.html"
+  status = 200
+
+[[redirects]]
+  from = "/pale-di-san-martino"
+  to = "/pale-di-san-martino.html"
+  status = 200
+
+[[redirects]]
+  from = "/val-pusteria"
+  to = "/val-pusteria.html"
+  status = 200
+
+[[redirects]]
+  from = "/canazei"
+  to = "/canazei.html"
+  status = 200
+
+[[redirects]]
+  from = "/civetta"
+  to = "/civetta.html"
+  status = 200
+
+[[redirects]]
+  from = "/auronzo-di-cadore"
+  to = "/auronzo-di-cadore.html"
+  status = 200
+
+[[redirects]]
+  from = "/brenta-dolomitas"
+  to = "/brenta-dolomitas.html"
+  status = 200
