@@ -239,3 +239,23 @@
   from = "/dolomiti-superski"
   to = "/dolomiti-superski.html"
   status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-primavera"
+  to = "/dolomitas-en-primavera.html"
+  status = 200
+
+[[redirects]]
+  from = "/cuanto-cuesta-dolomitas"
+  to = "/cuanto-cuesta-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/mejores-refugios-dolomitas"
+  to = "/mejores-refugios-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/fanes-sennes-braies"
+  to = "/fanes-sennes-braies.html"
+  status = 200
