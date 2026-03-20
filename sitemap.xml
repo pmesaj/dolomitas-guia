@@ -7,155 +7,132 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/lago-di-braies</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/tres-cime-di-lavaredo</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/lago-sorapis</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/cinque-torri</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/val-di-funes</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/seceda</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/alpe-di-siusi</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/la-marmolada</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/cortina-dampezzo</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/ruta-dolomitas-en-coche</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/passo-giau</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/val-gardena</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/lago-misurina</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/dobbiaco</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/dolomitas-en-invierno</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/alta-badia</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/passo-pordoi</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/val-di-fassa</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/dolomitas-en-otono</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/donde-alojarse-dolomitas</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-
   <url>
     <loc>https://dolomitas.guiassecretas.com/alta-via-1</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url><loc>https://dolomitas.guiassecretas.com/alta-via-2</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/passo-falzarego</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/passo-sella</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -210,7 +187,22 @@
   <url><loc>https://dolomitas.guiassecretas.com/civetta</loc><lastmod>2025-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/auronzo-di-cadore</loc><lastmod>2025-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/brenta-dolomitas</loc><lastmod>2025-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-</urlset>
+  <url><loc>https://dolomitas.guiassecretas.com/rifugios-dolomitas-guia</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/como-reservar-rifugio-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/senderismo-hut-to-hut-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/que-llevar-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/altitud-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/idiomas-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/parking-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/teleféricos-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/dolomitas-en-mayo</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/tiempo-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/dolomitas-ninos-pequenos</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/dolomitas-desde-innsbruck</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/comer-rifugio-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/itinerario-dolomitas-4-dias</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/seguro-viaje-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dolomitas.guiassecretas.com/nombres-aleman-italiano-dolomitas</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/dolomitas-en-octubre</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/dolomitas-en-enero</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://dolomitas.guiassecretas.com/dolomitas-en-junio</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

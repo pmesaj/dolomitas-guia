@@ -549,3 +549,83 @@
   from = "/areas-autocaravana-dolomitas"
   to = "/areas-autocaravana-dolomitas.html"
   status = 200
+
+[[redirects]]
+  from = "/rifugios-dolomitas-guia"
+  to = "/rifugios-dolomitas-guia.html"
+  status = 200
+
+[[redirects]]
+  from = "/como-reservar-rifugio-dolomitas"
+  to = "/como-reservar-rifugio-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/senderismo-hut-to-hut-dolomitas"
+  to = "/senderismo-hut-to-hut-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/que-llevar-dolomitas"
+  to = "/que-llevar-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/altitud-dolomitas"
+  to = "/altitud-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/idiomas-dolomitas"
+  to = "/idiomas-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/parking-dolomitas"
+  to = "/parking-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/teleféricos-dolomitas"
+  to = "/teleféricos-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-en-mayo"
+  to = "/dolomitas-en-mayo.html"
+  status = 200
+
+[[redirects]]
+  from = "/tiempo-dolomitas"
+  to = "/tiempo-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-ninos-pequenos"
+  to = "/dolomitas-ninos-pequenos.html"
+  status = 200
+
+[[redirects]]
+  from = "/dolomitas-desde-innsbruck"
+  to = "/dolomitas-desde-innsbruck.html"
+  status = 200
+
+[[redirects]]
+  from = "/comer-rifugio-dolomitas"
+  to = "/comer-rifugio-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/itinerario-dolomitas-4-dias"
+  to = "/itinerario-dolomitas-4-dias.html"
+  status = 200
+
+[[redirects]]
+  from = "/seguro-viaje-dolomitas"
+  to = "/seguro-viaje-dolomitas.html"
+  status = 200
+
+[[redirects]]
+  from = "/nombres-aleman-italiano-dolomitas"
+  to = "/nombres-aleman-italiano-dolomitas.html"
+  status = 200
