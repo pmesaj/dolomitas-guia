@@ -163,6 +163,13 @@
     .faq-q { font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600; color: var(--black); margin-bottom: 10px; }
     .faq-a { font-size: 16px; color: #555; line-height: 1.7; }
 
+    /* AUTHOR BIO */
+    .author-bio { background: #f9f9f9; border: 1px solid #eaeaea; border-radius: 12px; padding: 24px; margin: 40px 0 0 0; display: flex; align-items: center; gap: 20px; }
+    .author-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid var(--gold); }
+    .author-text h4 { font-size: 16px; margin-bottom: 6px; color: var(--black); font-weight: 700; }
+    .author-text p { font-size: 14px; line-height: 1.6; margin: 0; color: #555; }
+    @media (max-width: 600px) { .author-bio { flex-direction: column; text-align: center; padding: 20px; } }
+
     /* FOOTER */
     .site-footer { background: var(--black); color: #aaa; text-align: center; padding: 28px 24px; font-size: 14px; }
     .site-footer a { color: var(--gold); text-decoration: none; }
@@ -402,6 +409,15 @@
       </div>
     </section>
 
+    <!-- AUTHOR BIO -->
+    <div class="author-bio">
+      <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69bfc50d9bd139e670f723ca.png" alt="Paco Mesa" class="author-avatar">
+      <div class="author-text">
+        <h4>Paco Mesa</h4>
+        <p>Creador de <strong>La GuÃ­a Secreta de Dolomitas</strong>. Tras aÃ±os recorriendo estos senderos, mi obsesiÃ³n es ayudarte a planificar tu viaje evitando malas decisiones, optimizando tus tiempos y mostrÃ¡ndote las verdaderas Dolomitas.</p>
+      </div>
+    </div>
+
   </article>
 </main>
 
@@ -410,5 +426,6 @@
 </footer>
 </body>
 </html>
+
 
 
