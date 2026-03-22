@@ -3,3 +3,4 @@ ai-marketing-claude/
 SEO-MASS-AUDIT.md
 .agents/
 inject_links.ps1
+inject_favicon.ps1
