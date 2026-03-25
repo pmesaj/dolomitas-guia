@@ -473,6 +473,45 @@
       color: #fff;
       text-decoration: underline;
     }
+  
+    /* AUTHOR BIO */
+    .author-bio {
+      background: #f9f9f9;
+      border: 1px solid #eaeaea;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 40px 0 0 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .author-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--gold);
+    }
+    .author-text h4 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: var(--black);
+      font-weight: 700;
+    }
+    .author-text p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      .author-bio {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+    }
   </style>
   <script src="/stay22.js" defer></script>
 </head>
@@ -824,9 +863,9 @@
           alt="Paco Mesa" class="author-avatar">
         <div class="author-text">
           <h4>Paco Mesa</h4>
-          <p>Creador de <strong>La GuÃ­a Secreta de Dolomitas</strong>. Tras aÃ±os recorriendo estos senderos, mi
-            obsesiÃ³n es ayudarte a planificar tu viaje evitando malas decisiones, optimizando tus tiempos y
-            mostrÃ¡ndote las verdaderas Dolomitas.</p>
+          <p>Creador de <strong>La Guía Secreta de Dolomitas</strong>. Tras años recorriendo estos senderos, mi
+            obsesión es ayudarte a planificar tu viaje evitando malas decisiones, optimizando tus tiempos y
+            mostrándote las verdaderas Dolomitas.</p>
         </div>
       </div>
 
