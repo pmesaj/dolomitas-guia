@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /urls.txt
+Disallow: /*.ps1$
+Disallow: /SEO-MASS-AUDIT.md
+
+Sitemap: https://dolomitas.guiassecretas.com/sitemap.xml

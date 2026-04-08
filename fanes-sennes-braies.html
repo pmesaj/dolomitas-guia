@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png"
+    href="https://msgsndr-private.storage.googleapis.com/companyPhotos/6074beb4-3113-4008-903a-d7dce034ab02.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Natural Fanes-Sennes-Braies — Guía completa</title>
+  <meta name="description"
+    content="Guía completa del Parque Natural Fanes-Sennes-Braies: las mejores rutas, el Lago di Braies, la leyenda de Fanes y todo lo que necesitas saber para visitarlo.">
+  <link rel="canonical" href="https://dolomitas.guiassecretas.com/fanes-sennes-braies">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold: #ef2d2e;
+      --gold-dark: #c82526;
+      --red: #ef2d2e;
+      --black: #1a1a1a;
+      --text: #333;
+      --bg: #fff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      color: var(--red);
+    }
+
+    .hero {
+      width: 100%;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(160deg, #0a1a0a 0%, #1a3a0e 40%, #0e2d1a 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 44px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(26px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .hero-meta {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-body {
+      padding: 44px 0 60px;
+    }
+
+    .article-body h2 {
+      font-size: clamp(20px, 3vw, 26px);
+      font-weight: 800;
+      color: var(--black);
+      margin: 44px 0 16px;
+      padding-top: 8px;
+    }
+
+    .article-body h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 28px 0 10px;
+    }
+
+    .article-body p {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .article-body ul,
+    .article-body ol {
+      margin: 0 0 18px 22px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .article-body strong {
+      color: var(--black);
+    }
+
+    .mid-cta {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+      margin: 36px 0;
+      font-size: 15px;
+      color: #666;
+    }
+
+    .mid-cta a {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .route-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 28px 0;
+    }
+
+    .route-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .route-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+
+    .route-card .difficulty {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .easy {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .medium {
+      background: #fff3e0;
+      color: #e65100;
+    }
+
+    .hard {
+      background: #fce4ec;
+      color: #c62828;
+    }
+
+    .route-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .route-stats {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .route-stat {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .route-stat strong {
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 24px 0;
+    }
+
+    th {
+      background: var(--black);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    .open-col {
+      color: #2e7d32;
+      font-weight: 700;
+    }
+
+    .partial-col {
+      color: #e65100;
+      font-weight: 700;
+    }
+
+    .closed-col {
+      color: #c62828;
+      font-weight: 700;
+    }
+
+    .info-box {
+      background: #f0f7ff;
+      border-left: 4px solid #2196f3;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    .info-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #1565c0;
+    }
+
+    .good-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    .good-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #2e7d32;
+    }
+
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    .warning-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #e65100;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1px;
+      background: #e8e8e8;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 32px 0;
+    }
+
+    .stat-item {
+      background: #fff;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--red);
+      display: block;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .paywall-wrap {
+      position: relative;
+      margin: 40px 0 0;
+    }
+
+    .paywall-blur {
+      filter: blur(4px);
+      pointer-events: none;
+      user-select: none;
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .paywall-blur h2 {
+      font-size: 22px;
+      margin: 30px 0 12px;
+    }
+
+    .paywall-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.97) 35%, rgba(255, 255, 255, 1) 60%);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .paywall-cta {
+      background: #fff;
+      border: 2px solid #f0f0f0;
+      border-radius: 16px;
+      padding: 36px 32px;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .paywall-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    .paywall-cta h2 {
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 900;
+      color: var(--black);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .paywall-cta p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 22px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: var(--gold-dark);
+      color: #fff;
+    }
+
+    .cta-note {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .route-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .paywall-cta {
+        padding: 28px 20px;
+      }
+    }
+      .back-link {
+      display: inline-block;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    .back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Parque Natural Fanes-Sennes-Braies — Guía completa",
+      "description": "Guía completa del Parque Natural Fanes-Sennes-Braies: las mejores rutas, el Lago di Braies, la leyenda de Fanes y todo lo que necesitas saber para visitarlo.",
+      "datePublished": "2026-03-20",
+      "dateModified": "2026-03-20",
+      "author": { "@type": "Organization", "name": "Guías Secretas", "url": "https://coordenadassecretas.com" },
+      "publisher": { "@type": "Organization", "name": "Guías Secretas" },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cuándo es la mejor época para visitar el Parque Natural Fanes-Sennes-Braies?", "acceptedAnswer": { "@type": "Answer", "text": "La mejor época es septiembre, cuando los colores dorados del otoño alpino son espectaculares, la afluencia baja notablemente y todos los refugios siguen abiertos. Junio y julio son también excelentes, con flores alpinas y buenas condiciones para el senderismo. Agosto es la época de mayor masificación, especialmente en el Lago di Braies." } },
+        { "@type": "Question", "name": "¿Cómo llegar al Lago di Braies sin coche?", "acceptedAnswer": { "@type": "Answer", "text": "En temporada alta existe el autobús 442 desde Dobbiaco que llega directamente al lago. Es la mejor opción en julio y agosto, cuando el parking del lago se llena antes de las 8:00 de la mañana y el acceso en coche privado está limitado. El bus sale varias veces al día y el precio es muy económico." } },
+        { "@type": "Question", "name": "¿Qué es la leyenda de la Princesa Dolasilla en el Parque de Fanes?", "acceptedAnswer": { "@type": "Answer", "text": "Es el mito fundacional del pueblo ladino. Dolasilla era la princesa guerrera del reino de Fanes, invencible mientras fuera fiel a su pueblo y portara una armadura de plata. Su traición explica en la mitología ladina la desaparición de un antiguo reino de los Dolomitas. La leyenda sigue siendo parte viva de la identidad cultural de la Alta Badia." } },
+        { "@type": "Question", "name": "¿Qué fauna se puede ver en el Parque Natural Fanes-Sennes-Braies?", "acceptedAnswer": { "@type": "Answer", "text": "El parque alberga una gran densidad de fauna alpina: rebecos en grupos de hasta 20 ejemplares en zonas rocosas, marmotas alpinas en los prados de alta montaña, ciervos rojos cuya berrea se escucha en septiembre, águilas reales que nidifican en los cortados rocosos, y gallo lira en los bordes del bosque alpino en primavera." } },
+        { "@type": "Question", "name": "¿Cuánto cuesta el aparcamiento en el Parque Fanes-Sennes-Braies?", "acceptedAnswer": { "@type": "Answer", "text": "La entrada al parque es gratuita. El aparcamiento del Lago di Braies cuesta unos 15 euros al día en temporada alta. El parking de Pederü, principal acceso al altiplano de Fanes, tiene un coste de entre 8 y 10 euros al día. Se recomienda llegar antes de las 8:00 para asegurar plaza en los meses de julio y agosto." } }
+      ]
+    }
+  ]
+}
+</script>
+  <script src="/stay22.js" defer></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-placeholder"></div>
+    <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
+        índice</a><br>
+      <span class="hero-eyebrow">Parque Natural · Dolomitas UNESCO</span>
+      <h1>Parque Natural Fanes-Sennes-Braies</h1>
+      <div class="hero-meta">
+        <span>📍 Alto Adige · Veneto</span>
+        <span>🌿 86.000 hectáreas</span>
+        <span>🦌 Fauna alpina · Leyenda ladina</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="article-body">
+
+      <p>El <strong>Parque Natural Fanes-Sennes-Braies</strong> es uno de los rincones más salvajes y menos masificados
+        de los Dolomitas. Con 86.000 hectáreas de extensión, ocupa el territorio entre la Alta Badia al oeste y el Lago
+        di Braies al este, en el corazón del Alto Adige.</p>
+
+      <p>A diferencia de los puntos más turísticos del patrimonio UNESCO, Fanes-Sennes-Braies guarda zonas que apenas
+        visita nadie: el altiplano de Fanes, con sus praderas y lagos de alta montaña, los pastos de la altiplanicie de
+        Sennes y los bosques que rodean el Lago di Braies. Es el lugar favorito de los senderistas que han estado varias
+        veces en los Dolomitas y buscan algo diferente.</p>
+
+      <div class="stats-bar">
+        <div class="stat-item"><span class="stat-value">86.000</span><span class="stat-label">Hectáreas</span></div>
+        <div class="stat-item"><span class="stat-value">2.839 m</span><span class="stat-label">Cota máxima</span></div>
+        <div class="stat-item"><span class="stat-value">1967</span><span class="stat-label">Año de creación</span></div>
+        <div class="stat-item"><span class="stat-value">3</span><span class="stat-label">Zonas principales</span></div>
+      </div>
+
+      <div class="mid-cta">
+        ¿Planeas visitar los Dolomitas? El primer capítulo de <strong>La Guía Secreta de Dolomitas</strong> es
+        completamente gratis — 8 jornadas de senderismo con rutas y mapas. <a
+          href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis">Descárgalo aquí →</a>
+      </div>
+
+      <h2>El altiplano de Fanes y la leyenda ladina</h2>
+
+      <p>El corazón del parque es el <strong>altiplano de Fanes</strong>, una meseta de alta montaña a unos 2.000–2.200
+        metros de altitud. Es un paisaje de otro mundo: praderas de hierba corta salpicadas de pequeños lagos glaciales,
+        rodeadas por paredes de roca dolomítica. En verano, los pastores todavía llevan el ganado aquí para pastar.</p>
+
+      <p>Fanes es también el escenario de la <strong>leyenda de la Princesa Dolasilla</strong>, el mito fundacional del
+        pueblo ladino. Según la leyenda, Dolasilla era la princesa guerrera del reino de Fanes, invencible mientras
+        portara una armadura de plata y fuera fiel a su pueblo. Su traición y caída explican, en la mitología ladina, la
+        desaparición de un antiguo reino de los Dolomitas. La leyenda sigue siendo parte viva de la identidad cultural
+        de la Alta Badia.</p>
+
+      <div class="good-box">
+        <strong>El parque tiene tres zonas con carácter muy diferente</strong>
+        Fanes (altiplano, rutas de montaña), Sennes (pastos altos, senderos tranquilos, menos frecuentado) y Braies
+        (bosques, el famoso lago). Cada zona tiene su carácter propio y merece al menos medio día de visita.
+      </div>
+
+      <h2>Las mejores rutas del parque</h2>
+
+      <div class="route-cards">
+
+        <div class="route-card">
+          <h4>Circuito del Lago di Braies</h4>
+          <span class="difficulty easy">Fácil</span>
+          <p>El paseo más famoso del parque. El sendero rodea el lago por su orilla a través de bosques de abetos y roca
+            caliza. Impresionante en cualquier estación, especialmente en otoño.</p>
+          <div class="route-stats">
+            <span class="route-stat"><strong>Distancia:</strong> 3,4 km</span>
+            <span class="route-stat"><strong>Duración:</strong> ~1h</span>
+            <span class="route-stat"><strong>Desnivel:</strong> mínimo</span>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <h4>Prato Piazza / Platzwiese</h4>
+          <span class="difficulty easy">Fácil</span>
+          <p>Desde la pradera de Prato Piazza, uno de los miradores más espectaculares de las Tre Cime desde el sur.
+            Accesible en coche hasta el parking de la altiplanicie. Ideal para familias.</p>
+          <div class="route-stats">
+            <span class="route-stat"><strong>Distancia:</strong> 6 km</span>
+            <span class="route-stat"><strong>Duración:</strong> ~2h</span>
+            <span class="route-stat"><strong>Desnivel:</strong> +150 m</span>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <h4>Ruta a la Malga Fanes Grande</h4>
+          <span class="difficulty medium">Media</span>
+          <p>El acceso más utilizado al altiplano de Fanes desde el parking de Pederü (Val Badia). El camino asciende
+            por el valle hasta la malga, rodeado de paisaje cada vez más abierto. Desde aquí se abre el altiplano de
+            Fanes en toda su extensión.</p>
+          <div class="route-stats">
+            <span class="route-stat"><strong>Distancia:</strong> 12 km (ida y vuelta)</span>
+            <span class="route-stat"><strong>Duración:</strong> 4h</span>
+            <span class="route-stat"><strong>Desnivel:</strong> +650 m</span>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <h4>Circuito del altiplano de Fanes</h4>
+          <span class="difficulty medium">Media-alta</span>
+          <p>El gran circuito del altiplano: desde Pederü, sube al Rifugio Scotoni, recorre el altiplano de Fanes hasta
+            el Lago di Limo y regresa por la altiplanicie de Sennes. El día más redondo que puedes hacer en el parque.
+          </p>
+          <div class="route-stats">
+            <span class="route-stat"><strong>Distancia:</strong> 20 km</span>
+            <span class="route-stat"><strong>Duración:</strong> 6–7h</span>
+            <span class="route-stat"><strong>Desnivel:</strong> +900 m</span>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <h4>Alta Via 1 — tramo Fanes-Braies</h4>
+          <span class="difficulty hard">Exigente</span>
+          <p>El tramo más salvaje de la Alta Via 1 cruza el parque de norte a sur, conectando el Lago di Braies con la
+            Alta Badia. Dos o tres días de travesía por el altiplano, pernoctando en rifugios. La etapa más auténtica de
+            toda la AV1.</p>
+          <div class="route-stats">
+            <span class="route-stat"><strong>Distancia:</strong> ~30 km</span>
+            <span class="route-stat"><strong>Duración:</strong> 2–3 días</span>
+            <span class="route-stat"><strong>Desnivel:</strong> +1.500 m</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h2>La mejor época para visitar el parque</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Temporada</th>
+            <th>Condiciones</th>
+            <th>Recomendación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mayo – inicio junio</strong></td>
+            <td>Nieve en altitud, refugios abriendo</td>
+            <td class="partial-col">Solo zona del lago y valles bajos</td>
+          </tr>
+          <tr>
+            <td><strong>Junio – julio</strong></td>
+            <td>Todo abierto, flores alpinas, poca gente</td>
+            <td class="open-col">Excelente — la mejor relación</td>
+          </tr>
+          <tr>
+            <td><strong>Agosto</strong></td>
+            <td>Máxima afluencia, todo abierto, calor</td>
+            <td class="partial-col">Bien, pero lleno en el Lago di Braies</td>
+          </tr>
+          <tr>
+            <td><strong>Septiembre</strong></td>
+            <td>Colores dorados, fresquito, menos gente</td>
+            <td class="open-col">La mejor época del año</td>
+          </tr>
+          <tr>
+            <td><strong>Octubre</strong></td>
+            <td>Refugios cerrando, nieve posible en altitud</td>
+            <td class="partial-col">Solo para el lago y zona baja</td>
+          </tr>
+          <tr>
+            <td><strong>Noviembre – abril</strong></td>
+            <td>Nieve, rutas cerradas</td>
+            <td class="closed-col">No recomendado sin equipo invernal</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>La fauna del parque</h2>
+
+      <p>Fanes-Sennes-Braies es uno de los lugares con mayor densidad de fauna alpina de los Dolomitas:</p>
+
+      <ul>
+        <li><strong>Camoscio (rebeco)</strong>: habitual en las zonas rocosas del altiplano. Es común verlos en grupos
+          de 10–20 ejemplares al amanecer y al atardecer</li>
+        <li><strong>Marmota alpina</strong>: coloniza las praderas de alta montaña. Al despertar de la hibernación
+          (mayo-junio), son especialmente activas y fáciles de ver</li>
+        <li><strong>Águila real</strong>: nidifica en los cortados rocosos del parque. Se avista con frecuencia
+          planeando sobre el altiplano</li>
+        <li><strong>Ciervo rojo</strong>: el más grande de la fauna del parque. En septiembre, durante la berrea, sus
+          bramidos se escuchan por todo el valle</li>
+        <li><strong>Gallo lira</strong>: una de las aves más características de los Alpes, visible en los bordes de los
+          bosques alpinos en primavera</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Binoculares: el mejor accesorio para Fanes</strong>
+        A diferencia de otros parques europeos, en Fanes la fauna no está habituada al turismo masivo y se mantiene a
+        distancia. Un par de prismáticos 8×42 marca la diferencia entre ver manchas marrones y ver una familia de
+        rebecos con detalle.
+      </div>
+
+      <h2>Cómo llegar al parque</h2>
+
+      <ul>
+        <li><strong>Acceso norte (Lago di Braies)</strong>: desde la autovía A22, salida Bressanone/Brixen, dirección
+          Dobbiaco y luego Lago di Braies. 1h30 desde el Brennero</li>
+        <li><strong>Acceso oeste (Val Badia / Pederü)</strong>: desde Brunico, dirección San Vigilio di Marebbe y luego
+          Pederü (final de carretera). Es el acceso principal al altiplano de Fanes</li>
+        <li><strong>Acceso sur (Cortina d'Ampezzo)</strong>: desde Cortina, dirección Dobbiaco por la SS51. El parque
+          limita al sur con el territorio de Cortina</li>
+      </ul>
+
+      <div class="warning-box">
+        <strong>Lago di Braies en julio y agosto: llega antes de las 8:00</strong>
+        El Lago di Braies es el punto más visitado del parque y sufre de saturación grave en temporada alta. En julio y
+        agosto, el parking se llena antes de las 8:00 de la mañana. Existe un servicio de bus desde Dobbiaco que permite
+        visitar el lago sin coche y evitar el problema del aparcamiento.
+      </div>
+
+      <h2>Información práctica</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Entrada al parque</td>
+            <td>Gratuita</td>
+          </tr>
+          <tr>
+            <td>Parking Lago di Braies</td>
+            <td>15 €/día en temporada alta</td>
+          </tr>
+          <tr>
+            <td>Parking Pederü (acceso Fanes)</td>
+            <td>8–10 €/día</td>
+          </tr>
+          <tr>
+            <td>Perros</td>
+            <td>Permitidos con correa en todos los senderos</td>
+          </tr>
+          <tr>
+            <td>Bicicleta de montaña</td>
+            <td>Permitida en senderos marcados como ciclables</td>
+          </tr>
+          <tr>
+            <td>Número de emergencias</td>
+            <td>118 (Italia) · Soccorso Alpino</td>
+          </tr>
+          <tr>
+            <td>Cobertura móvil</td>
+            <td>Variable — irregular en el altiplano de Fanes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Dónde alojarse</h2>
+
+      <p>El parque no tiene alojamiento en su interior excepto los rifugios de montaña (Rifugio Fanes, Rifugio Scotoni,
+        Rifugio Sennes, Rifugio Pederü). Para alojamiento en hotel, las opciones más cómodas son:</p>
+
+      <ul>
+        <li><strong>San Vigilio di Marebbe / St. Vigil in Enneberg</strong>: el pueblo más cercano al acceso de Pederü.
+          Tranquilo, auténtico y con buenos garni</li>
+        <li><strong>Corvara / La Villa (Alta Badia)</strong>: a 20 minutos del acceso oeste del parque. Más animado, con
+          buena oferta gastronómica</li>
+        <li><strong>Dobbiaco</strong>: junto al acceso norte, cerca del Lago di Braies. Buen punto base para combinar el
+          parque con otras rutas</li>
+        <li><strong>Brunico / Bruneck</strong>: la ciudad más grande de la zona, 30 minutos en coche del acceso al
+          parque. Más opciones de alojamiento y precios más bajos</li>
+      </ul>
+
+      <h2>La conexión con el Lago di Braies</h2>
+
+      <p>El <strong>Lago di Braies</strong> es técnicamente parte del parque y actúa como su puerta de entrada más
+        famosa. Las aguas verde esmeralda del lago, enmarcadas por el macizo de las Croda del Becco, son una de las
+        imágenes más reconocibles de los Dolomitas.</p>
+
+      <p>Lo que muchos visitantes no saben es que el lago es solo el comienzo: desde aquí parte el tramo inicial de la
+        Alta Via 1 y varios senderos que se adentran en el corazón del parque, hacia la altiplanicie de Sennes y el
+        Rifugio Fanes.</p>
+
+      <div class="paywall-wrap">
+        <div class="paywall-blur">
+          <h2>Los rincones secretos de Fanes que no aparecen en los mapas</h2>
+          <p>El altiplano de Fanes tiene zonas que apenas visita nadie: lagos sin nombre en los mapas turísticos,
+            praderas donde los ciervos pastan al atardecer y senderos que solo conocen los pastores locales y los
+            senderistas que llevan años volviendo al parque.</p>
+          <p>La Malga Fanes Piccola, a diferencia de la Malga Fanes Grande que aparece en todos los itinerarios, es una
+            parada que casi nadie hace. Sirve el mejor goulash de la zona y el queso fresco que producen en la propia
+            malga no se vende en ningún sitio.</p>
+          <p>El acceso norte por Pederü es la ruta más solitaria. Desde el parking de Pederü puedes hacer un bucle de 3
+            días sin cruzarte con más de cinco personas al día en el altiplano alto.</p>
+        </div>
+        <div class="paywall-overlay">
+          <div class="paywall-cta">
+            <p class="paywall-eyebrow">Explora el parque sin aglomeraciones</p>
+            <h2>¿Planificando tu viaje a los Dolomitas? Nuestra guía de 8 jornadas incluye rutas detalladas, mapas y más
+              de 150 puntos de interés</h2>
+            <p>La Guía Secreta de Dolomitas es un circuito de senderismo de 8 días: Marmolada, Cinque Torri, Lago
+              Sorapis, Tres Cime, Val di Funes, Seceda y Alpe di Siusi. El primer capítulo es completamente gratis.</p>
+            <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="cta-btn">Probar el primer capítulo
+              gratis →</a>
+            <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

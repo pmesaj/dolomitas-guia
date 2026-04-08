@@ -1,0 +1,783 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png"
+    href="https://msgsndr-private.storage.googleapis.com/companyPhotos/6074beb4-3113-4008-903a-d7dce034ab02.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los mejores refugios de los Dolomitas — Guía completa de rifugios</title>
+  <meta name="description"
+    content="Guía completa de los mejores rifugios de los Dolomitas: cómo reservar, qué comer, cuánto cuesta y cuáles son los más espectaculares. Con consejos de insider.">
+  <link rel="canonical" href="https://dolomitas.guiassecretas.com/mejores-refugios-dolomitas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold: #ef2d2e;
+      --gold-dark: #c82526;
+      --red: #ef2d2e;
+      --black: #1a1a1a;
+      --text: #333;
+      --bg: #fff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      color: var(--red);
+    }
+
+    .hero {
+      width: 100%;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(160deg, #0e1a2d 0%, #1a2d3a 40%, #1a3a1a 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 44px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(26px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .hero-meta {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-body {
+      padding: 44px 0 60px;
+    }
+
+    .article-body h2 {
+      font-size: clamp(20px, 3vw, 26px);
+      font-weight: 800;
+      color: var(--black);
+      margin: 44px 0 16px;
+      padding-top: 8px;
+    }
+
+    .article-body h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 28px 0 10px;
+    }
+
+    .article-body p {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .article-body ul,
+    .article-body ol {
+      margin: 0 0 18px 22px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .article-body strong {
+      color: var(--black);
+    }
+
+    .mid-cta {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+      margin: 36px 0;
+      font-size: 15px;
+      color: #666;
+    }
+
+    .mid-cta a {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .rifugio-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 28px 0;
+    }
+
+    .rifugio-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .rifugio-card .rank {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+    }
+
+    .rifugio-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 4px;
+      padding-right: 50px;
+    }
+
+    .rifugio-card .altitude {
+      font-size: 13px;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .rifugio-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .rifugio-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .rifugio-tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: #f0f0f0;
+      color: #555;
+    }
+
+    .rifugio-tag.easy {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .rifugio-tag.mid-dif {
+      background: #fff3e0;
+      color: #e65100;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 24px 0;
+    }
+
+    th {
+      background: var(--black);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    .price-col {
+      font-weight: 700;
+      color: var(--black);
+      white-space: nowrap;
+    }
+
+    .info-box {
+      background: #f0f7ff;
+      border-left: 4px solid #2196f3;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+
+    .info-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #1565c0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+
+    .col-box {
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .col-box h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--black);
+    }
+
+    .col-box ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .col-box li {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .paywall-wrap {
+      position: relative;
+      margin: 40px 0 0;
+    }
+
+    .paywall-blur {
+      filter: blur(4px);
+      pointer-events: none;
+      user-select: none;
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .paywall-blur h2 {
+      font-size: 22px;
+      margin: 30px 0 12px;
+    }
+
+    .paywall-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.97) 35%, rgba(255, 255, 255, 1) 60%);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .paywall-cta {
+      background: #fff;
+      border: 2px solid #f0f0f0;
+      border-radius: 16px;
+      padding: 36px 32px;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .paywall-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    .paywall-cta h2 {
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 900;
+      color: var(--black);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .paywall-cta p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 22px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: var(--gold-dark);
+      color: #fff;
+    }
+
+    .cta-note {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .rifugio-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .paywall-cta {
+        padding: 28px 20px;
+      }
+    }
+      .back-link {
+      display: inline-block;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    .back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Los mejores refugios de los Dolomitas — Guía completa de rifugios",
+        "description": "Guía completa de los mejores rifugios de los Dolomitas: cómo reservar, qué comer, cuánto cuesta y cuáles son los más espectaculares. Con consejos de insider.",
+        "datePublished": "2026-03-20",
+        "dateModified": "2026-03-20",
+        "author": { "@type": "Organization", "name": "Guías Secretas", "url": "https://coordenadassecretas.com" },
+        "publisher": { "@type": "Organization", "name": "Guías Secretas" },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "¿Cuánto cuesta dormir en un refugio de los Dolomitas?", "acceptedAnswer": { "@type": "Answer", "text": "El precio de media pensión (cama, cena y desayuno) en un rifugio de los Dolomitas oscila entre 55 y 80 euros por persona. Solo la cama cuesta entre 25 y 40 euros. La cena suelta sin pernoctar ronda los 18-28 euros. Los socios del CAI (Club Alpino Italiano) obtienen descuentos de 5-10 euros por noche en la mayoría de refugios." } },
+          { "@type": "Question", "name": "¿Cómo se reserva un refugio en los Dolomitas?", "acceptedAnswer": { "@type": "Answer", "text": "La mayoría de refugios tienen web propia con formulario o correo electrónico de contacto. Para julio y agosto conviene reservar con 4-6 semanas de antelación. En junio y septiembre suelen quedar plazas con 2 semanas. También puedes buscar en rifugio.it o en webs del CAI. Especifica siempre si quieres solo cama, media pensión o pensión completa." } },
+          { "@type": "Question", "name": "¿Qué se come en los refugios de los Dolomitas?", "acceptedAnswer": { "@type": "Answer", "text": "Los platos más representativos de los refugios dolomíticos son los canederli (bolas de pan con speck en caldo), el goulash de ternera con pimentón, el kaiserschmarrn (tortita desmigajada con mermelada de arándanos), el strudel de manzana casero y la polenta con funghi. La cocina mezcla tradición tirolesa con influencias ladinas y vénetas." } },
+          { "@type": "Question", "name": "¿Cuál es el refugio más espectacular de los Dolomitas?", "acceptedAnswer": { "@type": "Answer", "text": "El Rifugio Lagazuoi (2.752 m) es considerado el más espectacular por sus panorámicas de 360° sobre los picos dolomíticos. Accesible en telecabina desde el Passo Falzarego, combina vistas excepcionales con la historia de la Primera Guerra Mundial en sus inmediaciones. El Rifugio Nuvolau (1883) es el más antiguo y tiene también vistas incomparables." } },
+          { "@type": "Question", "name": "¿Qué hay que llevar al dormir en un refugio de montaña?", "acceptedAnswer": { "@type": "Answer", "text": "Es imprescindible llevar sábana saco o funda de saco de dormir, ropa de abrigo para la noche, linterna frontal, tapones para los oídos en dormitorios compartidos y efectivo suficiente porque muchos refugios no aceptan tarjeta. Conviene llevar también un candado pequeño para las taquillas y botiquín básico con ibuprofeno." } }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script src="/stay22.js" defer></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-placeholder"></div>
+    <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
+        índice</a><br>
+      <span class="hero-eyebrow">Alojamiento de montaña</span>
+      <h1>Los mejores refugios de los Dolomitas</h1>
+      <div class="hero-meta">
+        <span>🏔️ 8 rifugios seleccionados</span>
+        <span>🍽️ Gastronomía y ambiente</span>
+        <span>💶 Precios y cómo reservar</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="article-body">
+
+      <p>Un <strong>rifugio</strong> en los Dolomitas no es solo un sitio donde dormir. Es una institución alpina con
+        más de cien años de historia: construidos originalmente por los clubes alpinos del siglo XIX para facilitar la
+        exploración de la alta montaña, los rifugios son hoy el eje de la cultura de senderismo en los Alpes italianos.
+      </p>
+
+      <p>Desde una cabaña de madera a 2.300 metros con vistas a las Tre Cime hasta un rifugio modernizado con ducha
+        caliente y carta de vinos, la oferta es enorme. Esta guía recoge los ocho mejores, con todo lo que necesitas
+        saber para elegir, reservar y disfrutar al máximo.</p>
+
+      <div class="mid-cta">
+        ¿Planeas visitar los Dolomitas? El primer capítulo de <strong>La Guía Secreta de Dolomitas</strong> es
+        completamente gratis — 8 jornadas de senderismo con rutas y mapas. <a
+          href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis">Descárgalo aquí →</a>
+      </div>
+
+      <h2>Los 8 refugios más espectaculares</h2>
+
+      <div class="rifugio-cards">
+
+        <div class="rifugio-card">
+          <span class="rank">#1</span>
+          <h4>Rifugio Lagazuoi</h4>
+          <span class="altitude">2.752 m · Passo Falzarego</span>
+          <p>El refugio más alto y espectacular de esta selección. Acceso por telecabina desde el Passo Falzarego o a
+            pie por los túneles de la Primera Guerra Mundial excavados en la roca. Las vistas al amanecer sobre Cortina
+            y la Marmolada son irrepetibles. El kaiserschmarrn que sirven es legendario en toda la zona.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag easy">Telecabina disponible</span>
+            <span class="rifugio-tag">€€€</span>
+            <span class="rifugio-tag">Túneles WWI</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#2</span>
+          <h4>Rifugio Nuvolau</h4>
+          <span class="altitude">2.575 m · Passo Giau</span>
+          <p>El refugio más antiguo de los Dolomitas (1883). Encaramado sobre una roca sobre el Passo Giau, las vistas
+            en todas las direcciones no tienen competencia. La subida a pie desde el Passo son 45 minutos de pendiente
+            pronunciada. Vale cada paso.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag mid-dif">45 min a pie</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">El más antiguo (1883)</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#3</span>
+          <h4>Rifugio Auronzo</h4>
+          <span class="altitude">2.320 m · Tre Cime di Lavaredo</span>
+          <p>El punto de partida de la ruta de las Tre Cime. Accesible en coche pagando el peaje. La mejor relación
+            accesibilidad-paisaje de todos los rifugios: aparcar, cruzar la puerta y estar en el corazón del paisaje más
+            fotografiado de los Dolomitas.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag easy">Acceso en coche</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">Punto de partida Tre Cime</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#4</span>
+          <h4>Rifugio Locatelli</h4>
+          <span class="altitude">2.405 m · Tre Cime (norte)</span>
+          <p>El refugio con la mejor vista frontal de las Tre Cime desde el norte. Hay que llegar caminando (1h30 desde
+            el parking del Auronzo). Esa barrera mantiene el ambiente más tranquilo y genuino del circuito. Los
+            canederli en caldo son los mejores de la zona.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag mid-dif">1h30 a pie</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">Vista norte Tre Cime</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#5</span>
+          <h4>Rifugio Scotoni</h4>
+          <span class="altitude">1.985 m · Parco Fanes</span>
+          <p>Escondido en el corazón del Parque Natural Fanes-Sennes-Braies, tiene un ambiente completamente diferente a
+            los refugios más turísticos. Rodeado de praderas alpinas sin telecabinas cerca, es el favorito de los que
+            repiten en los Dolomitas. La lasagna de espinacas es sorprendente.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag mid-dif">2h a pie desde Pederü</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">Ambiente local</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#6</span>
+          <h4>Rifugio Passo Giau</h4>
+          <span class="altitude">2.236 m · Passo Giau</span>
+          <p>En el mismo paso, acceso directo en coche y punto de partida para múltiples rutas hacia el Nuvolau, Ra
+            Gusela y las Cinque Torri. El strudel de manzana casero merece un viaje. Muy popular entre fotógrafos de
+            paisaje por la luz del atardecer.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag easy">Acceso en coche</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">Fotografía</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#7</span>
+          <h4>Rifugio Cinque Torri</h4>
+          <span class="altitude">2.137 m · Cinque Torri</span>
+          <p>A los pies de las cinco torres de roca naranja. Accesible en telecabina desde el Passo Falzarego o
+            caminando en 45 minutos. El museo al aire libre de la Primera Guerra Mundial integrado en el entorno es
+            fascinante. Muy popular entre escaladores y via ferratistas.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag easy">Telecabina disponible</span>
+            <span class="rifugio-tag">€€</span>
+            <span class="rifugio-tag">Escalada · WWI</span>
+          </div>
+        </div>
+
+        <div class="rifugio-card">
+          <span class="rank">#8</span>
+          <h4>Malga Ra Stua</h4>
+          <span class="altitude">1.668 m · Valle di Fanes</span>
+          <p>Técnicamente una malga (granja alpina), pero la experiencia supera a muchos refugios convencionales. A 6 km
+            del parking de Fiames (Cortina) por camino llano y accesible para toda la familia. Queso y speck de
+            producción propia. Solo en temporada de verano.</p>
+          <div class="rifugio-tags">
+            <span class="rifugio-tag easy">Camino llano, 6 km</span>
+            <span class="rifugio-tag">€</span>
+            <span class="rifugio-tag">Familiar</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h2>Cómo reservar un rifugio</h2>
+
+      <p>Los refugios más solicitados (Lagazuoi, Nuvolau, Locatelli) se llenan semanas antes en julio y agosto. La
+        reserva anticipada es imprescindible.</p>
+
+      <ul>
+        <li><strong>Directamente al rifugio</strong>: la mayoría tienen web propia con formulario o email de contacto.
+          Es la mejor opción</li>
+        <li><strong>Plataformas</strong>: algunos aparecen en rifugio.it o en webs del CAI (Club Alpino Italiano)</li>
+        <li><strong>Cuándo reservar</strong>: para julio-agosto, con al menos 4–6 semanas de antelación. Para junio y
+          septiembre, con 2 semanas suele ser suficiente</li>
+        <li><strong>Qué contratar</strong>: especifica si quieres solo cama, media pensión (cena + desayuno) o pensión
+          completa</li>
+        <li><strong>Política de cancelación</strong>: varía mucho — confirma siempre antes de reservar</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Los socios del CAI tienen descuento en todos los rifugios</strong>
+        El Club Alpino Italiano ofrece membresía anual por ~45 €. Incluye descuentos en rifugios (5–10 € por noche),
+        seguro de rescate en montaña en todo el Arco Alpino y acceso a mapas digitales. Si haces 3 o más noches en
+        rifugios, la membresía se amortiza sola.
+      </div>
+
+      <h2>Qué comer en un rifugio</h2>
+
+      <p>La cocina de los rifugios combina la tradición tirolesa con influencias vénetas y ladinas. Los platos
+        imprescindibles:</p>
+
+      <ul>
+        <li><strong>Canederli</strong>: bolas de pan con speck, servidas en caldo o con mantequilla fundida. El plato
+          más representativo de los Dolomitas</li>
+        <li><strong>Goulash</strong>: estofado de ternera con pimentón, herencia del Imperio Austrohúngaro. Caliente y
+          contundente tras 6 horas de senderismo</li>
+        <li><strong>Kaiserschmarrn</strong>: tortita dulce desmigajada con azúcar glasé y mermelada de arándanos. Postre
+          o merienda ineludible</li>
+        <li><strong>Strudel de manzana</strong>: la versión tirolesa, más rústica y menos dulce que la austriaca, a
+          menudo casero</li>
+        <li><strong>Polenta con funghi</strong>: polenta cremosa con setas locales, frecuente en otoño</li>
+        <li><strong>Speck</strong>: jamón curado tirolés, servido en tablas con queso local y pan de centeno</li>
+      </ul>
+
+      <h2>Qué incluye el rifugio y qué debes traer</h2>
+
+      <div class="two-col">
+        <div class="col-box">
+          <h4>Lo que incluye el rifugio</h4>
+          <ul>
+            <li>Cama (litera o individual según categoría)</li>
+            <li>Manta o edredón</li>
+            <li>Desayuno (si contratas media pensión)</li>
+            <li>Cena (si contratas media pensión)</li>
+            <li>Ducha de agua caliente (algunos cobran 2–3 € aparte)</li>
+            <li>Enchufes para cargar el móvil (limitados)</li>
+            <li>Wifi básico (no en todos)</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <h4>Lo que debes traer</h4>
+          <ul>
+            <li>Sábana saco o funda de saco de dormir</li>
+            <li>Ropa de abrigo para la noche (hace frío)</li>
+            <li>Linterna frontal</li>
+            <li>Tapones para los oídos (literas compartidas)</li>
+            <li>Efectivo: muchos rifugios no aceptan tarjeta</li>
+            <li>Botiquín básico con ibuprofeno y tiritas</li>
+            <li>Candado pequeño para las taquillas</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Precios de referencia en los rifugios</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Servicio</th>
+            <th>Precio aproximado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Solo cama (saco de dormir propio)</td>
+            <td class="price-col">25–40 €/persona</td>
+          </tr>
+          <tr>
+            <td>Cama + desayuno</td>
+            <td class="price-col">35–55 €/persona</td>
+          </tr>
+          <tr>
+            <td>Media pensión (cama + cena + desayuno)</td>
+            <td class="price-col">55–80 €/persona</td>
+          </tr>
+          <tr>
+            <td>Cena suelta (sin pernoctar)</td>
+            <td class="price-col">18–28 €</td>
+          </tr>
+          <tr>
+            <td>Almuerzo / plato del día</td>
+            <td class="price-col">12–18 €</td>
+          </tr>
+          <tr>
+            <td>Alquiler de sábana saco</td>
+            <td class="price-col">5–8 €</td>
+          </tr>
+          <tr>
+            <td>Ducha caliente (si se cobra aparte)</td>
+            <td class="price-col">2–4 €</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Etiqueta en el rifugio</h2>
+
+      <ul>
+        <li><strong>Deja las botas en la entrada</strong>: siempre hay un zapatero (Schuhraum). Entrar con botas de
+          montaña está muy mal visto</li>
+        <li><strong>Respeta el silencio</strong>: generalmente a partir de las 22:00</li>
+        <li><strong>No malgastes el agua</strong>: en alta montaña es un recurso caro de suministrar</li>
+        <li><strong>Propina</strong>: no obligatoria pero siempre bienvenida</li>
+        <li><strong>Si cancelas, avisa</strong>: los rifugios operan con márgenes muy estrechos y una no-presentación
+          sin aviso puede arruinar la noche al gestor</li>
+        <li><strong>Efectivo siempre</strong>: lleva suficiente para cubrir la estancia completa más un margen</li>
+      </ul>
+
+      <div class="paywall-wrap">
+        <div class="paywall-blur">
+          <h2>Los refugios secretos que no aparecen en las guías convencionales</h2>
+          <p>Hay una docena de rifugios y malghe en los Dolomitas que los locales frecuentan y que raramente aparecen en
+            blogs de viajes. Sin colas, sin reservas necesarias, y con la mejor comida casera de la zona.</p>
+          <p>El Malga Prendera, a 1.900 metros en Val di Fassa, sirve el mejor speck y queso local que hemos probado.
+            Abre de junio a septiembre y acepta solo efectivo. Los lugareños de Canazei van allí los domingos con la
+            familia.</p>
+          <p>La Casera Brogles en Val di Funes está a 20 minutos del parking de Santa Maddalena. El queso Graukäse que
+            producen en la propia malga no lo encontrarás en ningún restaurante de la zona baja.</p>
+        </div>
+        <div class="paywall-overlay">
+          <div class="paywall-cta">
+            <p class="paywall-eyebrow">Contenido exclusivo</p>
+            <h2>Los mejores rifugios de los Dolomitas están en la zona que cubre nuestra guía</h2>
+            <p>La Guía Secreta de Dolomitas es un circuito de senderismo de 8 días: Marmolada, Cinque Torri, Lago
+              Sorapis, Tres Cime, Val di Funes, Seceda y Alpe di Siusi. El primer capítulo es completamente gratis.</p>
+            <a href="https://coordenadassecretas.com/dolomitas-etapa-1-gratis" class="cta-btn">Probar el primer capítulo
+              gratis →</a>
+            <p class="cta-note">Sin spam. Sin compromisos. Solo la guía.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
