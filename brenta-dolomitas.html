@@ -449,18 +449,24 @@
       font-size: 15px;
       line-height: 1.6;
     }
-      .back-link {
+
+    .back-link {
       display: inline-block;
-      color: rgba(255,255,255,0.7);
+      color: #fff;
       font-size: 13px;
+      font-weight: 600;
       text-decoration: none;
       margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4px 10px;
+      border-radius: 4px;
     }
+
     .back-link:hover {
-      color: #fff;
-      text-decoration: underline;
+      background: rgba(0, 0, 0, 0.65);
+      text-decoration: none;
     }
-  
+
     /* AUTHOR BIO */
     .author-bio {
       background: #f9f9f9;
@@ -472,6 +478,7 @@
       align-items: center;
       gap: 20px;
     }
+
     .author-avatar {
       width: 80px;
       height: 80px;
@@ -480,18 +487,21 @@
       flex-shrink: 0;
       border: 2px solid var(--gold);
     }
+
     .author-text h4 {
       font-size: 16px;
       margin-bottom: 6px;
       color: var(--black);
       font-weight: 700;
     }
+
     .author-text p {
       font-size: 14px;
       line-height: 1.6;
       margin: 0;
       color: #555;
     }
+
     @media (max-width: 600px) {
       .author-bio {
         flex-direction: column;
@@ -506,7 +516,8 @@
 <body>
 
   <header class="hero">
-    <div class="hero-placeholder">[ Imagen de las Dolomitas de Brenta ]</div>
+    <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69de5765e7237c4dd3fea8fb.png" alt="Dolomitas"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;">
     <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
         índice</a><br>
       <span class="hero-eyebrow">Trentino · Dolomitas Occidentales</span>

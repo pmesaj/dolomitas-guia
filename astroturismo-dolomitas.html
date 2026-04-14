@@ -517,18 +517,24 @@
         font-size: 15px;
       }
     }
-      .back-link {
+
+    .back-link {
       display: inline-block;
-      color: rgba(255,255,255,0.7);
+      color: #fff;
       font-size: 13px;
+      font-weight: 600;
       text-decoration: none;
       margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4px 10px;
+      border-radius: 4px;
     }
+
     .back-link:hover {
-      color: #fff;
-      text-decoration: underline;
+      background: rgba(0, 0, 0, 0.65);
+      text-decoration: none;
     }
-  
+
     /* AUTHOR BIO */
     .author-bio {
       background: #f9f9f9;
@@ -540,6 +546,7 @@
       align-items: center;
       gap: 20px;
     }
+
     .author-avatar {
       width: 80px;
       height: 80px;
@@ -548,18 +555,21 @@
       flex-shrink: 0;
       border: 2px solid var(--gold);
     }
+
     .author-text h4 {
       font-size: 16px;
       margin-bottom: 6px;
       color: var(--black);
       font-weight: 700;
     }
+
     .author-text p {
       font-size: 14px;
       line-height: 1.6;
       margin: 0;
       color: #555;
     }
+
     @media (max-width: 600px) {
       .author-bio {
         flex-direction: column;
@@ -574,7 +584,8 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-placeholder">[ Imagen — Vía Láctea sobre las agujas de las Odle en Val di Funes ]</div>
+    <img src="https://images.unsplash.com/photo-1601500085783-4c2539178bd1" alt="Dolomitas"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;">
     <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
         índice</a><br>
       <span class="hero-eyebrow">Guías Secretas · Astroturismo</span>
@@ -624,7 +635,8 @@
 
       <p>A tan solo 5 km de Collepietra, en San Valentino in Campo (conocido también como Aldino o Aldein en alemán), el
         <strong>Planetario Alto Adige</strong> ofrece proyecciones en una cúpula de 8 metros de diámetro. Las sesiones
-        están disponibles en alemán, italiano e inglés, lo que lo hace accesible para una audiencia internacional.</p>
+        están disponibles en alemán, italiano e inglés, lo que lo hace accesible para una audiencia internacional.
+      </p>
 
       <p>La programación varía según la temporada: en verano se centra en la Vía Láctea y los objetos del cielo profundo
         visibles en esa época; en invierno, en las constelaciones invernales y los planetas. Lo ideal es combinar una

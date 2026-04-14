@@ -494,18 +494,24 @@
         font-size: 15px;
       }
     }
-      .back-link {
+
+    .back-link {
       display: inline-block;
-      color: rgba(255,255,255,0.7);
+      color: #fff;
       font-size: 13px;
+      font-weight: 600;
       text-decoration: none;
       margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4px 10px;
+      border-radius: 4px;
     }
+
     .back-link:hover {
-      color: #fff;
-      text-decoration: underline;
+      background: rgba(0, 0, 0, 0.65);
+      text-decoration: none;
     }
-  
+
     /* AUTHOR BIO */
     .author-bio {
       background: #f9f9f9;
@@ -517,6 +523,7 @@
       align-items: center;
       gap: 20px;
     }
+
     .author-avatar {
       width: 80px;
       height: 80px;
@@ -525,18 +532,21 @@
       flex-shrink: 0;
       border: 2px solid var(--gold);
     }
+
     .author-text h4 {
       font-size: 16px;
       margin-bottom: 6px;
       color: var(--black);
       font-weight: 700;
     }
+
     .author-text p {
       font-size: 14px;
       line-height: 1.6;
       margin: 0;
       color: #555;
     }
+
     @media (max-width: 600px) {
       .author-bio {
         flex-direction: column;
@@ -551,7 +561,8 @@
 <body>
 
   <header class="hero">
-    <div class="hero-placeholder">[ Imagen: Alta Badia con el Gruppo del Sella al fondo ]</div>
+    <img src="https://images.unsplash.com/photo-1728635723214-e7e61622af35" alt="Dolomitas"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;">
     <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
         índice</a><br>
       <span class="hero-eyebrow">Dolomitas · Valle y Esquí</span>
@@ -560,7 +571,6 @@
         <span>5 pueblos ladinos</span>
         <span>130 km de pistas</span>
         <span>Sellaronda directo</span>
-        <span>Actualizado: marzo 2026</span>
       </div>
     </div>
   </header>
@@ -690,7 +700,8 @@
 
       <p>En invierno, Alta Badia es parte del <strong>Dolomiti Superski</strong> y el punto de acceso más cómodo al
         <strong>Sellaronda</strong> desde el lado de Campolongo. Con 130 km de pistas homologadas y 53 remontes, la
-        oferta es suficiente para una semana completa sin repetir nada.</p>
+        oferta es suficiente para una semana completa sin repetir nada.
+      </p>
 
       <p>Pero lo que realmente distingue a Alta Badia del resto de estaciones del Dolomiti Superski es la <strong>Gran
           Risa</strong>: la pista de slalom gigante de La Villa que cada diciembre acoge una prueba de la <strong>Copa

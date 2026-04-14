@@ -422,18 +422,24 @@
       font-size: 15px;
       line-height: 1.6;
     }
-      .back-link {
+
+    .back-link {
       display: inline-block;
-      color: rgba(255,255,255,0.7);
+      color: #fff;
       font-size: 13px;
+      font-weight: 600;
       text-decoration: none;
       margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4px 10px;
+      border-radius: 4px;
     }
+
     .back-link:hover {
-      color: #fff;
-      text-decoration: underline;
+      background: rgba(0, 0, 0, 0.65);
+      text-decoration: none;
     }
-  
+
     /* AUTHOR BIO */
     .author-bio {
       background: #f9f9f9;
@@ -445,6 +451,7 @@
       align-items: center;
       gap: 20px;
     }
+
     .author-avatar {
       width: 80px;
       height: 80px;
@@ -453,18 +460,21 @@
       flex-shrink: 0;
       border: 2px solid var(--gold);
     }
+
     .author-text h4 {
       font-size: 16px;
       margin-bottom: 6px;
       color: var(--black);
       font-weight: 700;
     }
+
     .author-text p {
       font-size: 14px;
       line-height: 1.6;
       margin: 0;
       color: #555;
     }
+
     @media (max-width: 600px) {
       .author-bio {
         flex-direction: column;
@@ -478,7 +488,8 @@
 
 <body>
   <header class="hero">
-    <div class="hero-placeholder">[ Imagen ]</div>
+    <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69de569a3677cf2ce258c8ee.png" alt="Dolomitas"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;">
     <div class="hero-content"><a href="https://dolomitas.guiassecretas.com/" class="back-link">&larr; Volver al
         índice</a><br>
       <span class="hero-eyebrow">Dolomitas · Ciudades · Véneto</span>
@@ -591,7 +602,8 @@
 
       <p>La cocina de Belluno es la cocina veneto-alpina en su forma más auténtica, sin la inflación de precio que
         aparece en cuanto hay picos de fondo. Los dos platos que mejor representan la zona son los
-        <strong>casunziei</strong> y el <strong>schiz</strong>.</p>
+        <strong>casunziei</strong> y el <strong>schiz</strong>.
+      </p>
 
       <p>Los <strong>casunziei all'ampezzana</strong> son una pasta fresca rellena de remolacha, ricotta y patata,
         condimentada con mantequilla fundida, semillas de amapola y Parmigiano. El color magenta del relleno los hace
