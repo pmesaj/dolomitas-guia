@@ -303,6 +303,32 @@
     .cta-band .btn-primary { font-size: 16px; padding: 16px 32px; }
     .cta-note { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.35); }
 
+    /* ── AUTHOR BIO ── */
+    .author-bio {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: #f9f9f9;
+      border: 1px solid #eaeaea;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 0 0 60px 0;
+      max-width: 720px;
+    }
+    .author-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--gold);
+    }
+    .author-text h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: var(--black); }
+    .author-text p { font-size: 14px; line-height: 1.65; margin: 0; color: #555; }
+    @media (max-width: 600px) {
+      .author-bio { flex-direction: column; text-align: center; padding: 20px; }
+    }
+
     /* ── FOOTER ── */
     footer { text-align: center; padding: 30px 24px; font-size: 13px; color: #999; }
     footer a { color: var(--red); }
@@ -528,7 +554,7 @@
         </div>
       </a>
       <a href="/cortina-dampezzo" class="feat-card">
-        <div class="feat-img">🎿</div>
+        <div class="feat-img" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df3697243975ecf72fb2a5.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="feat-body">
           <p class="feat-tag">Ciudad · Veneto</p>
           <p class="feat-name">Cortina d'Ampezzo</p>
@@ -586,7 +612,7 @@
         </div>
       </a>
       <a href="/corvara" class="art-item">
-        <div class="art-icon">🏘️</div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df375480b446d0fb98c2e3.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Pueblo</p>
           <p class="art-name">Corvara</p>
@@ -658,7 +684,7 @@
         </div>
       </a>
       <a href="/dobbiaco" class="art-item">
-        <div class="art-icon" style="background-image:url('URL');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df38a280b446d0fb99035e.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Pueblo · Alta Pusteria</p>
           <p class="art-name">Dobbiaco</p>
@@ -833,7 +859,7 @@
         </div>
       </a>
       <a href="/civetta" class="art-item">
-        <div class="art-icon">🦉</div>
+        <div class="art-icon" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Monte_Civetta_Caprile.jpg/1280px-Monte_Civetta_Caprile.jpg');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Macizo · Veneto</p>
           <p class="art-name">Civetta</p>
@@ -857,7 +883,7 @@
         </div>
       </a>
       <a href="/como-reservar-rifugio-dolomitas" class="art-item">
-        <div class="art-icon">📅</div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df3658109243d2cce8a3e9.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Planificación</p>
           <p class="art-name">Cómo reservar un rifugio</p>
@@ -865,7 +891,7 @@
         </div>
       </a>
       <a href="/comer-rifugio-dolomitas" class="art-item">
-        <div class="art-icon">🍽️</div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df31cb109243d2cce7ccad.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Gastronomía</p>
           <p class="art-name">Qué se come en los rifugios</p>
@@ -968,7 +994,7 @@
         </div>
       </a>
       <a href="/como-llegar-dolomitas" class="feat-card">
-        <div class="feat-img">✈️</div>
+        <div class="feat-img" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df32bc109243d2cce7f6a1.webp');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="feat-body">
           <p class="feat-tag">Acceso</p>
           <p class="feat-name">Cómo llegar</p>
@@ -1169,7 +1195,7 @@
         </div>
       </a>
       <a href="/cortina-sin-coche" class="art-item">
-        <div class="art-icon">🏙️</div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df36f980b446d0fb98af75.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Destino</p>
           <p class="art-name">Cortina sin coche</p>
@@ -1365,7 +1391,7 @@
         </div>
       </a>
       <a href="/cuanto-cuesta-dolomitas" class="art-item">
-        <div class="art-icon">💶</div>
+        <div class="art-icon" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df37bb243975ecf72ff58d.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="art-info">
           <p class="art-tag">Presupuesto</p>
           <p class="art-name">Cuánto cuesta</p>
@@ -1482,7 +1508,7 @@
         </div>
       </a>
       <a href="/cultura-ladina" class="feat-card">
-        <div class="feat-img">🎭</div>
+        <div class="feat-img" style="background-image:url('https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69df380780b446d0fb98ea9e.png');background-size:cover;background-position:center;overflow:hidden;font-size:0;"></div>
         <div class="feat-body">
           <p class="feat-tag">Cultura</p>
           <p class="feat-name">Cultura ladina</p>
@@ -1702,13 +1728,17 @@
   </section>
 
 
-  <!-- VER TODOS -->
-  <div class="all-band">
-    <div class="all-band-text">
-      <h3>150 artículos en la enciclopedia completa</h3>
-      <p>Lagos, pasos, valles, refugios, actividades, temporadas, historia y más.</p>
+
+  <!-- AUTHOR BIO -->
+  <div class="author-bio">
+    <img src="https://assets.cdn.filesafe.space/o8XvqUKM4MpBIFAkxSoC/media/69bfc50d9bd139e670f723ca.png"
+      alt="Paco Mesa" class="author-avatar">
+    <div class="author-text">
+      <h4>Paco Mesa</h4>
+      <p>Creador de <strong>La Guía Secreta de Dolomitas</strong>. Tras años recorriendo estos senderos, mi
+        obsesión es ayudarte a planificar tu viaje evitando malas decisiones, optimizando tus tiempos y
+        mostrándote las verdaderas Dolomitas.</p>
     </div>
-    <a href="/enciclopedia">Ver todos los artículos →</a>
   </div>
 
 </div><!-- /container -->
